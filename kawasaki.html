@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LUMISS導入提案 | SSIN STUDIO加盟店様向け</title>
+<title>川崎店 LUMISS導入事例 | SSIN STUDIO</title>
 <script>/*!
  * Chart.js v4.4.1
  * https://www.chartjs.org
@@ -22,8 +22,7 @@
 <style>
 :root{
   --bg:#f6f7f9; --card:#fff; --ink:#1b2430; --muted:#6b7684; --line:#e3e7ec;
-  --ssin:#2E6F9E; --ssin-soft:#2E6F9E22;
-  --lum:#E8A33D; --lum-soft:#E8A33D22;
+  --ssin:#2E6F9E; --ssin-soft:#2E6F9E22; --lum:#E8A33D; --lum-soft:#E8A33D22;
   --pos:#1f9d6b; --neg:#d9534f;
   --shadow:0 1px 3px rgba(20,30,45,.07),0 6px 18px rgba(20,30,45,.05);
 }
@@ -32,20 +31,21 @@ body{margin:0;background:var(--bg);color:var(--ink);
  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
  font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
-
-/* header */
 header{background:linear-gradient(135deg,#1d3557 0%,#2E6F9E 55%,#3f8bbf 100%);color:#fff;padding:36px 0 30px;margin-bottom:26px}
 header .wrap{padding-bottom:0}
 .eyebrow{font-size:12px;letter-spacing:.16em;opacity:.75;margin-bottom:8px}
-h1{font-size:30px;margin:0 0 8px;font-weight:700;letter-spacing:.01em}
+h1{font-size:30px;margin:0 0 8px;font-weight:700}
 .sub{font-size:14px;opacity:.9;margin:0}
 .meta{margin-top:16px;font-size:12px;opacity:.75}
-.modebar{display:flex;gap:8px;align-items:center;margin-top:18px;flex-wrap:wrap}
+.modebar{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
 .modebtn{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;
  padding:6px 14px;border-radius:999px;font-size:12px;cursor:pointer;font-family:inherit}
-.modebtn.on{background:#fff;color:#1d3557;font-weight:700}
+.headline{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:22px}
+.hl{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:14px 16px}
+.hl .k{font-size:11px;opacity:.8;margin-bottom:4px}
+.hl .v{font-size:26px;font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums}
+.hl .n{font-size:11px;opacity:.75;margin-top:3px}
 
-/* sections */
 section{background:var(--card);border:1px solid var(--line);border-radius:14px;
  padding:24px;margin-bottom:20px;box-shadow:var(--shadow)}
 h2{font-size:19px;margin:0 0 4px;font-weight:700;display:flex;align-items:center;gap:10px}
@@ -53,844 +53,526 @@ h2 .num{background:var(--ssin);color:#fff;width:26px;height:26px;border-radius:8
  display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:0 0 26px}
 .lead{color:var(--muted);font-size:13px;margin:0 0 18px}
 h3{font-size:14px;margin:22px 0 10px;font-weight:700;color:#31415a}
+h3:first-of-type{margin-top:6px}
 
-/* kpi */
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
 .kpi{background:#fbfcfd;border:1px solid var(--line);border-radius:11px;padding:14px 16px}
-.kpi .k{font-size:11px;color:var(--muted);margin-bottom:5px;letter-spacing:.02em}
-.kpi .v{font-size:24px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
+.kpi .k{font-size:11px;color:var(--muted);margin-bottom:5px}
+.kpi .v{font-size:23px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
 .kpi .n{font-size:11px;color:var(--muted);margin-top:3px}
 .kpi.hi{background:linear-gradient(160deg,#fff8ec,#fffdf8);border-color:#f0d9b0}
 .kpi.hi .v{color:#b9781a}
 
-/* table */
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
 th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
-th{background:#f2f5f8;color:#43536b;font-weight:600;font-size:12px;text-align:right;position:sticky;top:0}
+th{background:#f2f5f8;color:#43536b;font-weight:600;font-size:12px;text-align:right}
 th:first-child,td:first-child{text-align:left}
 tbody tr:hover{background:#f8fafc}
 td.pos{color:var(--pos);font-weight:600} td.neg{color:var(--neg);font-weight:600}
 tfoot td{font-weight:700;background:#f7f9fb;border-top:2px solid var(--line)}
 
-/* chart */
 .chart{position:relative;height:300px}
-.chart.tall{height:360px}
+.chart.tall{height:370px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:860px){.grid2{grid-template-columns:1fr}h1{font-size:23px}}
 
-/* misc */
-.badge{display:inline-block;font-size:10.5px;padding:2px 8px;border-radius:999px;font-weight:700;vertical-align:1px}
-.badge.chok{background:var(--ssin-soft);color:var(--ssin)}
-.badge.kamei{background:#eef7f1;color:#1f7a52}
 .note{background:#fbfcfd;border-left:3px solid var(--ssin);padding:11px 14px;border-radius:0 8px 8px 0;
  font-size:12.5px;color:#48566b;margin-top:14px}
 .note b{color:var(--ink)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:6px}
-.card{border:1px solid var(--line);border-radius:11px;padding:16px;background:#fbfcfd}
-.card .t{font-size:13px;font-weight:700;margin-bottom:6px;color:#31415a}
-.card .big{font-size:22px;font-weight:700;color:var(--lum);font-variant-numeric:tabular-nums}
-.card p{margin:6px 0 0;font-size:12px;color:var(--muted)}
 .switch{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:14px}
 .switch button{border:0;background:#fff;color:var(--muted);padding:8px 16px;font-size:12.5px;
  font-family:inherit;font-weight:600;cursor:pointer;border-right:1px solid var(--line)}
 .switch button:last-child{border-right:0}
 .switch button.on{background:var(--ssin);color:#fff}
-table.mx td{font-size:12px;padding:7px 9px}
-table.mx td.pre{background:#f4f6f8;color:#c3ccd6}
-table.mx td.first{box-shadow:inset 2px 0 0 var(--lum)}
-table.mx th.mon{font-size:11px}
-table.mx td.name,table.mx th.name{position:sticky;left:0;background:#fff;z-index:1;
- box-shadow:2px 0 4px -2px rgba(0,0,0,.08)}
-table.mx th.name{background:#f2f5f8}
-.sv-only{display:none}
-body.sv .sv-only{display:block}
-body.sv .sv-only.tr{display:table-row}
-.legend{display:flex;gap:16px;font-size:12px;color:var(--muted);margin-bottom:10px;flex-wrap:wrap}
-.legend i{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
+.badge{display:inline-block;font-size:10.5px;padding:2px 8px;border-radius:999px;font-weight:700}
+.badge.l{background:var(--lum-soft);color:#b9781a}
 
-/* simulator */
-.simgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:18px}
-.field{display:flex;flex-direction:column;gap:5px}
-.field label{font-size:11.5px;color:var(--muted);font-weight:600}
-.field input,.field select{padding:9px 11px;border:1px solid var(--line);border-radius:9px;font-size:14px;
- font-family:inherit;background:#fff;color:var(--ink);font-variant-numeric:tabular-nums}
-.field input:focus,.field select:focus{outline:2px solid var(--ssin-soft);border-color:var(--ssin)}
-.simout{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-
+/* timeline */
+.tl{position:relative;padding-left:22px;margin-top:6px}
+.tl:before{content:'';position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl .ev{position:relative;padding:0 0 16px}
+.tl .ev:before{content:'';position:absolute;left:-20px;top:6px;width:10px;height:10px;border-radius:50%;
+ background:var(--ssin);border:2px solid #fff;box-shadow:0 0 0 2px var(--line)}
+.tl .ev.lum:before{background:var(--lum)}
+.tl .m{font-size:12px;font-weight:700;color:#31415a}
+.tl .t{font-size:12.5px;color:var(--muted)}
 footer{text-align:center;color:var(--muted);font-size:11.5px;padding:28px 0}
-@media print{
-  body{background:#fff} header{background:#1d3557!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  section{break-inside:avoid;box-shadow:none} .modebar{display:none}
-}
+@media print{body{background:#fff}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ section{break-inside:avoid;box-shadow:none}.modebar{display:none}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="eyebrow">SSIN STUDIO 加盟店オーナー様向け</div>
-    <h1>LUMISS 追加導入のご提案</h1>
-    <p class="sub">既存店舗の空き時間と既存顧客を、マツエク・まつ毛パーマ売上へ。導入済み全店の実データでご説明します。</p>
+    <div class="eyebrow">LUMISS 導入事例レポート</div>
+    <h1>川崎店の実績 ― 眉サロンにマツエクを足した9ヶ月</h1>
+    <p class="sub">SSIN STUDIO川崎店にLUMISS（マツエク）を併設した前後を、サロンボードの売上明細で追いかけたレポートです。</p>
     <div class="meta" id="metaLine"></div>
-    <div class="modebar">
-      <button class="modebtn on" id="btnOwner">オーナー様向け表示</button>
-      <button class="modebtn" onclick="window.print()">印刷 / PDF保存</button>
-    </div>
+    <div class="headline" id="headline"></div>
+    <div class="modebar"><button class="modebtn" onclick="window.print()">印刷 / PDF保存</button></div>
   </div>
 </header>
 
 <div class="wrap">
 
-<!-- 1 実績サマリー -->
 <section>
-  <h2><span class="num">1</span>LUMISS導入実績（全店・実データ）</h2>
-  <p class="lead">SSIN STUDIO併設でLUMISSを導入した全店舗の実績です。金額はすべて月商ベース（サロンボードの売上明細・税込）で、未完了の当月は含めていません。</p>
-  <div class="kpis" id="kpiTop"></div>
-  <div class="note" id="topNote"></div>
+  <h2><span class="num">1</span>導入前後で店舗はどう変わったか</h2>
+  <p class="lead">LUMISS導入前の月平均と、直近3ヶ月の月平均を並べています。</p>
+  <div class="kpis" id="kpiBA"></div>
+  <h3>店舗合計売上の推移（SSIN / LUMISS 内訳）</h3>
+  <div class="chart tall"><canvas id="cMain"></canvas></div>
+  <div class="note" id="mainNote"></div>
 </section>
 
-<!-- 2 立ち上がりカーブ -->
 <section>
-  <h2><span class="num">2</span>導入後、月商はどう伸びるか</h2>
-  <p class="lead">導入1ヶ月目を起点に、各店のLUMISS月商を重ねたものです。「何ヶ月でいくらになるか」の目安としてご覧ください。</p>
+  <h2><span class="num">2</span>導入からの歩み</h2>
+  <p class="lead">月ごとの動きを、実績データから自動で書き出しています。</p>
+  <div class="tl" id="timeline"></div>
+</section>
+
+<section>
+  <h2><span class="num">3</span>LUMISS単体の伸び</h2>
+  <p class="lead">まつげ側だけを取り出した推移です。</p>
   <div class="grid2">
-    <div>
-      <h3>導入Nヶ月目のLUMISS月商（全店中央値）</h3>
-      <div class="chart"><canvas id="cRamp"></canvas></div>
-    </div>
-    <div>
-      <h3>店舗別の立ち上がり推移</h3>
-      <div class="chart"><canvas id="cRampStores"></canvas></div>
-    </div>
+    <div><h3>月商と来店数</h3><div class="chart"><canvas id="cLum"></canvas></div></div>
+    <div><h3>新規 / 再来の内訳</h3><div class="chart"><canvas id="cLumNR"></canvas></div></div>
   </div>
-  <h3>数値表</h3>
-  <div class="scroll"><table id="tRamp"></table></div>
-  <div class="note">対象店舗数は月を追うごとに減ります（先行導入店ほど経過月数が長いため）。<b>各行の「対象店舗数」を必ずご確認ください。</b>直近の未完了月は集計から除外しています。</div>
+  <div class="kpis" style="margin-top:18px" id="kpiLum"></div>
 </section>
 
-<!-- 3 店舗別実績 -->
 <section>
-  <h2><span class="num">3</span>導入店舗の月次実績</h2>
-  <p class="lead">「毎月いくら売れているか」を暦月ベースで並べています。ご自身の店舗の月次損益と直接比較してご検討ください。</p>
-  <div class="switch" id="mxSwitch">
-    <button data-k="L" class="on">LUMISS月商</button>
-    <button data-k="S">SSIN月商</button>
-    <button data-k="T">店舗合計月商</button>
-  </div>
-  <div class="scroll"><table class="mx" id="tMatrix"></table></div>
-  <div class="note" id="mxNote"></div>
-
-  <h3>店舗を選んで月次の中身を見る</h3>
-  <div class="field" style="max-width:240px"><label>店舗</label><select id="selStore"></select></div>
-  <div class="chart tall" style="margin-top:16px"><canvas id="cStoreMonthly"></canvas></div>
-  <div class="scroll" style="margin-top:16px"><table id="tStoreMonthly"></table></div>
-
-  <h3>店舗別サマリー</h3>
-  <div class="scroll"><table id="tStores"></table></div>
-</section>
-
-<!-- 4 導入前後 -->
-<section>
-  <h2><span class="num">4</span>導入前後で店舗全体はどう変わったか</h2>
-  <p class="lead">「LUMISSを入れるとSSINの売上が食われるのでは？」という点を、導入前後の月平均で検証しています。</p>
-  <div class="legend">
-    <span><i style="background:var(--ssin)"></i>SSIN（眉）売上</span>
-    <span><i style="background:var(--lum)"></i>LUMISS（まつげ）売上</span>
-  </div>
-  <div class="chart tall"><canvas id="cBeforeAfter"></canvas></div>
-  <h3>店舗合計売上の推移（LUMISS導入月＝100として指数化）</h3>
-  <p class="lead" style="margin-bottom:10px">導入月の店舗合計売上を100としたときに、その後どこまで伸びたかを店舗ごとに重ねたものです。</p>
-  <div class="chart"><canvas id="cIndex"></canvas></div>
-  <h3>月平均の比較</h3>
-  <div class="scroll"><table id="tBeforeAfter"></table></div>
-  <div class="note" id="baNote"></div>
-</section>
-
-<!-- 5 予約割合 -->
-<section>
-  <h2><span class="num">5</span>SSINとLUMISSの内訳（予約割合・売上構成比）</h2>
-  <p class="lead">店舗の来店（予約）と売上が、眉とまつげでどう分かれているかです。LUMISSがどのくらいのボリュームを担うようになるかの目安になります。</p>
-  <div class="field" style="max-width:240px;margin-bottom:14px"><label>対象</label><select id="selMix"></select></div>
+  <h2><span class="num">4</span>SSINとLUMISSの予約割合</h2>
+  <p class="lead">来店（予約）と売上が、眉とまつげでどう分かれているかの推移です。</p>
   <div class="grid2">
-    <div>
-      <h3>月次の来店数（予約）内訳</h3>
-      <div class="chart"><canvas id="cMixVisits"></canvas></div>
-    </div>
-    <div>
-      <h3>月次の売上内訳</h3>
-      <div class="chart"><canvas id="cMixSales"></canvas></div>
-    </div>
+    <div><h3>来店数の内訳</h3><div class="chart"><canvas id="cMixV"></canvas></div></div>
+    <div><h3>売上の内訳</h3><div class="chart"><canvas id="cMixS"></canvas></div></div>
   </div>
-  <h3>数値表</h3>
-  <div class="scroll"><table id="tMix"></table></div>
-  <h3>店舗別 直近月の構成比</h3>
-  <div class="chart"><canvas id="cMixStores"></canvas></div>
-  <div class="note">来店＝会計1件を1来店として数えています（サロンボードの会計ID単位）。導入から日が浅い店舗ほどLUMISS比率は低く出ます。</div>
+  <div class="note" id="mixNote"></div>
 </section>
 
-<!-- 6 スタッフ別 -->
 <section>
-  <h2><span class="num">6</span>スタッフ別の売上（SSIN／LUMISS）</h2>
-  <p class="lead">どのスタッフがどちらのブランドでいくら売上を作っているかです。人員配置と採用計画の検討にお使いください。</p>
-  <div style="display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap;margin-bottom:14px">
-    <div class="field" style="max-width:240px"><label>店舗</label><select id="selStaffStore"></select></div>
-    <div class="switch" id="brandSwitch" style="margin-bottom:0">
-      <button data-b="L" class="on">LUMISSのみ</button>
-      <button data-b="S">SSINのみ</button>
-    </div>
+  <h2><span class="num">5</span>スタッフ体制と1人あたり売上</h2>
+  <p class="lead">「何名でこの売上を作っているか」です。LUMISS担当者数はSV確認済みの実配置と一致しています。</p>
+  <div class="grid2">
+    <div><h3>店舗の総スタッフ数と、うちLUMISS担当</h3><div class="chart"><canvas id="cStaffN"></canvas></div></div>
+    <div><h3>LUMISS担当1人あたりの月商</h3><div class="chart"><canvas id="cPerStaff"></canvas></div></div>
+  </div>
+  <h3>スタッフ別の売上</h3>
+  <div class="switch" id="brandSwitch">
+    <button data-b="L" class="on">LUMISSのみ</button>
+    <button data-b="S">SSINのみ</button>
   </div>
   <div class="chart tall"><canvas id="cStaffRev"></canvas></div>
-  <div class="scroll" style="margin-top:16px"><table id="tStaffRev"></table></div>
+  <div class="scroll" style="margin-top:16px"><table id="tStaff"></table></div>
   <h3>両ブランドを担当しているスタッフ</h3>
   <div class="scroll"><table id="tStaffBoth"></table></div>
-  <div class="note" id="staffRevNote"></div>
-</section>
-
-<!-- 7 なぜ伸びるのか -->
-<section>
-  <h2><span class="num">7</span>売上が積み上がる3つの理由</h2>
-  <p class="lead">実データで確認できている構造です。</p>
-  <div class="cards" id="reasonCards"></div>
-  <h3>新規客数の変化（月平均）</h3>
-  <div class="chart"><canvas id="cNewCust"></canvas></div>
-  <div class="note">HOT PEPPER Beautyに<b>「眉」と「まつげ」で2枠掲載</b>できるため、検索接点そのものが増えます。既存のSSIN顧客がLUMISSも使う「併用客」は、SSIN単独客より生涯単価が高くなる傾向があります。
-  <br>※ <b>*</b> 付きの店舗は導入後3ヶ月未満のため、季節変動の影響を受けます。併用客の累計利用額は来店回数が多いほど大きくなる点にご留意ください。</div>
-</section>
-
-<!-- 8 シミュレーション -->
-<section>
-  <h2><span class="num">8</span>投資回収シミュレーション</h2>
-  <p class="lead">数字を入力すると、実績の立ち上がりカーブに沿った回収見込みを試算します。費用は最新の加盟条件に置き換えてご利用ください。</p>
-  <div class="simgrid">
-    <div class="field"><label>初期費用（加盟金・研修費など／円）</label><input type="number" id="inInit" value="800000" step="50000"></div>
-    <div class="field"><label>内装・什器・材料等の初期投資（円）</label><input type="number" id="inSetup" value="300000" step="50000"></div>
-    <div class="field"><label>増員人件費（LUMISS按分後／月・円）</label><input type="number" id="inLabor" value="150000" step="10000"></div>
-    <div class="field"><label>売上に対する変動費率（材料・手数料 %）</label><input type="number" id="inVar" value="25" step="1"></div>
-    <div class="field"><label>立ち上がりの前提</label>
-      <select id="inCurve">
-        <option value="median">全店の中央値（標準）</option>
-        <option value="min">最も遅い店に合わせる（保守的）</option>
-        <option value="avg">全店平均</option>
-      </select></div>
-  </div>
-  <div class="simout" id="simOut"></div>
-  <h3>月次キャッシュフロー見込み</h3>
-  <div class="chart"><canvas id="cSim"></canvas></div>
-  <div class="note">粗利＝LUMISS売上×(1−変動費率)−増員人件費 として計算しています。既存スタッフが兼務する場合は人件費を0円に、既存の空き時間で回す場合は変動費率のみで試算してください。
-  <br><b>売上カーブは実績3店以上で確認できている月までを採用し、それ以降は横ばいとして計算しています</b>（先行店では以降も伸びていますが、試算では見込まないため保守的な数字になります）。
-  <br><b>本試算は導入済み店舗の実績に基づく参考値であり、売上を保証するものではありません。</b></div>
-</section>
-
-<!-- 9 体制 -->
-<section>
-  <h2><span class="num">9</span>導入に必要な体制とスケジュール</h2>
-  <p class="lead">実際に導入した店舗の、月次スタッフ数の推移から見た必要人員です。</p>
-  <div class="grid2">
-    <div>
-      <h3>LUMISS担当スタッフ数の推移（店舗別）</h3>
-      <div class="chart"><canvas id="cStaff"></canvas></div>
-    </div>
-    <div>
-      <h3>スタッフ1人あたりLUMISS月商</h3>
-      <div class="chart"><canvas id="cPerStaff"></canvas></div>
-    </div>
-  </div>
   <div class="note" id="staffNote"></div>
 </section>
 
+<section>
+  <h2><span class="num">6</span>お客様はどう増えたか</h2>
+  <p class="lead">新規獲得・リピート・眉とまつげの併用状況です。</p>
+  <div class="kpis" id="kpiCust"></div>
+  <h3>月間の新規客数（SSIN / LUMISS）</h3>
+  <div class="chart"><canvas id="cNew"></canvas></div>
+  <div class="note" id="custNote"></div>
+</section>
 
+<section>
+  <h2><span class="num">7</span>いつ埋まっているか（曜日・時間帯）</h2>
+  <p class="lead">まつげの予約がどの曜日・時間に入っているかです。空き枠の使われ方の参考にご覧ください。</p>
+  <div class="grid2">
+    <div><h3>曜日別の来店数</h3><div class="chart"><canvas id="cWd"></canvas></div></div>
+    <div><h3>時間帯別の来店数（会計時刻ベース）</h3><div class="chart"><canvas id="cHr"></canvas></div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">8</span>LUMISSの中身（メニュー構成・予約経路）</h2>
+  <div class="grid2">
+    <div><h3>売上の内訳</h3><div class="chart"><canvas id="cMenu"></canvas></div></div>
+    <div><h3>予約経路</h3><div class="chart"><canvas id="cRoute"></canvas></div></div>
+  </div>
+  <div class="scroll" style="margin-top:16px"><table id="tMenu"></table></div>
+</section>
+
+<section>
+  <h2><span class="num">9</span>月次明細</h2>
+  <p class="lead">ご自身の店舗の月次損益と並べてご確認ください。</p>
+  <div class="scroll"><table id="tMonthly"></table></div>
+</section>
 
 </div>
-
 <footer>
   <div id="footMeta"></div>
-  <div style="margin-top:4px">出典：サロンボード売上明細CSV（会計ID単位で集計）</div>
+  <div style="margin-top:4px">出典：サロンボード売上明細CSV（会計ID単位・税込）／未完了の当月は集計に含めていません</div>
 </footer>
 
 <script>
-const D = {"generated": "2026-08-22 15:25", "data_through": "2026-07", "stores": [{"name": "川崎", "kind": "直営", "start": "2025-11", "elapsed": 9, "L月次": [{"月": "2025-11", "売上": 250300, "来店": 41, "客単価": 6105, "新規": 41, "再来": 0, "スタッフ": 1, "担当名": ["Nana"]}, {"月": "2025-12", "売上": 580900, "来店": 99, "客単価": 5868, "新規": 86, "再来": 13, "スタッフ": 1, "担当名": ["Nana"]}, {"月": "2026-01", "売上": 518287, "来店": 81, "客単価": 6399, "新規": 54, "再来": 27, "スタッフ": 1, "担当名": ["Nana"]}, {"月": "2026-02", "売上": 732900, "来店": 115, "客単価": 6373, "新規": 81, "再来": 34, "スタッフ": 2, "担当名": ["Nana", "O.mifu"]}, {"月": "2026-03", "売上": 1120332, "来店": 170, "客単価": 6590, "新規": 108, "再来": 62, "スタッフ": 2, "担当名": ["Nana", "O.mifu"]}, {"月": "2026-04", "売上": 954600, "来店": 151, "客単価": 6322, "新規": 74, "再来": 77, "スタッフ": 2, "担当名": ["Nana", "O.mifu"]}, {"月": "2026-05", "売上": 1100750, "来店": 176, "客単価": 6254, "新規": 81, "再来": 95, "スタッフ": 2, "担当名": ["Nana", "O.mifu"]}, {"月": "2026-06", "売上": 1241955, "来店": 191, "客単価": 6502, "新規": 79, "再来": 112, "スタッフ": 2, "担当名": ["Nana", "O.mifu"]}, {"月": "2026-07", "売上": 1611900, "来店": 245, "客単価": 6579, "新規": 93, "再来": 152, "スタッフ": 3, "担当名": ["Nana", "O.mifu", "Y.rea"]}], "S月次": [{"月": "2025-08", "売上": 1619900, "来店": 304, "客単価": 5329, "新規": 62, "再来": 242, "スタッフ": 3, "担当名": ["I.Karin", "Kanna", "Nana"]}, {"月": "2025-09", "売上": 1926071, "来店": 323, "客単価": 5963, "新規": 81, "再来": 242, "スタッフ": 3, "担当名": ["I.Karin", "Kanna", "Nana"]}, {"月": "2025-10", "売上": 2076400, "来店": 325, "客単価": 6389, "新規": 51, "再来": 274, "スタッフ": 3, "担当名": ["I.Karin", "Kanna", "Nana"]}, {"月": "2025-11", "売上": 2356809, "来店": 370, "客単価": 6370, "新規": 104, "再来": 266, "スタッフ": 4, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu"]}, {"月": "2025-12", "売上": 3260696, "来店": 491, "客単価": 6641, "新規": 142, "再来": 349, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-01", "売上": 2782560, "来店": 424, "客単価": 6563, "新規": 143, "再来": 281, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-02", "売上": 2731005, "来店": 434, "客単価": 6293, "新規": 109, "再来": 325, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-03", "売上": 2834330, "来店": 465, "客単価": 6095, "新規": 135, "再来": 330, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-04", "売上": 2747840, "来店": 460, "客単価": 5974, "新規": 104, "再来": 356, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-05", "売上": 2495410, "来店": 451, "客単価": 5533, "新規": 109, "再来": 342, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-06", "売上": 2917828, "来店": 478, "客単価": 6104, "新規": 138, "再来": 340, "スタッフ": 5, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari"]}, {"月": "2026-07", "売上": 3064448, "来店": 505, "客単価": 6068, "新規": 159, "再来": 346, "スタッフ": 6, "担当名": ["I.Karin", "Kanna", "Nana", "O.mifu", "U.kirari", "Y.rea"]}], "合計月次": [{"月": "2025-08", "S売上": 1619900, "L売上": 0, "S来店": 304, "L来店": 0, "S新規": 62, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1619900, "合計来店": 304, "合計新規": 62}, {"月": "2025-09", "S売上": 1926071, "L売上": 0, "S来店": 323, "L来店": 0, "S新規": 81, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1926071, "合計来店": 323, "合計新規": 81}, {"月": "2025-10", "S売上": 2076400, "L売上": 0, "S来店": 325, "L来店": 0, "S新規": 51, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 2076400, "合計来店": 325, "合計新規": 51}, {"月": "2025-11", "S売上": 2356809, "L売上": 250300, "S来店": 370, "L来店": 41, "S新規": 104, "L新規": 41, "Sスタッフ": 4, "Lスタッフ": 1, "合計売上": 2607109, "合計来店": 411, "合計新規": 145}, {"月": "2025-12", "S売上": 3260696, "L売上": 580900, "S来店": 491, "L来店": 99, "S新規": 142, "L新規": 86, "Sスタッフ": 5, "Lスタッフ": 1, "合計売上": 3841596, "合計来店": 590, "合計新規": 228}, {"月": "2026-01", "S売上": 2782560, "L売上": 518287, "S来店": 424, "L来店": 81, "S新規": 143, "L新規": 54, "Sスタッフ": 5, "Lスタッフ": 1, "合計売上": 3300847, "合計来店": 505, "合計新規": 197}, {"月": "2026-02", "S売上": 2731005, "L売上": 732900, "S来店": 434, "L来店": 115, "S新規": 109, "L新規": 81, "Sスタッフ": 5, "Lスタッフ": 2, "合計売上": 3463905, "合計来店": 549, "合計新規": 190}, {"月": "2026-03", "S売上": 2834330, "L売上": 1120332, "S来店": 465, "L来店": 170, "S新規": 135, "L新規": 108, "Sスタッフ": 5, "Lスタッフ": 2, "合計売上": 3954662, "合計来店": 635, "合計新規": 243}, {"月": "2026-04", "S売上": 2747840, "L売上": 954600, "S来店": 460, "L来店": 151, "S新規": 104, "L新規": 74, "Sスタッフ": 5, "Lスタッフ": 2, "合計売上": 3702440, "合計来店": 611, "合計新規": 178}, {"月": "2026-05", "S売上": 2495410, "L売上": 1100750, "S来店": 451, "L来店": 176, "S新規": 109, "L新規": 81, "Sスタッフ": 5, "Lスタッフ": 2, "合計売上": 3596160, "合計来店": 627, "合計新規": 190}, {"月": "2026-06", "S売上": 2917828, "L売上": 1241955, "S来店": 478, "L来店": 191, "S新規": 138, "L新規": 79, "Sスタッフ": 5, "Lスタッフ": 2, "合計売上": 4159783, "合計来店": 669, "合計新規": 217}, {"月": "2026-07", "S売上": 3064448, "L売上": 1611900, "S来店": 505, "L来店": 245, "S新規": 159, "L新規": 93, "Sスタッフ": 6, "Lスタッフ": 3, "合計売上": 4676348, "合計来店": 750, "合計新規": 252}], "L累計売上": 8111924, "L累計来店": 1269, "L直近月商": 1611900, "L最高月商": 1611900, "L客単価": 6392, "S客単価": 6126, "S前平均": 1874124, "S後平均": 2798992, "S前来店": 317, "S後来店": 453, "S前新規": 65, "S後新規": 127, "合計前平均": 1874124, "合計後平均": 3700317, "合計前新規": 65, "合計後新規": 204, "前月数": 3, "後月数": 9, "cross": {"S顧客数": 1998, "L顧客数": 749, "併用顧客数": 33, "L客の既存S率": 4.4, "S客のL併用率": 1.7, "併用客LTV": 27963, "S単独客LTV": 16293}, "staffL": {"スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 15900, "来店": 4}, {"月": "2025-12", "売上": 3500, "来店": 1}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 14000, "来店": 4}, {"月": "2026-03", "売上": 29200, "来店": 6}, {"月": "2026-04", "売上": 7500, "来店": 2}, {"月": "2026-05", "売上": 8900, "来店": 2}, {"月": "2026-06", "売上": 7500, "来店": 2}, {"月": "2026-07", "売上": 3500, "来店": 1}], "売上": 90000, "来店": 22, "客単価": 4091, "新規": 19, "初月": "2025-11", "最終月": "2026-07", "稼働月数": 8}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 199000, "来店": 29}, {"月": "2025-12", "売上": 513700, "来店": 75}, {"月": "2026-01", "売上": 370650, "来店": 52}, {"月": "2026-02", "売上": 470900, "来店": 69}, {"月": "2026-03", "売上": 431750, "来店": 62}, {"月": "2026-04", "売上": 498200, "来店": 76}, {"月": "2026-05", "売上": 556850, "来店": 87}, {"月": "2026-06", "売上": 535350, "来店": 78}, {"月": "2026-07", "売上": 611850, "来店": 91}], "売上": 4188250, "来店": 619, "客単価": 6766, "新規": 324, "初月": "2025-11", "最終月": "2026-07", "稼働月数": 9}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 7900, "来店": 2}, {"月": "2025-12", "売上": 51800, "来店": 10}, {"月": "2026-01", "売上": 92400, "来店": 18}, {"月": "2026-02", "売上": 176200, "来店": 28}, {"月": "2026-03", "売上": 461900, "来店": 68}, {"月": "2026-04", "売上": 434800, "来店": 66}, {"月": "2026-05", "売上": 512300, "来店": 82}, {"月": "2026-06", "売上": 529650, "来店": 83}, {"月": "2026-07", "売上": 620850, "来店": 94}], "売上": 2887800, "来店": 451, "客単価": 6403, "新規": 247, "初月": "2025-11", "最終月": "2026-07", "稼働月数": 9}, "スタッフG": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 147600, "来店": 22}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 147600, "来店": 22, "客単価": 6709, "新規": 9, "初月": "2026-06", "最終月": "2026-06", "稼働月数": 1}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 3500, "来店": 1}, {"月": "2026-01", "売上": 36500, "来店": 7}, {"月": "2026-02", "売上": 54000, "来店": 11}, {"月": "2026-03", "売上": 46100, "来店": 9}, {"月": "2026-04", "売上": 10600, "来店": 2}, {"月": "2026-05", "売上": 10600, "来店": 2}, {"月": "2026-06", "売上": 8400, "来店": 2}, {"月": "2026-07", "売上": 16700, "来店": 2}], "売上": 186400, "来店": 36, "客単価": 5178, "新規": 30, "初月": "2025-12", "最終月": "2026-07", "稼働月数": 8}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 350600, "来店": 55}], "売上": 350600, "来店": 55, "客単価": 6375, "新規": 22, "初月": "2026-07", "最終月": "2026-07", "稼働月数": 1}, "スタッフH": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 109400, "来店": 17}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 109400, "来店": 17, "客単価": 6435, "新規": 10, "初月": "2026-03", "最終月": "2026-03", "稼働月数": 1}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 27500, "来店": 5}, {"月": "2025-12", "売上": 8400, "来店": 2}, {"月": "2026-01", "売上": 14100, "来店": 3}, {"月": "2026-02", "売上": 10600, "来店": 2}, {"月": "2026-03", "売上": 20000, "来店": 4}, {"月": "2026-04", "売上": 3500, "来店": 1}, {"月": "2026-05", "売上": 14100, "来店": 3}, {"月": "2026-06", "売上": 7000, "来店": 3}, {"月": "2026-07", "売上": 8400, "来店": 2}], "売上": 113600, "来店": 25, "客単価": 4544, "新規": 22, "初月": "2025-11", "最終月": "2026-07", "稼働月数": 9}}, "staffS": {"スタッフA": {"月次": [{"月": "2025-08", "売上": 499900, "来店": 92}, {"月": "2025-09", "売上": 738880, "来店": 121}, {"月": "2025-10", "売上": 655800, "来店": 103}, {"月": "2025-11", "売上": 728100, "来店": 108}, {"月": "2025-12", "売上": 810250, "来店": 110}, {"月": "2026-01", "売上": 726800, "来店": 106}, {"月": "2026-02", "売上": 724300, "来店": 108}, {"月": "2026-03", "売上": 784960, "来店": 123}, {"月": "2026-04", "売上": 798900, "来店": 126}, {"月": "2026-05", "売上": 639500, "来店": 108}, {"月": "2026-06", "売上": 895000, "来店": 130}, {"月": "2026-07", "売上": 763900, "来店": 127}], "売上": 8766290, "来店": 1362, "客単価": 6436, "新規": 342, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 657500, "来店": 115}, {"月": "2025-09", "売上": 671500, "来店": 121}, {"月": "2025-10", "売上": 804000, "来店": 120}, {"月": "2025-11", "売上": 588000, "来店": 99}, {"月": "2025-12", "売上": 744000, "来店": 120}, {"月": "2026-01", "売上": 654000, "来店": 94}, {"月": "2026-02", "売上": 562200, "来店": 90}, {"月": "2026-03", "売上": 740900, "来店": 120}, {"月": "2026-04", "売上": 694400, "来店": 109}, {"月": "2026-05", "売上": 708850, "来店": 133}, {"月": "2026-06", "売上": 766750, "来店": 129}, {"月": "2026-07", "売上": 730350, "来店": 117}], "売上": 8322450, "来店": 1367, "客単価": 6088, "新規": 352, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 462500, "来店": 91}, {"月": "2025-09", "売上": 511600, "来店": 80}, {"月": "2025-10", "売上": 526900, "来店": 89}, {"月": "2025-11", "売上": 266500, "来店": 44}, {"月": "2025-12", "売上": 346300, "来店": 63}, {"月": "2026-01", "売上": 352000, "来店": 56}, {"月": "2026-02", "売上": 332650, "来店": 58}, {"月": "2026-03", "売上": 325150, "来店": 56}, {"月": "2026-04", "売上": 355950, "来店": 65}, {"月": "2026-05", "売上": 360600, "来店": 61}, {"月": "2026-06", "売上": 325980, "来店": 62}, {"月": "2026-07", "売上": 421200, "来店": 66}], "売上": 4587330, "来店": 791, "客単価": 5799, "新規": 143, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 89700, "来店": 11}, {"月": "2025-11", "売上": 697800, "来店": 106}, {"月": "2025-12", "売上": 619600, "来店": 94}, {"月": "2026-01", "売上": 482600, "来店": 79}, {"月": "2026-02", "売上": 560100, "来店": 88}, {"月": "2026-03", "売上": 309100, "来店": 59}, {"月": "2026-04", "売上": 248900, "来店": 51}, {"月": "2026-05", "売上": 296800, "来店": 51}, {"月": "2026-06", "売上": 244700, "来店": 47}, {"月": "2026-07", "売上": 249870, "来店": 40}], "売上": 3799170, "来店": 626, "客単価": 6069, "新規": 198, "初月": "2025-10", "最終月": "2026-07", "稼働月数": 10}, "スタッフG": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 135500, "来店": 24}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 135500, "来店": 24, "客単価": 5646, "新規": 9, "初月": "2026-06", "最終月": "2026-06", "稼働月数": 1}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 66300, "来店": 11}, {"月": "2025-12", "売上": 731800, "来店": 102}, {"月": "2026-01", "売上": 560250, "来店": 86}, {"月": "2026-02", "売上": 547900, "来店": 89}, {"月": "2026-03", "売上": 659800, "来店": 103}, {"月": "2026-04", "売上": 654090, "来店": 109}, {"月": "2026-05", "売上": 492350, "来店": 98}, {"月": "2026-06", "売上": 541100, "来店": 84}, {"月": "2026-07", "売上": 739650, "来店": 124}], "売上": 4993240, "来店": 806, "客単価": 6195, "新規": 265, "初月": "2025-11", "最終月": "2026-07", "稼働月数": 9}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 133250, "来店": 25}], "売上": 133250, "来店": 25, "客単価": 5330, "新規": 13, "初月": "2026-07", "最終月": "2026-07", "稼働月数": 1}, "スタッフH": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 18700, "来店": 4}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 18700, "来店": 4, "客単価": 4675, "新規": 2, "初月": "2026-03", "最終月": "2026-03", "稼働月数": 1}}}, {"name": "札幌", "kind": "直営", "start": "2026-02", "elapsed": 6, "L月次": [{"月": "2026-02", "売上": 85100, "来店": 21, "客単価": 4052, "新規": 20, "再来": 1, "スタッフ": 1, "担当名": ["Haseyama"]}, {"月": "2026-03", "売上": 350500, "来店": 54, "客単価": 6491, "新規": 49, "再来": 5, "スタッフ": 1, "担当名": ["Haseyama"]}, {"月": "2026-04", "売上": 294710, "来店": 46, "客単価": 6407, "新規": 30, "再来": 16, "スタッフ": 1, "担当名": ["Haseyama"]}, {"月": "2026-05", "売上": 268350, "来店": 40, "客単価": 6709, "新規": 30, "再来": 10, "スタッフ": 1, "担当名": ["Haseyama"]}, {"月": "2026-06", "売上": 360260, "来店": 52, "客単価": 6928, "新規": 32, "再来": 20, "スタッフ": 1, "担当名": ["Haseyama"]}, {"月": "2026-07", "売上": 534300, "来店": 75, "客単価": 7124, "新規": 48, "再来": 27, "スタッフ": 1, "担当名": ["Haseyama"]}], "S月次": [{"月": "2025-08", "売上": 1760582, "来店": 338, "客単価": 5209, "新規": 174, "再来": 164, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2025-09", "売上": 1677745, "来店": 252, "客単価": 6658, "新規": 100, "再来": 152, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2025-10", "売上": 1629427, "来店": 280, "客単価": 5819, "新規": 83, "再来": 197, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2025-11", "売上": 1571292, "来店": 285, "客単価": 5513, "新規": 95, "再来": 190, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2025-12", "売上": 1789555, "来店": 309, "客単価": 5791, "新規": 114, "再来": 195, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2026-01", "売上": 1258939, "来店": 212, "客単価": 5938, "新規": 59, "再来": 153, "スタッフ": 2, "担当名": ["Mizuki", "Suzuka"]}, {"月": "2026-02", "売上": 1774713, "来店": 297, "客単価": 5975, "新規": 91, "再来": 206, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2026-03", "売上": 1885601, "来店": 334, "客単価": 5646, "新規": 117, "再来": 217, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2026-04", "売上": 1926950, "来店": 324, "客単価": 5947, "新規": 91, "再来": 233, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2026-05", "売上": 1912555, "来店": 301, "客単価": 6354, "新規": 84, "再来": 217, "スタッフ": 3, "担当名": ["Haseyama", "Mizuki", "Suzuka"]}, {"月": "2026-06", "売上": 2250180, "来店": 355, "客単価": 6339, "新規": 111, "再来": 244, "スタッフ": 4, "担当名": ["Haseyama", "K.Ai", "Mizuki", "Suzuka"]}, {"月": "2026-07", "売上": 2331370, "来店": 368, "客単価": 6335, "新規": 120, "再来": 248, "スタッフ": 4, "担当名": ["Haseyama", "K.Ai", "Mizuki", "Suzuka"]}], "合計月次": [{"月": "2025-08", "S売上": 1760582, "L売上": 0, "S来店": 338, "L来店": 0, "S新規": 174, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1760582, "合計来店": 338, "合計新規": 174}, {"月": "2025-09", "S売上": 1677745, "L売上": 0, "S来店": 252, "L来店": 0, "S新規": 100, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1677745, "合計来店": 252, "合計新規": 100}, {"月": "2025-10", "S売上": 1629427, "L売上": 0, "S来店": 280, "L来店": 0, "S新規": 83, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1629427, "合計来店": 280, "合計新規": 83}, {"月": "2025-11", "S売上": 1571292, "L売上": 0, "S来店": 285, "L来店": 0, "S新規": 95, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1571292, "合計来店": 285, "合計新規": 95}, {"月": "2025-12", "S売上": 1789555, "L売上": 0, "S来店": 309, "L来店": 0, "S新規": 114, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1789555, "合計来店": 309, "合計新規": 114}, {"月": "2026-01", "S売上": 1258939, "L売上": 0, "S来店": 212, "L来店": 0, "S新規": 59, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1258939, "合計来店": 212, "合計新規": 59}, {"月": "2026-02", "S売上": 1774713, "L売上": 85100, "S来店": 297, "L来店": 21, "S新規": 91, "L新規": 20, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 1859813, "合計来店": 318, "合計新規": 111}, {"月": "2026-03", "S売上": 1885601, "L売上": 350500, "S来店": 334, "L来店": 54, "S新規": 117, "L新規": 49, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 2236101, "合計来店": 388, "合計新規": 166}, {"月": "2026-04", "S売上": 1926950, "L売上": 294710, "S来店": 324, "L来店": 46, "S新規": 91, "L新規": 30, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 2221660, "合計来店": 370, "合計新規": 121}, {"月": "2026-05", "S売上": 1912555, "L売上": 268350, "S来店": 301, "L来店": 40, "S新規": 84, "L新規": 30, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 2180905, "合計来店": 341, "合計新規": 114}, {"月": "2026-06", "S売上": 2250180, "L売上": 360260, "S来店": 355, "L来店": 52, "S新規": 111, "L新規": 32, "Sスタッフ": 4, "Lスタッフ": 1, "合計売上": 2610440, "合計来店": 407, "合計新規": 143}, {"月": "2026-07", "S売上": 2331370, "L売上": 534300, "S来店": 368, "L来店": 75, "S新規": 120, "L新規": 48, "Sスタッフ": 4, "Lスタッフ": 1, "合計売上": 2865670, "合計来店": 443, "合計新規": 168}], "L累計売上": 1893220, "L累計来店": 288, "L直近月商": 534300, "L最高月商": 534300, "L客単価": 6574, "S客単価": 5956, "S前平均": 1614590, "S後平均": 2013562, "S前来店": 279, "S後来店": 330, "S前新規": 104, "S後新規": 102, "合計前平均": 1614590, "合計後平均": 2329098, "合計前新規": 104, "合計後新規": 137, "前月数": 6, "後月数": 6, "cross": {"S顧客数": 1646, "L顧客数": 225, "併用顧客数": 5, "L客の既存S率": 2.2, "S客のL併用率": 0.3, "併用客LTV": 27928, "S単独客LTV": 14225}, "staffL": {"スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 81100, "来店": 12}, {"月": "2026-03", "売上": 350500, "来店": 54}, {"月": "2026-04", "売上": 290510, "来店": 45}, {"月": "2026-05", "売上": 268350, "来店": 40}, {"月": "2026-06", "売上": 353350, "来店": 51}, {"月": "2026-07", "売上": 519100, "来店": 73}], "売上": 1862910, "来店": 275, "客単価": 6774, "新規": 196, "初月": "2026-02", "最終月": "2026-07", "稼働月数": 6}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 4200, "来店": 1}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 7600, "来店": 1}], "売上": 11800, "来店": 2, "客単価": 5900, "新規": 2, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 2}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 4000, "来店": 1}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 7600, "来店": 1}], "売上": 11600, "来店": 2, "客単価": 5800, "新規": 2, "初月": "2026-02", "最終月": "2026-07", "稼働月数": 2}}, "staffS": {"スタッフC": {"月次": [{"月": "2025-08", "売上": 546380, "来店": 105}, {"月": "2025-09", "売上": 598800, "来店": 86}, {"月": "2025-10", "売上": 557600, "来店": 93}, {"月": "2025-11", "売上": 525600, "来店": 99}, {"月": "2025-12", "売上": 590400, "来店": 105}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 411360, "来店": 71}, {"月": "2026-03", "売上": 397350, "来店": 69}, {"月": "2026-04", "売上": 388100, "来店": 67}, {"月": "2026-05", "売上": 404650, "来店": 65}, {"月": "2026-06", "売上": 347500, "来店": 70}, {"月": "2026-07", "売上": 294100, "来店": 49}], "売上": 5061840, "来店": 879, "客単価": 5759, "新規": 255, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 11}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 274150, "来店": 42}, {"月": "2026-07", "売上": 646015, "来店": 106}], "売上": 920165, "来店": 148, "客単価": 6217, "新規": 78, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 610720, "来店": 112}, {"月": "2025-09", "売上": 545700, "来店": 86}, {"月": "2025-10", "売上": 502360, "来店": 95}, {"月": "2025-11", "売上": 543660, "来店": 91}, {"月": "2025-12", "売上": 631130, "来店": 105}, {"月": "2026-01", "売上": 637415, "来店": 111}, {"月": "2026-02", "売上": 797965, "来店": 117}, {"月": "2026-03", "売上": 729414, "来店": 136}, {"月": "2026-04", "売上": 825350, "来店": 131}, {"月": "2026-05", "売上": 818015, "来店": 123}, {"月": "2026-06", "売上": 838585, "来店": 127}, {"月": "2026-07", "売上": 691175, "来店": 99}], "売上": 8171489, "来店": 1333, "客単価": 6130, "新規": 424, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 620150, "来店": 121}, {"月": "2025-09", "売上": 554580, "来店": 80}, {"月": "2025-10", "売上": 593730, "来店": 92}, {"月": "2025-11", "売上": 519180, "来店": 95}, {"月": "2025-12", "売上": 587000, "来店": 99}, {"月": "2026-01", "売上": 634650, "来店": 100}, {"月": "2026-02", "売上": 584950, "来店": 109}, {"月": "2026-03", "売上": 765535, "来店": 126}, {"月": "2026-04", "売上": 722550, "来店": 125}, {"月": "2026-05", "売上": 719470, "来店": 113}, {"月": "2026-06", "売上": 819755, "来店": 116}, {"月": "2026-07", "売上": 709440, "来店": 114}], "売上": 7830990, "来店": 1290, "客単価": 6071, "新規": 480, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}}}, {"name": "藤沢", "kind": "直営", "start": "2026-01", "elapsed": 7, "L月次": [{"月": "2026-01", "売上": 19500, "来店": 4, "客単価": 4875, "新規": 4, "再来": 0, "スタッフ": 1, "担当名": ["yuuka"]}, {"月": "2026-02", "売上": 82850, "来店": 14, "客単価": 5918, "新規": 14, "再来": 0, "スタッフ": 1, "担当名": ["airi"]}, {"月": "2026-03", "売上": 140200, "来店": 20, "客単価": 7010, "新規": 20, "再来": 0, "スタッフ": 2, "担当名": ["akashi", "yuuka"]}, {"月": "2026-04", "売上": 135100, "来店": 26, "客単価": 5196, "新規": 26, "再来": 0, "スタッフ": 1, "担当名": ["Y.megumi"]}, {"月": "2026-05", "売上": 278400, "来店": 45, "客単価": 6187, "新規": 43, "再来": 2, "スタッフ": 1, "担当名": ["Y.megumi"]}, {"月": "2026-06", "売上": 504250, "来店": 77, "客単価": 6549, "新規": 61, "再来": 16, "スタッフ": 2, "担当名": ["O.sena", "Y.megumi"]}, {"月": "2026-07", "売上": 583550, "来店": 86, "客単価": 6785, "新規": 52, "再来": 34, "スタッフ": 2, "担当名": ["O.sena", "Y.megumi"]}], "S月次": [{"月": "2025-08", "売上": 1251846, "来店": 225, "客単価": 5564, "新規": 113, "再来": 112, "スタッフ": 3, "担当名": ["K.rina", "O.sena", "T.miyu"]}, {"月": "2025-09", "売上": 1182520, "来店": 230, "客単価": 5141, "新規": 101, "再来": 129, "スタッフ": 3, "担当名": ["K.rina", "O.sena", "T.miyu"]}, {"月": "2025-10", "売上": 1037720, "来店": 209, "客単価": 4965, "新規": 91, "再来": 118, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2025-11", "売上": 1063440, "来店": 193, "客単価": 5510, "新規": 80, "再来": 113, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2025-12", "売上": 1161890, "来店": 221, "客単価": 5257, "新規": 94, "再来": 127, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2026-01", "売上": 962200, "来店": 205, "客単価": 4694, "新規": 104, "再来": 101, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2026-02", "売上": 1038730, "来店": 195, "客単価": 5327, "新規": 97, "再来": 98, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2026-03", "売上": 1157000, "来店": 219, "客単価": 5283, "新規": 104, "再来": 115, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2026-04", "売上": 1277900, "来店": 236, "客単価": 5415, "新規": 99, "再来": 137, "スタッフ": 2, "担当名": ["K.rina", "O.sena"]}, {"月": "2026-05", "売上": 817160, "来店": 166, "客単価": 4923, "新規": 57, "再来": 109, "スタッフ": 3, "担当名": ["K.rina", "O.sena", "Y.megumi"]}, {"月": "2026-06", "売上": 1031000, "来店": 166, "客単価": 6211, "新規": 54, "再来": 112, "スタッフ": 2, "担当名": ["O.sena", "Y.megumi"]}, {"月": "2026-07", "売上": 1010320, "来店": 174, "客単価": 5806, "新規": 56, "再来": 118, "スタッフ": 2, "担当名": ["O.sena", "Y.megumi"]}], "合計月次": [{"月": "2025-08", "S売上": 1251846, "L売上": 0, "S来店": 225, "L来店": 0, "S新規": 113, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1251846, "合計来店": 225, "合計新規": 113}, {"月": "2025-09", "S売上": 1182520, "L売上": 0, "S来店": 230, "L来店": 0, "S新規": 101, "L新規": 0, "Sスタッフ": 3, "Lスタッフ": 0, "合計売上": 1182520, "合計来店": 230, "合計新規": 101}, {"月": "2025-10", "S売上": 1037720, "L売上": 0, "S来店": 209, "L来店": 0, "S新規": 91, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1037720, "合計来店": 209, "合計新規": 91}, {"月": "2025-11", "S売上": 1063440, "L売上": 0, "S来店": 193, "L来店": 0, "S新規": 80, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1063440, "合計来店": 193, "合計新規": 80}, {"月": "2025-12", "S売上": 1161890, "L売上": 0, "S来店": 221, "L来店": 0, "S新規": 94, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1161890, "合計来店": 221, "合計新規": 94}, {"月": "2026-01", "S売上": 962200, "L売上": 19500, "S来店": 205, "L来店": 4, "S新規": 104, "L新規": 4, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 981700, "合計来店": 209, "合計新規": 108}, {"月": "2026-02", "S売上": 1038730, "L売上": 82850, "S来店": 195, "L来店": 14, "S新規": 97, "L新規": 14, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1121580, "合計来店": 209, "合計新規": 111}, {"月": "2026-03", "S売上": 1157000, "L売上": 140200, "S来店": 219, "L来店": 20, "S新規": 104, "L新規": 20, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1297200, "合計来店": 239, "合計新規": 124}, {"月": "2026-04", "S売上": 1277900, "L売上": 135100, "S来店": 236, "L来店": 26, "S新規": 99, "L新規": 26, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1413000, "合計来店": 262, "合計新規": 125}, {"月": "2026-05", "S売上": 817160, "L売上": 278400, "S来店": 166, "L来店": 45, "S新規": 57, "L新規": 43, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 1095560, "合計来店": 211, "合計新規": 100}, {"月": "2026-06", "S売上": 1031000, "L売上": 504250, "S来店": 166, "L来店": 77, "S新規": 54, "L新規": 61, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1535250, "合計来店": 243, "合計新規": 115}, {"月": "2026-07", "S売上": 1010320, "L売上": 583550, "S来店": 174, "L来店": 86, "S新規": 56, "L新規": 52, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1593870, "合計来店": 260, "合計新規": 108}], "L累計売上": 1743850, "L累計来店": 272, "L直近月商": 583550, "L最高月商": 583550, "L客単価": 6411, "S客単価": 5327, "S前平均": 1139483, "S後平均": 1042044, "S前来店": 216, "S後来店": 194, "S前新規": 96, "S後新規": 82, "合計前平均": 1139483, "合計後平均": 1291166, "合計前新規": 96, "合計後新規": 113, "前月数": 5, "後月数": 7, "cross": {"S顧客数": 1324, "L顧客数": 257, "併用顧客数": 11, "L客の既存S率": 4.3, "S客のL併用率": 0.8, "併用客LTV": 19844, "S単独客LTV": 10171}, "staffL": {"スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 28500, "来店": 6}, {"月": "2026-05", "売上": 11500, "来店": 2}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 40000, "来店": 8, "客単価": 5000, "新規": 8, "初月": "2026-04", "最終月": "2026-05", "稼働月数": 2}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 19200, "来店": 4}, {"月": "2026-05", "売上": 55300, "来店": 9}, {"月": "2026-06", "売上": 216000, "来店": 33}, {"月": "2026-07", "売上": 312100, "来店": 45}], "売上": 602600, "来店": 91, "客単価": 6622, "新規": 64, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 4}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 87400, "来店": 16}, {"月": "2026-05", "売上": 211600, "来店": 34}, {"月": "2026-06", "売上": 288250, "来店": 44}, {"月": "2026-07", "売上": 271450, "来店": 41}], "売上": 858700, "来店": 135, "客単価": 6361, "新規": 110, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 4}, "スタッフG": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 5400, "来店": 1}, {"月": "2026-02", "売上": 43850, "来店": 6}, {"月": "2026-03", "売上": 9000, "来店": 1}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 58250, "来店": 8, "客単価": 7281, "新規": 8, "初月": "2026-01", "最終月": "2026-03", "稼働月数": 3}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 24900, "来店": 5}, {"月": "2026-03", "売上": 47300, "来店": 8}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 72200, "来店": 13, "客単価": 5554, "新規": 13, "初月": "2026-02", "最終月": "2026-03", "稼働月数": 2}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 14100, "来店": 3}, {"月": "2026-02", "売上": 14100, "来店": 3}, {"月": "2026-03", "売上": 83900, "来店": 11}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 112100, "来店": 17, "客単価": 6594, "新規": 17, "初月": "2026-01", "最終月": "2026-03", "稼働月数": 3}}, "staffS": {"スタッフB": {"月次": [{"月": "2025-08", "売上": 483580, "来店": 91}, {"月": "2025-09", "売上": 437300, "来店": 101}, {"月": "2025-10", "売上": 517060, "来店": 102}, {"月": "2025-11", "売上": 573620, "来店": 104}, {"月": "2025-12", "売上": 511960, "来店": 102}, {"月": "2026-01", "売上": 434080, "来店": 87}, {"月": "2026-02", "売上": 465240, "来店": 87}, {"月": "2026-03", "売上": 493060, "来店": 96}, {"月": "2026-04", "売上": 500600, "来店": 94}, {"月": "2026-05", "売上": 299880, "来店": 64}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 4716380, "来店": 928, "客単価": 5082, "新規": 392, "初月": "2025-08", "最終月": "2026-05", "稼働月数": 10}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 578880, "来店": 96}, {"月": "2025-09", "売上": 574180, "来店": 99}, {"月": "2025-10", "売上": 376920, "来店": 84}, {"月": "2025-11", "売上": 492220, "来店": 89}, {"月": "2025-12", "売上": 652680, "来店": 119}, {"月": "2026-01", "売上": 532320, "来店": 96}, {"月": "2026-02", "売上": 575800, "来店": 106}, {"月": "2026-03", "売上": 667240, "来店": 123}, {"月": "2026-04", "売上": 687800, "来店": 121}, {"月": "2026-05", "売上": 133400, "来店": 25}, {"月": "2026-06", "売上": 572600, "来店": 85}, {"月": "2026-07", "売上": 620840, "来店": 100}], "売上": 6464880, "来店": 1143, "客単価": 5656, "新規": 504, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 187940, "来店": 37}, {"月": "2025-09", "売上": 172240, "来店": 30}, {"月": "2025-10", "売上": 146340, "来店": 23}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 506520, "来店": 90, "客単価": 5628, "新規": 38, "初月": "2025-08", "最終月": "2025-10", "稼働月数": 3}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 102400, "来店": 21}, {"月": "2026-05", "売上": 389580, "来店": 77}, {"月": "2026-06", "売上": 472640, "来店": 81}, {"月": "2026-07", "売上": 391880, "来店": 74}], "売上": 1356500, "来店": 253, "客単価": 5362, "新規": 91, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 4}}}, {"name": "二子玉川", "kind": "直営", "start": "2026-03", "elapsed": 5, "L月次": [{"月": "2026-03", "売上": 288000, "来店": 59, "客単価": 4881, "新規": 58, "再来": 1, "スタッフ": 1, "担当名": ["K.Suzu"]}, {"月": "2026-04", "売上": 303500, "来店": 48, "客単価": 6323, "新規": 28, "再来": 20, "スタッフ": 2, "担当名": ["K.Suzu", "f.Neneha"]}, {"月": "2026-05", "売上": 259880, "来店": 46, "客単価": 5650, "新規": 29, "再来": 17, "スタッフ": 2, "担当名": ["K.Suzu", "f.Neneha"]}, {"月": "2026-06", "売上": 375900, "来店": 57, "客単価": 6595, "新規": 31, "再来": 26, "スタッフ": 1, "担当名": ["K.Suzu"]}, {"月": "2026-07", "売上": 622830, "来店": 98, "客単価": 6355, "新規": 47, "再来": 51, "スタッフ": 2, "担当名": ["K.Suzu", "f.Neneha"]}], "S月次": [{"月": "2025-08", "売上": 1104500, "来店": 225, "客単価": 4909, "新規": 98, "再来": 127, "スタッフ": 2, "担当名": ["S.MIYU", "Tomoyo"]}, {"月": "2025-09", "売上": 883320, "来店": 162, "客単価": 5453, "新規": 65, "再来": 97, "スタッフ": 2, "担当名": ["S.MIYU", "Tomoyo"]}, {"月": "2025-10", "売上": 725700, "来店": 128, "客単価": 5670, "新規": 31, "再来": 97, "スタッフ": 1, "担当名": ["Tomoyo"]}, {"月": "2025-11", "売上": 812400, "来店": 142, "客単価": 5721, "新規": 33, "再来": 109, "スタッフ": 1, "担当名": ["Tomoyo"]}, {"月": "2025-12", "売上": 1262500, "来店": 227, "客単価": 5562, "新規": 89, "再来": 138, "スタッフ": 2, "担当名": ["M.RIMI", "Tomoyo"]}, {"月": "2026-01", "売上": 1341250, "来店": 207, "客単価": 6479, "新規": 77, "再来": 130, "スタッフ": 2, "担当名": ["K.Suzu", "Tomoyo"]}, {"月": "2026-02", "売上": 1228600, "来店": 199, "客単価": 6174, "新規": 69, "再来": 130, "スタッフ": 2, "担当名": ["K.Suzu", "Tomoyo"]}, {"月": "2026-03", "売上": 1307309, "来店": 248, "客単価": 5271, "新規": 91, "再来": 157, "スタッフ": 3, "担当名": ["K.Suzu", "Tomoyo", "f.Neneha"]}, {"月": "2026-04", "売上": 1075463, "来店": 185, "客単価": 5813, "新規": 41, "再来": 144, "スタッフ": 2, "担当名": ["K.Suzu", "f.Neneha"]}, {"月": "2026-05", "売上": 1257330, "来店": 206, "客単価": 6104, "新規": 40, "再来": 166, "スタッフ": 2, "担当名": ["K.Suzu", "f.Neneha"]}, {"月": "2026-06", "売上": 1145810, "来店": 220, "客単価": 5208, "新規": 58, "再来": 162, "スタッフ": 2, "担当名": ["K.Suzu", "f.Neneha"]}, {"月": "2026-07", "売上": 1400270, "来店": 239, "客単価": 5859, "新規": 66, "再来": 173, "スタッフ": 3, "担当名": ["K.Suzu", "O.Mahiro", "f.Neneha"]}], "合計月次": [{"月": "2025-08", "S売上": 1104500, "L売上": 0, "S来店": 225, "L来店": 0, "S新規": 98, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1104500, "合計来店": 225, "合計新規": 98}, {"月": "2025-09", "S売上": 883320, "L売上": 0, "S来店": 162, "L来店": 0, "S新規": 65, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 883320, "合計来店": 162, "合計新規": 65}, {"月": "2025-10", "S売上": 725700, "L売上": 0, "S来店": 128, "L来店": 0, "S新規": 31, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 725700, "合計来店": 128, "合計新規": 31}, {"月": "2025-11", "S売上": 812400, "L売上": 0, "S来店": 142, "L来店": 0, "S新規": 33, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 812400, "合計来店": 142, "合計新規": 33}, {"月": "2025-12", "S売上": 1262500, "L売上": 0, "S来店": 227, "L来店": 0, "S新規": 89, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1262500, "合計来店": 227, "合計新規": 89}, {"月": "2026-01", "S売上": 1341250, "L売上": 0, "S来店": 207, "L来店": 0, "S新規": 77, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1341250, "合計来店": 207, "合計新規": 77}, {"月": "2026-02", "S売上": 1228600, "L売上": 0, "S来店": 199, "L来店": 0, "S新規": 69, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1228600, "合計来店": 199, "合計新規": 69}, {"月": "2026-03", "S売上": 1307309, "L売上": 288000, "S来店": 248, "L来店": 59, "S新規": 91, "L新規": 58, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 1595309, "合計来店": 307, "合計新規": 149}, {"月": "2026-04", "S売上": 1075463, "L売上": 303500, "S来店": 185, "L来店": 48, "S新規": 41, "L新規": 28, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1378963, "合計来店": 233, "合計新規": 69}, {"月": "2026-05", "S売上": 1257330, "L売上": 259880, "S来店": 206, "L来店": 46, "S新規": 40, "L新規": 29, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1517210, "合計来店": 252, "合計新規": 69}, {"月": "2026-06", "S売上": 1145810, "L売上": 375900, "S来店": 220, "L来店": 57, "S新規": 58, "L新規": 31, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1521710, "合計来店": 277, "合計新規": 89}, {"月": "2026-07", "S売上": 1400270, "L売上": 622830, "S来店": 239, "L来店": 98, "S新規": 66, "L新規": 47, "Sスタッフ": 3, "Lスタッフ": 2, "合計売上": 2023100, "合計来店": 337, "合計新規": 113}], "L累計売上": 1850110, "L累計来店": 308, "L直近月商": 622830, "L最高月商": 622830, "L客単価": 6007, "S客単価": 5672, "S前平均": 1051181, "S後平均": 1237236, "S前来店": 184, "S後来店": 220, "S前新規": 66, "S後新規": 59, "合計前平均": 1051181, "合計後平均": 1607258, "合計前新規": 66, "合計後新規": 98, "前月数": 7, "後月数": 5, "cross": {"S顧客数": 1026, "L顧客数": 211, "併用顧客数": 10, "L客の既存S率": 4.7, "S客のL併用率": 1.0, "併用客LTV": 17740, "S単独客LTV": 13956}, "staffL": {"スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 161800, "来店": 25}, {"月": "2026-04", "売上": 162900, "来店": 27}, {"月": "2026-05", "売上": 98800, "来店": 20}, {"月": "2026-06", "売上": 172200, "来店": 25}, {"月": "2026-07", "売上": 257000, "来店": 43}], "売上": 852700, "来店": 140, "客単価": 6091, "新規": 86, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 63100, "来店": 10}, {"月": "2026-07", "売上": 167600, "来店": 23}], "売上": 230700, "来店": 33, "客単価": 6991, "新規": 18, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 17000, "来店": 4}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 17000, "来店": 4, "客単価": 4250, "新規": 4, "初月": "2026-03", "最終月": "2026-03", "稼働月数": 1}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 109200, "来店": 20}, {"月": "2026-04", "売上": 145000, "来店": 21}, {"月": "2026-05", "売上": 164300, "来店": 26}, {"月": "2026-06", "売上": 140600, "来店": 22}, {"月": "2026-07", "売上": 198230, "来店": 31}], "売上": 757330, "来店": 120, "客単価": 6311, "新規": 74, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}}, "staffS": {"スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 101300, "来店": 15}, {"月": "2026-01", "売上": 715500, "来店": 103}, {"月": "2026-02", "売上": 575300, "来店": 98}, {"月": "2026-03", "売上": 424400, "来店": 84}, {"月": "2026-04", "売上": 541560, "来店": 85}, {"月": "2026-05", "売上": 720950, "来店": 104}, {"月": "2026-06", "売上": 554980, "来店": 99}, {"月": "2026-07", "売上": 556765, "来店": 95}], "売上": 4190755, "来店": 683, "客単価": 6136, "新規": 227, "初月": "2025-12", "最終月": "2026-07", "稼働月数": 8}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 98900, "来店": 16}, {"月": "2025-12", "売上": 489800, "来店": 87}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 588700, "来店": 103, "客単価": 5716, "新規": 46, "初月": "2025-11", "最終月": "2025-12", "稼働月数": 2}, "スタッフG": {"月次": [{"月": "2025-08", "売上": 14400, "来店": 3}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 14400, "来店": 3, "客単価": 4800, "新規": 0, "初月": "2025-08", "最終月": "2025-08", "稼働月数": 1}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 92300, "来店": 19}, {"月": "2026-07", "売上": 215100, "来店": 36}], "売上": 307400, "来店": 55, "客単価": 5589, "新規": 20, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 582300, "来店": 109}, {"月": "2025-09", "売上": 554000, "来店": 100}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 1136300, "来店": 209, "客単価": 5437, "新規": 96, "初月": "2025-08", "最終月": "2025-09", "稼働月数": 2}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 522800, "来店": 107}, {"月": "2025-09", "売上": 335320, "来店": 62}, {"月": "2025-10", "売上": 730500, "来店": 120}, {"月": "2025-11", "売上": 719800, "来店": 126}, {"月": "2025-12", "売上": 679800, "来店": 123}, {"月": "2026-01", "売上": 632050, "来店": 104}, {"月": "2026-02", "売上": 661100, "来店": 101}, {"月": "2026-03", "売上": 417100, "来店": 78}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 4698470, "来店": 821, "客単価": 5723, "新規": 232, "初月": "2025-08", "最終月": "2026-03", "稼働月数": 8}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 475950, "来店": 85}, {"月": "2026-04", "売上": 548900, "来店": 99}, {"月": "2026-05", "売上": 589700, "来店": 102}, {"月": "2026-06", "売上": 536120, "来店": 102}, {"月": "2026-07", "売上": 636965, "来店": 108}], "売上": 2787635, "来店": 496, "客単価": 5620, "新規": 119, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}}}, {"name": "高田馬場", "kind": "直営", "start": "2026-03", "elapsed": 5, "L月次": [{"月": "2026-03", "売上": 84900, "来店": 28, "客単価": 3032, "新規": 28, "再来": 0, "スタッフ": 1, "担当名": ["I.misaki"]}, {"月": "2026-04", "売上": 213600, "来店": 35, "客単価": 6103, "新規": 32, "再来": 3, "スタッフ": 1, "担当名": ["I.misaki"]}, {"月": "2026-05", "売上": 328100, "来店": 61, "客単価": 5379, "新規": 50, "再来": 11, "スタッフ": 1, "担当名": ["I.misaki"]}, {"月": "2026-06", "売上": 328350, "来店": 53, "客単価": 6195, "新規": 34, "再来": 19, "スタッフ": 2, "担当名": ["I.misaki", "K.nami"]}, {"月": "2026-07", "売上": 495364, "来店": 78, "客単価": 6351, "新規": 51, "再来": 27, "スタッフ": 2, "担当名": ["I.misaki", "K.nami"]}], "S月次": [{"月": "2025-08", "売上": 1452200, "来店": 225, "客単価": 6454, "新規": 128, "再来": 97, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2025-09", "売上": 1309573, "来店": 213, "客単価": 6148, "新規": 84, "再来": 129, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2025-10", "売上": 1393500, "来店": 225, "客単価": 6193, "新規": 82, "再来": 143, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2025-11", "売上": 1326750, "来店": 200, "客単価": 6634, "新規": 55, "再来": 145, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2025-12", "売上": 1610055, "来店": 224, "客単価": 7188, "新規": 52, "再来": 172, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2026-01", "売上": 1412160, "来店": 205, "客単価": 6889, "新規": 59, "再来": 146, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2026-02", "売上": 1395750, "来店": 213, "客単価": 6553, "新規": 62, "再来": 151, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2026-03", "売上": 1540600, "来店": 218, "客単価": 7067, "新規": 49, "再来": 169, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2026-04", "売上": 1311350, "来店": 179, "客単価": 7326, "新規": 38, "再来": 141, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2026-05", "売上": 1323650, "来店": 214, "客単価": 6185, "新規": 68, "再来": 146, "スタッフ": 3, "担当名": ["H.Chihiro", "I.misaki", "K.nami"]}, {"月": "2026-06", "売上": 1281500, "来店": 191, "客単価": 6709, "新規": 52, "再来": 139, "スタッフ": 3, "担当名": ["H.Chihiro", "I.misaki", "K.nami"]}, {"月": "2026-07", "売上": 1634100, "来店": 226, "客単価": 7231, "新規": 43, "再来": 183, "スタッフ": 3, "担当名": ["H.Chihiro", "I.misaki", "K.nami"]}], "合計月次": [{"月": "2025-08", "S売上": 1452200, "L売上": 0, "S来店": 225, "L来店": 0, "S新規": 128, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1452200, "合計来店": 225, "合計新規": 128}, {"月": "2025-09", "S売上": 1309573, "L売上": 0, "S来店": 213, "L来店": 0, "S新規": 84, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1309573, "合計来店": 213, "合計新規": 84}, {"月": "2025-10", "S売上": 1393500, "L売上": 0, "S来店": 225, "L来店": 0, "S新規": 82, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1393500, "合計来店": 225, "合計新規": 82}, {"月": "2025-11", "S売上": 1326750, "L売上": 0, "S来店": 200, "L来店": 0, "S新規": 55, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1326750, "合計来店": 200, "合計新規": 55}, {"月": "2025-12", "S売上": 1610055, "L売上": 0, "S来店": 224, "L来店": 0, "S新規": 52, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1610055, "合計来店": 224, "合計新規": 52}, {"月": "2026-01", "S売上": 1412160, "L売上": 0, "S来店": 205, "L来店": 0, "S新規": 59, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1412160, "合計来店": 205, "合計新規": 59}, {"月": "2026-02", "S売上": 1395750, "L売上": 0, "S来店": 213, "L来店": 0, "S新規": 62, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1395750, "合計来店": 213, "合計新規": 62}, {"月": "2026-03", "S売上": 1540600, "L売上": 84900, "S来店": 218, "L来店": 28, "S新規": 49, "L新規": 28, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1625500, "合計来店": 246, "合計新規": 77}, {"月": "2026-04", "S売上": 1311350, "L売上": 213600, "S来店": 179, "L来店": 35, "S新規": 38, "L新規": 32, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1524950, "合計来店": 214, "合計新規": 70}, {"月": "2026-05", "S売上": 1323650, "L売上": 328100, "S来店": 214, "L来店": 61, "S新規": 68, "L新規": 50, "Sスタッフ": 3, "Lスタッフ": 1, "合計売上": 1651750, "合計来店": 275, "合計新規": 118}, {"月": "2026-06", "S売上": 1281500, "L売上": 328350, "S来店": 191, "L来店": 53, "S新規": 52, "L新規": 34, "Sスタッフ": 3, "Lスタッフ": 2, "合計売上": 1609850, "合計来店": 244, "合計新規": 86}, {"月": "2026-07", "S売上": 1634100, "L売上": 495364, "S来店": 226, "L来店": 78, "S新規": 43, "L新規": 51, "Sスタッフ": 3, "Lスタッフ": 2, "合計売上": 2129464, "合計来店": 304, "合計新規": 94}], "L累計売上": 1450314, "L累計来店": 255, "L直近月商": 495364, "L最高月商": 495364, "L客単価": 5688, "S客単価": 6708, "S前平均": 1414284, "S後平均": 1418240, "S前来店": 215, "S後来店": 206, "S前新規": 75, "S後新規": 50, "合計前平均": 1414284, "合計後平均": 1708303, "合計前新規": 75, "合計後新規": 89, "前月数": 7, "後月数": 5, "cross": {"S顧客数": 962, "L顧客数": 220, "併用顧客数": 11, "L客の既存S率": 5.0, "S客のL併用率": 1.1, "併用客LTV": 12870, "S単独客LTV": 18901}, "staffL": {"スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 21000, "来店": 3}, {"月": "2026-05", "売上": 59700, "来店": 6}, {"月": "2026-06", "売上": 16500, "来店": 2}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 97200, "来店": 11, "客単価": 8836, "新規": 6, "初月": "2026-04", "最終月": "2026-06", "稼働月数": 3}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 84900, "来店": 18}, {"月": "2026-04", "売上": 192600, "来店": 32}, {"月": "2026-05", "売上": 192350, "来店": 34}, {"月": "2026-06", "売上": 156700, "来店": 26}, {"月": "2026-07", "売上": 268000, "来店": 40}], "売上": 894550, "来店": 150, "客単価": 5964, "新規": 119, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 10400, "来店": 2}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 10400, "来店": 2, "客単価": 5200, "新規": 2, "初月": "2026-05", "最終月": "2026-05", "稼働月数": 1}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 65650, "来店": 13}, {"月": "2026-06", "売上": 155150, "来店": 25}, {"月": "2026-07", "売上": 222000, "来店": 37}], "売上": 442800, "来店": 75, "客単価": 5904, "新規": 52, "初月": "2026-05", "最終月": "2026-07", "稼働月数": 3}}, "staffS": {"スタッフE": {"月次": [{"月": "2025-08", "売上": 14300, "来店": 3}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 14300, "来店": 3, "客単価": 4767, "新規": 0, "初月": "2025-08", "最終月": "2025-08", "稼働月数": 1}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 825000, "来店": 121}, {"月": "2025-09", "売上": 739700, "来店": 115}, {"月": "2025-10", "売上": 821000, "来店": 127}, {"月": "2025-11", "売上": 758625, "来店": 109}, {"月": "2025-12", "売上": 1030200, "来店": 133}, {"月": "2026-01", "売上": 765650, "来店": 107}, {"月": "2026-02", "売上": 829700, "来店": 111}, {"月": "2026-03", "売上": 927550, "来店": 127}, {"月": "2026-04", "売上": 844800, "来店": 103}, {"月": "2026-05", "売上": 595150, "来店": 90}, {"月": "2026-06", "売上": 388200, "来店": 47}, {"月": "2026-07", "売上": 553000, "来店": 59}], "売上": 9078575, "来店": 1249, "客単価": 7269, "新規": 300, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 603600, "来店": 99}, {"月": "2025-09", "売上": 563600, "来店": 97}, {"月": "2025-10", "売上": 572500, "来店": 98}, {"月": "2025-11", "売上": 568125, "来店": 91}, {"月": "2025-12", "売上": 573400, "来店": 90}, {"月": "2026-01", "売上": 639600, "来店": 97}, {"月": "2026-02", "売上": 566050, "来店": 102}, {"月": "2026-03", "売上": 613050, "来店": 91}, {"月": "2026-04", "売上": 466550, "来店": 76}, {"月": "2026-05", "売上": 548200, "来店": 88}, {"月": "2026-06", "売上": 425900, "来店": 64}, {"月": "2026-07", "売上": 523450, "来店": 77}], "売上": 6664025, "来店": 1070, "客単価": 6228, "新規": 402, "初月": "2025-08", "最終月": "2026-07", "稼働月数": 12}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 39400, "来店": 8}, {"月": "2026-06", "売上": 89500, "来店": 15}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 128900, "来店": 23, "客単価": 5604, "新規": 1, "初月": "2026-05", "最終月": "2026-06", "稼働月数": 2}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 142100, "来店": 28}, {"月": "2026-06", "売上": 377900, "来店": 65}, {"月": "2026-07", "売上": 557650, "来店": 90}], "売上": 1077650, "来店": 183, "客単価": 5889, "新規": 67, "初月": "2026-05", "最終月": "2026-07", "稼働月数": 3}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 9300, "来店": 2}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 9300, "来店": 2, "客単価": 4650, "新規": 0, "初月": "2025-08", "最終月": "2025-08", "稼働月数": 1}}}, {"name": "立川", "kind": "直営", "start": "2026-07", "elapsed": 1, "L月次": [{"月": "2026-07", "売上": 365440, "来店": 69, "客単価": 5296, "新規": 67, "再来": 2, "スタッフ": 1, "担当名": ["M.Ayane"]}], "S月次": [{"月": "2025-08", "売上": 1380300, "来店": 251, "客単価": 5499, "新規": 140, "再来": 111, "スタッフ": 2, "担当名": ["O.yuria", "minori"]}, {"月": "2025-09", "売上": 1056700, "来店": 183, "客単価": 5774, "新規": 83, "再来": 100, "スタッフ": 2, "担当名": ["O.yuria", "minori"]}, {"月": "2025-10", "売上": 1160600, "来店": 223, "客単価": 5204, "新規": 113, "再来": 110, "スタッフ": 2, "担当名": ["O.yuria", "minori"]}, {"月": "2025-11", "売上": 574160, "来店": 100, "客単価": 5742, "新規": 28, "再来": 72, "スタッフ": 1, "担当名": ["minori"]}, {"月": "2025-12", "売上": 590900, "来店": 107, "客単価": 5522, "新規": 30, "再来": 77, "スタッフ": 2, "担当名": ["O.yuria", "minori"]}, {"月": "2026-01", "売上": 558700, "来店": 97, "客単価": 5760, "新規": 43, "再来": 54, "スタッフ": 2, "担当名": ["N.yuria", "O.yuria"]}, {"月": "2026-02", "売上": 1075700, "来店": 200, "客単価": 5378, "新規": 117, "再来": 83, "スタッフ": 2, "担当名": ["N.yuria", "O.momoka"]}, {"月": "2026-03", "売上": 1211100, "来店": 219, "客単価": 5530, "新規": 101, "再来": 118, "スタッフ": 2, "担当名": ["N.yuria", "O.momoka"]}, {"月": "2026-04", "売上": 1264100, "来店": 220, "客単価": 5746, "新規": 87, "再来": 133, "スタッフ": 2, "担当名": ["N.yuria", "O.momoka"]}, {"月": "2026-05", "売上": 900100, "来店": 170, "客単価": 5295, "新規": 45, "再来": 125, "スタッフ": 1, "担当名": ["O.momoka"]}, {"月": "2026-06", "売上": 870280, "来店": 157, "客単価": 5543, "新規": 49, "再来": 108, "スタッフ": 2, "担当名": ["M.Ayane", "O.momoka"]}, {"月": "2026-07", "売上": 1287000, "来店": 214, "客単価": 6014, "新規": 89, "再来": 125, "スタッフ": 2, "担当名": ["M.Ayane", "O.momoka"]}], "合計月次": [{"月": "2025-08", "S売上": 1380300, "L売上": 0, "S来店": 251, "L来店": 0, "S新規": 140, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1380300, "合計来店": 251, "合計新規": 140}, {"月": "2025-09", "S売上": 1056700, "L売上": 0, "S来店": 183, "L来店": 0, "S新規": 83, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1056700, "合計来店": 183, "合計新規": 83}, {"月": "2025-10", "S売上": 1160600, "L売上": 0, "S来店": 223, "L来店": 0, "S新規": 113, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1160600, "合計来店": 223, "合計新規": 113}, {"月": "2025-11", "S売上": 574160, "L売上": 0, "S来店": 100, "L来店": 0, "S新規": 28, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 574160, "合計来店": 100, "合計新規": 28}, {"月": "2025-12", "S売上": 590900, "L売上": 0, "S来店": 107, "L来店": 0, "S新規": 30, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 590900, "合計来店": 107, "合計新規": 30}, {"月": "2026-01", "S売上": 558700, "L売上": 0, "S来店": 97, "L来店": 0, "S新規": 43, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 558700, "合計来店": 97, "合計新規": 43}, {"月": "2026-02", "S売上": 1075700, "L売上": 0, "S来店": 200, "L来店": 0, "S新規": 117, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1075700, "合計来店": 200, "合計新規": 117}, {"月": "2026-03", "S売上": 1211100, "L売上": 0, "S来店": 219, "L来店": 0, "S新規": 101, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1211100, "合計来店": 219, "合計新規": 101}, {"月": "2026-04", "S売上": 1264100, "L売上": 0, "S来店": 220, "L来店": 0, "S新規": 87, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1264100, "合計来店": 220, "合計新規": 87}, {"月": "2026-05", "S売上": 900100, "L売上": 0, "S来店": 170, "L来店": 0, "S新規": 45, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 900100, "合計来店": 170, "合計新規": 45}, {"月": "2026-06", "S売上": 870280, "L売上": 0, "S来店": 157, "L来店": 0, "S新規": 49, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 870280, "合計来店": 157, "合計新規": 49}, {"月": "2026-07", "S売上": 1287000, "L売上": 365440, "S来店": 214, "L来店": 69, "S新規": 89, "L新規": 67, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1652440, "合計来店": 283, "合計新規": 156}], "L累計売上": 365440, "L累計来店": 69, "L直近月商": 365440, "L最高月商": 365440, "L客単価": 5296, "S客単価": 5572, "S前平均": 967513, "S後平均": 1287000, "S前来店": 175, "S後来店": 214, "S前新規": 76, "S後新規": 89, "合計前平均": 967513, "合計後平均": 1652440, "合計前新規": 76, "合計後新規": 156, "前月数": 11, "後月数": 1, "cross": {"S顧客数": 1129, "L顧客数": 90, "併用顧客数": 1, "L客の既存S率": 1.1, "S客のL併用率": 0.1, "併用客LTV": 24300, "S単独客LTV": 11128}, "staffL": {"スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 365440, "来店": 57}], "売上": 365440, "来店": 57, "客単価": 6411, "新規": 55, "初月": "2026-07", "最終月": "2026-07", "稼働月数": 1}}, "staffS": {"スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 120100, "来店": 18}, {"月": "2026-04", "売上": 108600, "来店": 18}, {"月": "2026-05", "売上": 32000, "来店": 7}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 260700, "来店": 43, "客単価": 6063, "新規": 18, "初月": "2026-03", "最終月": "2026-05", "稼働月数": 3}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 187280, "来店": 36}, {"月": "2026-07", "売上": 467500, "来店": 71}], "売上": 654780, "来店": 107, "客単価": 6119, "新規": 55, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 273300, "来店": 47}, {"月": "2026-02", "売上": 523500, "来店": 91}, {"月": "2026-03", "売上": 484900, "来店": 88}, {"月": "2026-04", "売上": 525300, "来店": 87}, {"月": "2026-05", "売上": 125600, "来店": 24}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 1932600, "来店": 337, "客単価": 5735, "新規": 156, "初月": "2026-01", "最終月": "2026-05", "稼働月数": 5}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 539700, "来店": 107}, {"月": "2026-03", "売上": 606400, "来店": 113}, {"月": "2026-04", "売上": 632050, "来店": 115}, {"月": "2026-05", "売上": 743300, "来店": 139}, {"月": "2026-06", "売上": 683000, "来店": 121}, {"月": "2026-07", "売上": 819500, "来店": 143}], "売上": 4023950, "来店": 738, "客単価": 5453, "新規": 278, "初月": "2026-02", "最終月": "2026-07", "稼働月数": 6}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 662000, "来店": 116}, {"月": "2025-09", "売上": 419200, "来店": 73}, {"月": "2025-10", "売上": 527000, "来店": 102}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 136000, "来店": 25}, {"月": "2026-01", "売上": 285400, "来店": 48}, {"月": "2026-02", "売上": 12600, "来店": 2}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 2042200, "来店": 366, "客単価": 5580, "新規": 186, "初月": "2025-08", "最終月": "2026-02", "稼働月数": 6}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 722800, "来店": 121}, {"月": "2025-09", "売上": 645300, "来店": 110}, {"月": "2025-10", "売上": 634100, "来店": 117}, {"月": "2025-11", "売上": 575660, "来店": 100}, {"月": "2025-12", "売上": 455500, "来店": 82}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 3033360, "来店": 530, "客単価": 5723, "新規": 219, "初月": "2025-08", "最終月": "2025-12", "稼働月数": 5}}}, {"name": "中野", "kind": "直営", "start": "2026-07", "elapsed": 1, "L月次": [{"月": "2026-07", "売上": 183200, "来店": 29, "客単価": 6317, "新規": 28, "再来": 1, "スタッフ": 1, "担当名": ["O.mahiro"]}], "S月次": [{"月": "2025-08", "売上": 1215980, "来店": 248, "客単価": 4903, "新規": 119, "再来": 129, "スタッフ": 2, "担当名": ["Hanna", "MOMO"]}, {"月": "2025-09", "売上": 1022580, "来店": 214, "客単価": 4778, "新規": 88, "再来": 126, "スタッフ": 2, "担当名": ["MOMO", "hanna"]}, {"月": "2025-10", "売上": 1130895, "来店": 222, "客単価": 5094, "新規": 77, "再来": 145, "スタッフ": 2, "担当名": ["MOMO", "hanna"]}, {"月": "2025-11", "売上": 1023000, "来店": 217, "客単価": 4714, "新規": 82, "再来": 135, "スタッフ": 2, "担当名": ["MOMO", "hanna"]}, {"月": "2025-12", "売上": 659600, "来店": 152, "客単価": 4339, "新規": 36, "再来": 116, "スタッフ": 1, "担当名": ["MOMO"]}, {"月": "2026-03", "売上": 149800, "来店": 24, "客単価": 6242, "新規": 14, "再来": 10, "スタッフ": 2, "担当名": ["H.Chihiro", "I.misaki"]}, {"月": "2026-04", "売上": 438800, "来店": 68, "客単価": 6453, "新規": 34, "再来": 34, "スタッフ": 1, "担当名": ["K.Sara"]}, {"月": "2026-05", "売上": 970550, "来店": 167, "客単価": 5812, "新規": 106, "再来": 61, "スタッフ": 2, "担当名": ["I.misaki", "K.Sara"]}, {"月": "2026-06", "売上": 915450, "来店": 151, "客単価": 6063, "新規": 67, "再来": 84, "スタッフ": 1, "担当名": ["K.Sara"]}, {"月": "2026-07", "売上": 1314219, "来店": 205, "客単価": 6411, "新規": 87, "再来": 118, "スタッフ": 2, "担当名": ["K.Sara", "O.mahiro"]}], "合計月次": [{"月": "2025-08", "S売上": 1215980, "L売上": 0, "S来店": 248, "L来店": 0, "S新規": 119, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1215980, "合計来店": 248, "合計新規": 119}, {"月": "2025-09", "S売上": 1022580, "L売上": 0, "S来店": 214, "L来店": 0, "S新規": 88, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1022580, "合計来店": 214, "合計新規": 88}, {"月": "2025-10", "S売上": 1130895, "L売上": 0, "S来店": 222, "L来店": 0, "S新規": 77, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1130895, "合計来店": 222, "合計新規": 77}, {"月": "2025-11", "S売上": 1023000, "L売上": 0, "S来店": 217, "L来店": 0, "S新規": 82, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 1023000, "合計来店": 217, "合計新規": 82}, {"月": "2025-12", "S売上": 659600, "L売上": 0, "S来店": 152, "L来店": 0, "S新規": 36, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 659600, "合計来店": 152, "合計新規": 36}, {"月": "2026-03", "S売上": 149800, "L売上": 0, "S来店": 24, "L来店": 0, "S新規": 14, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 149800, "合計来店": 24, "合計新規": 14}, {"月": "2026-04", "S売上": 438800, "L売上": 0, "S来店": 68, "L来店": 0, "S新規": 34, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 438800, "合計来店": 68, "合計新規": 34}, {"月": "2026-05", "S売上": 970550, "L売上": 0, "S来店": 167, "L来店": 0, "S新規": 106, "L新規": 0, "Sスタッフ": 2, "Lスタッフ": 0, "合計売上": 970550, "合計来店": 167, "合計新規": 106}, {"月": "2026-06", "S売上": 915450, "L売上": 0, "S来店": 151, "L来店": 0, "S新規": 67, "L新規": 0, "Sスタッフ": 1, "Lスタッフ": 0, "合計売上": 915450, "合計来店": 151, "合計新規": 67}, {"月": "2026-07", "S売上": 1314219, "L売上": 183200, "S来店": 205, "L来店": 29, "S新規": 87, "L新規": 28, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1497419, "合計来店": 234, "合計新規": 115}], "L累計売上": 183200, "L累計来店": 29, "L直近月商": 183200, "L最高月商": 183200, "L客単価": 6317, "S客単価": 5300, "S前平均": 836295, "S後平均": 1314219, "S前来店": 163, "S後来店": 205, "S前新規": 69, "S後新規": 87, "合計前平均": 836295, "合計後平均": 1497419, "合計前新規": 69, "合計後新規": 115, "前月数": 9, "後月数": 1, "cross": {"S顧客数": 959, "L顧客数": 39, "併用顧客数": 3, "L客の既存S率": 7.7, "S客のL併用率": 0.3, "併用客LTV": 20617, "S単独客LTV": 9937}, "staffL": {"スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 18800, "来店": 3}], "売上": 18800, "来店": 3, "客単価": 6267, "新規": 3, "初月": "2026-07", "最終月": "2026-07", "稼働月数": 1}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 16100, "来店": 3}], "売上": 16100, "来店": 3, "客単価": 5367, "新規": 3, "初月": "2026-07", "最終月": "2026-07", "稼働月数": 1}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 148300, "来店": 23}], "売上": 148300, "来店": 23, "客単価": 6448, "新規": 22, "初月": "2026-07", "最終月": "2026-07", "稼働月数": 1}}, "staffS": {"スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 83400, "来店": 13}, {"月": "2026-04", "売上": 168700, "来店": 24}, {"月": "2026-05", "売上": 35400, "来店": 10}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 287500, "来店": 47, "客単価": 6117, "新規": 25, "初月": "2026-03", "最終月": "2026-05", "稼働月数": 3}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 48300, "来店": 9}, {"月": "2025-09", "売上": 460640, "来店": 99}, {"月": "2025-10", "売上": 564900, "来店": 116}, {"月": "2025-11", "売上": 493700, "来店": 104}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 1567540, "来店": 328, "客単価": 4779, "新規": 135, "初月": "2025-08", "最終月": "2025-11", "稼働月数": 4}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 66400, "来店": 11}, {"月": "2026-04", "売上": 108400, "来店": 18}, {"月": "2026-05", "売上": 170050, "来店": 27}, {"月": "2026-06", "売上": 156700, "来店": 22}, {"月": "2026-07", "売上": 150200, "来店": 22}], "売上": 651750, "来店": 100, "客単価": 6518, "新規": 55, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}, "スタッフB": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 161700, "来店": 26}, {"月": "2026-05", "売上": 767100, "来店": 130}, {"月": "2026-06", "売上": 670450, "来店": 112}, {"月": "2026-07", "売上": 913600, "来店": 137}], "売上": 2512850, "来店": 405, "客単価": 6205, "新規": 186, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 4}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 603580, "来店": 124}, {"月": "2025-09", "売上": 506740, "来店": 103}, {"月": "2025-10", "売上": 559540, "来店": 105}, {"月": "2025-11", "売上": 525300, "来店": 112}, {"月": "2025-12", "売上": 659600, "来店": 152}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 2854760, "来店": 596, "客単価": 4790, "新規": 199, "初月": "2025-08", "最終月": "2025-12", "稼働月数": 5}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 88300, "来店": 15}, {"月": "2026-07", "売上": 246600, "来店": 45}], "売上": 334900, "来店": 60, "客単価": 5582, "新規": 39, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}}}, {"name": "池袋", "kind": "直営", "start": "2026-04", "elapsed": 4, "L月次": [{"月": "2026-04", "売上": 301760, "来店": 90, "客単価": 3353, "新規": 90, "再来": 0, "スタッフ": 1, "担当名": ["S.RINA"]}, {"月": "2026-05", "売上": 347500, "来店": 87, "客単価": 3994, "新規": 79, "再来": 8, "スタッフ": 1, "担当名": ["S.RINA"]}, {"月": "2026-06", "売上": 609300, "来店": 126, "客単価": 4836, "新規": 100, "再来": 26, "スタッフ": 2, "担当名": ["S.CHISATO", "S.RINA"]}, {"月": "2026-07", "売上": 1163038, "来店": 208, "客単価": 5592, "新規": 166, "再来": 42, "スタッフ": 2, "担当名": ["S.CHISATO", "S.RINA"]}], "S月次": [{"月": "2026-04", "売上": 301760, "来店": 90, "客単価": 3353, "新規": 90, "再来": 0, "スタッフ": 1, "担当名": ["S.RINA"]}, {"月": "2026-05", "売上": 347500, "来店": 87, "客単価": 3994, "新規": 79, "再来": 8, "スタッフ": 1, "担当名": ["S.RINA"]}, {"月": "2026-06", "売上": 609300, "来店": 126, "客単価": 4836, "新規": 100, "再来": 26, "スタッフ": 2, "担当名": ["S.CHISATO", "S.RINA"]}, {"月": "2026-07", "売上": 819538, "来店": 162, "客単価": 5059, "新規": 122, "再来": 40, "スタッフ": 2, "担当名": ["S.CHISATO", "S.RINA"]}], "合計月次": [{"月": "2026-04", "S売上": 301760, "L売上": 301760, "S来店": 90, "L来店": 90, "S新規": 90, "L新規": 90, "Sスタッフ": 1, "Lスタッフ": 1, "合計売上": 603520, "合計来店": 180, "合計新規": 180}, {"月": "2026-05", "S売上": 347500, "L売上": 347500, "S来店": 87, "L来店": 87, "S新規": 79, "L新規": 79, "Sスタッフ": 1, "Lスタッフ": 1, "合計売上": 695000, "合計来店": 174, "合計新規": 158}, {"月": "2026-06", "S売上": 609300, "L売上": 609300, "S来店": 126, "L来店": 126, "S新規": 100, "L新規": 100, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1218600, "合計来店": 252, "合計新規": 200}, {"月": "2026-07", "S売上": 819538, "L売上": 1163038, "S来店": 162, "L来店": 208, "S新規": 122, "L新規": 166, "Sスタッフ": 2, "Lスタッフ": 2, "合計売上": 1982576, "合計来店": 370, "合計新規": 288}], "L累計売上": 2421598, "L累計来店": 511, "L直近月商": 1163038, "L最高月商": 1163038, "L客単価": 4739, "S客単価": 4469, "S前平均": 0, "S後平均": 519524, "S前来店": 0, "S後来店": 116, "S前新規": 0, "S後新規": 98, "合計前平均": 0, "合計後平均": 1124924, "合計前新規": 0, "合計後新規": 206, "前月数": 0, "後月数": 4, "cross": {"S顧客数": 383, "L顧客数": 427, "併用顧客数": 383, "L客の既存S率": 89.7, "S客のL併用率": 100.0, "併用客LTV": 10852, "S単独客LTV": 0}, "staffL": {"スタッフB": {"月次": [{"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 149700, "来店": 31}, {"月": "2026-07", "売上": 665910, "来店": 108}], "売上": 815610, "来店": 139, "客単価": 5868, "新規": 116, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}, "スタッフA": {"月次": [{"月": "2026-04", "売上": 301760, "来店": 81}, {"月": "2026-05", "売上": 347500, "来店": 84}, {"月": "2026-06", "売上": 459600, "来店": 95}, {"月": "2026-07", "売上": 494400, "来店": 99}], "売上": 1603260, "来店": 359, "客単価": 4466, "新規": 306, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 4}}, "staffS": {"スタッフB": {"月次": [{"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 149700, "来店": 31}, {"月": "2026-07", "売上": 322410, "来店": 62}], "売上": 472110, "来店": 93, "客単価": 5076, "新規": 72, "初月": "2026-06", "最終月": "2026-07", "稼働月数": 2}, "スタッフA": {"月次": [{"月": "2026-04", "売上": 301760, "来店": 81}, {"月": "2026-05", "売上": 347500, "来店": 84}, {"月": "2026-06", "売上": 459600, "来店": 95}, {"月": "2026-07", "売上": 494400, "来店": 99}], "売上": 1603260, "来店": 359, "客単価": 4466, "新規": 306, "初月": "2026-04", "最終月": "2026-07", "稼働月数": 4}}}, {"name": "土浦", "kind": "加盟", "start": "2026-03", "elapsed": 5, "L月次": [{"月": "2026-03", "売上": 495100, "来店": 77, "客単価": 6430, "新規": 75, "再来": 2, "スタッフ": 1, "担当名": ["O.aren"]}, {"月": "2026-04", "売上": 648700, "来店": 104, "客単価": 6238, "新規": 71, "再来": 33, "スタッフ": 1, "担当名": ["O.aren"]}, {"月": "2026-05", "売上": 663200, "来店": 98, "客単価": 6767, "新規": 36, "再来": 62, "スタッフ": 1, "担当名": ["O.aren"]}, {"月": "2026-06", "売上": 698740, "来店": 102, "客単価": 6850, "新規": 43, "再来": 59, "スタッフ": 1, "担当名": ["O.aren"]}, {"月": "2026-07", "売上": 910141, "来店": 131, "客単価": 6948, "新規": 46, "再来": 85, "スタッフ": 1, "担当名": ["O.aren"]}], "S月次": [{"月": "2026-03", "売上": 334624, "来店": 55, "客単価": 6084, "新規": 55, "再来": 0, "スタッフ": 2, "担当名": ["N.kanna", "O.aren"]}, {"月": "2026-04", "売上": 507010, "来店": 84, "客単価": 6036, "新規": 72, "再来": 12, "スタッフ": 1, "担当名": ["N.kanna"]}, {"月": "2026-05", "売上": 702840, "来店": 118, "客単価": 5956, "新規": 82, "再来": 36, "スタッフ": 2, "担当名": ["N.kanna", "O.aren"]}, {"月": "2026-06", "売上": 590100, "来店": 97, "客単価": 6084, "新規": 47, "再来": 50, "スタッフ": 1, "担当名": ["N.kanna"]}, {"月": "2026-07", "売上": 761420, "来店": 129, "客単価": 5902, "新規": 70, "再来": 59, "スタッフ": 2, "担当名": ["N.kanna", "O.aren"]}], "合計月次": [{"月": "2026-03", "S売上": 334624, "L売上": 495100, "S来店": 55, "L来店": 77, "S新規": 55, "L新規": 75, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 829724, "合計来店": 132, "合計新規": 130}, {"月": "2026-04", "S売上": 507010, "L売上": 648700, "S来店": 84, "L来店": 104, "S新規": 72, "L新規": 71, "Sスタッフ": 1, "Lスタッフ": 1, "合計売上": 1155710, "合計来店": 188, "合計新規": 143}, {"月": "2026-05", "S売上": 702840, "L売上": 663200, "S来店": 118, "L来店": 98, "S新規": 82, "L新規": 36, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1366040, "合計来店": 216, "合計新規": 118}, {"月": "2026-06", "S売上": 590100, "L売上": 698740, "S来店": 97, "L来店": 102, "S新規": 47, "L新規": 43, "Sスタッフ": 1, "Lスタッフ": 1, "合計売上": 1288840, "合計来店": 199, "合計新規": 90}, {"月": "2026-07", "S売上": 761420, "L売上": 910141, "S来店": 129, "L来店": 131, "S新規": 70, "L新規": 46, "Sスタッフ": 2, "Lスタッフ": 1, "合計売上": 1671561, "合計来店": 260, "合計新規": 116}], "L累計売上": 3415881, "L累計来店": 512, "L直近月商": 910141, "L最高月商": 910141, "L客単価": 6672, "S客単価": 5996, "S前平均": 0, "S後平均": 579199, "S前来店": 0, "S後来店": 97, "S前新規": 0, "S後新規": 65, "合計前平均": 0, "合計後平均": 1262375, "合計前新規": 0, "合計後新規": 119, "前月数": 0, "後月数": 5, "cross": {"S顧客数": 321, "L顧客数": 270, "併用顧客数": 8, "L客の既存S率": 3.0, "S客のL併用率": 2.5, "併用客LTV": 16555, "S単独客LTV": 9047}, "staffL": {"スタッフB": {"月次": [{"月": "2026-03", "売上": 25200, "来店": 2}, {"月": "2026-04", "売上": 22500, "来店": 4}, {"月": "2026-05", "売上": 15000, "来店": 3}, {"月": "2026-06", "売上": 12300, "来店": 2}, {"月": "2026-07", "売上": 9800, "来店": 3}], "売上": 84800, "来店": 14, "客単価": 6057, "新規": 11, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}, "スタッフA": {"月次": [{"月": "2026-03", "売上": 469900, "来店": 75}, {"月": "2026-04", "売上": 626200, "来店": 100}, {"月": "2026-05", "売上": 648200, "来店": 95}, {"月": "2026-06", "売上": 687440, "来店": 100}, {"月": "2026-07", "売上": 892250, "来店": 127}], "売上": 3323990, "来店": 497, "客単価": 6688, "新規": 259, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}}, "staffS": {"スタッフB": {"月次": [{"月": "2026-03", "売上": 169360, "来店": 25}, {"月": "2026-04", "売上": 368400, "来店": 62}, {"月": "2026-05", "売上": 537800, "来店": 91}, {"月": "2026-06", "売上": 432020, "来店": 73}, {"月": "2026-07", "売上": 608800, "来店": 102}], "売上": 2116380, "来店": 353, "客単価": 5995, "新規": 230, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}, "スタッフA": {"月次": [{"月": "2026-03", "売上": 155600, "来店": 28}, {"月": "2026-04", "売上": 138940, "来店": 22}, {"月": "2026-05", "売上": 166940, "来店": 27}, {"月": "2026-06", "売上": 159920, "来店": 24}, {"月": "2026-07", "売上": 154980, "来店": 27}], "売上": 776380, "来店": 128, "客単価": 6065, "新規": 94, "初月": "2026-03", "最終月": "2026-07", "稼働月数": 5}, "スタッフC": {"月次": [{"月": "2026-03", "売上": 6300, "来店": 1}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 6300, "来店": 1, "客単価": 6300, "新規": 1, "初月": "2026-03", "最終月": "2026-03", "稼働月数": 1}}}], "ramp": [{"月目": 1, "店舗数": 9, "平均": 230367, "中央値": 250300, "最大": 495100, "最小": 19500}, {"月目": 2, "店舗数": 7, "平均": 361079, "中央値": 347500, "最大": 648700, "最小": 82850}, {"月目": 3, "店舗数": 7, "平均": 401954, "中央値": 328100, "最大": 663200, "最小": 140200}, {"月目": 4, "店舗数": 7, "平均": 528911, "中央値": 375900, "最大": 1163038, "最小": 135100}, {"月目": 5, "店舗数": 6, "平均": 631221, "中央値": 559097, "最大": 1120332, "最小": 278400}, {"月目": 6, "店舗数": 3, "平均": 664383, "中央値": 534300, "最大": 954600, "最小": 504250}, {"月目": 7, "店舗数": 2, "平均": 842150, "中央値": 842150, "最大": 1100750, "最小": 583550}, {"月目": 8, "店舗数": 1, "平均": 1241955, "中央値": 1241955, "最大": 1241955, "最小": 1241955}, {"月目": 9, "店舗数": 1, "平均": 1611900, "中央値": 1611900, "最大": 1611900, "最小": 1611900}], "ratio_med": 0.371, "staff_rule": "月25件以上、またはその月の来店の40%以上を担当した人を担当者としてカウント（川崎店の実配置と全月一致を確認済み）", "targets": []};
+const D = {"generated": "2026-08-22 15:23", "store": "川崎", "start": "2025-11", "data_through": "2026-07", "months": ["2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07"], "monthly": [{"月": "2025-08", "S売上": 1619900, "L売上": 0, "S来店": 304, "L来店": 0, "S新規": 62, "L新規": 0, "S再来": 242, "L再来": 0, "S客単価": 5329, "L客単価": 0, "Sスタッフ": 3, "Lスタッフ": 0, "L担当名": [], "総スタッフ": 3, "S物販": 13200, "L物販": 0, "合計売上": 1619900, "合計来店": 304, "合計新規": 62, "合計客単価": 5329, "L売上比率": 0.0, "L来店比率": 0.0}, {"月": "2025-09", "S売上": 1926071, "L売上": 0, "S来店": 323, "L来店": 0, "S新規": 81, "L新規": 0, "S再来": 242, "L再来": 0, "S客単価": 5963, "L客単価": 0, "Sスタッフ": 3, "Lスタッフ": 0, "L担当名": [], "総スタッフ": 3, "S物販": 57000, "L物販": 0, "合計売上": 1926071, "合計来店": 323, "合計新規": 81, "合計客単価": 5963, "L売上比率": 0.0, "L来店比率": 0.0}, {"月": "2025-10", "S売上": 2076400, "L売上": 0, "S来店": 325, "L来店": 0, "S新規": 51, "L新規": 0, "S再来": 274, "L再来": 0, "S客単価": 6389, "L客単価": 0, "Sスタッフ": 3, "Lスタッフ": 0, "L担当名": [], "総スタッフ": 4, "S物販": 111600, "L物販": 0, "合計売上": 2076400, "合計来店": 325, "合計新規": 51, "合計客単価": 6389, "L売上比率": 0.0, "L来店比率": 0.0}, {"月": "2025-11", "S売上": 2356809, "L売上": 250300, "S来店": 370, "L来店": 41, "S新規": 104, "L新規": 41, "S再来": 266, "L再来": 0, "S客単価": 6370, "L客単価": 6105, "Sスタッフ": 4, "Lスタッフ": 1, "L担当名": ["Nana"], "総スタッフ": 4, "S物販": 123200, "L物販": 20100, "合計売上": 2607109, "合計来店": 411, "合計新規": 145, "合計客単価": 6343, "L売上比率": 9.6, "L来店比率": 10.0}, {"月": "2025-12", "S売上": 3260696, "L売上": 580900, "S来店": 491, "L来店": 99, "S新規": 142, "L新規": 86, "S再来": 349, "L再来": 13, "S客単価": 6641, "L客単価": 5868, "Sスタッフ": 5, "Lスタッフ": 1, "L担当名": ["Nana"], "総スタッフ": 5, "S物販": 201650, "L物販": 32200, "合計売上": 3841596, "合計来店": 590, "合計新規": 228, "合計客単価": 6511, "L売上比率": 15.1, "L来店比率": 16.8}, {"月": "2026-01", "S売上": 2782560, "L売上": 518287, "S来店": 424, "L来店": 81, "S新規": 143, "L新規": 54, "S再来": 281, "L再来": 27, "S客単価": 6563, "L客単価": 6399, "Sスタッフ": 5, "Lスタッフ": 1, "L担当名": ["Nana"], "総スタッフ": 4, "S物販": 141400, "L物販": 11550, "合計売上": 3300847, "合計来店": 505, "合計新規": 197, "合計客単価": 6536, "L売上比率": 15.7, "L来店比率": 16.0}, {"月": "2026-02", "S売上": 2731005, "L売上": 732900, "S来店": 434, "L来店": 115, "S新規": 109, "L新規": 81, "S再来": 325, "L再来": 34, "S客単価": 6293, "L客単価": 6373, "Sスタッフ": 5, "Lスタッフ": 2, "L担当名": ["Nana", "O.mifu"], "総スタッフ": 5, "S物販": 81950, "L物販": 33700, "合計売上": 3463905, "合計来店": 549, "合計新規": 190, "合計客単価": 6309, "L売上比率": 21.2, "L来店比率": 20.9}, {"月": "2026-03", "S売上": 2834330, "L売上": 1120332, "S来店": 465, "L来店": 170, "S新規": 135, "L新規": 108, "S再来": 330, "L再来": 62, "S客単価": 6095, "L客単価": 6590, "Sスタッフ": 5, "Lスタッフ": 2, "L担当名": ["Nana", "O.mifu"], "総スタッフ": 6, "S物販": 68950, "L物販": 23750, "合計売上": 3954662, "合計来店": 635, "合計新規": 243, "合計客単価": 6228, "L売上比率": 28.3, "L来店比率": 26.8}, {"月": "2026-04", "S売上": 2747840, "L売上": 954600, "S来店": 460, "L来店": 151, "S新規": 104, "L新規": 74, "S再来": 356, "L再来": 77, "S客単価": 5974, "L客単価": 6322, "Sスタッフ": 5, "Lスタッフ": 2, "L担当名": ["Nana", "O.mifu"], "総スタッフ": 5, "S物販": 91200, "L物販": 18300, "合計売上": 3702440, "合計来店": 611, "合計新規": 178, "合計客単価": 6060, "L売上比率": 25.8, "L来店比率": 24.7}, {"月": "2026-05", "S売上": 2495410, "L売上": 1100750, "S来店": 451, "L来店": 176, "S新規": 109, "L新規": 81, "S再来": 342, "L再来": 95, "S客単価": 5533, "L客単価": 6254, "Sスタッフ": 5, "Lスタッフ": 2, "L担当名": ["Nana", "O.mifu"], "総スタッフ": 5, "S物販": 41800, "L物販": 6050, "合計売上": 3596160, "合計来店": 627, "合計新規": 190, "合計客単価": 5736, "L売上比率": 30.6, "L来店比率": 28.1}, {"月": "2026-06", "S売上": 2917828, "L売上": 1241955, "S来店": 478, "L来店": 191, "S新規": 138, "L新規": 79, "S再来": 340, "L再来": 112, "S客単価": 6104, "L客単価": 6502, "Sスタッフ": 5, "Lスタッフ": 2, "L担当名": ["Nana", "O.mifu"], "総スタッフ": 6, "S物販": 98550, "L物販": 40600, "合計売上": 4159783, "合計来店": 669, "合計新規": 217, "合計客単価": 6218, "L売上比率": 29.9, "L来店比率": 28.6}, {"月": "2026-07", "S売上": 3064448, "L売上": 1611900, "S来店": 505, "L来店": 245, "S新規": 159, "L新規": 93, "S再来": 346, "L再来": 152, "S客単価": 6068, "L客単価": 6579, "Sスタッフ": 6, "Lスタッフ": 3, "L担当名": ["Nana", "O.mifu", "Y.rea"], "総スタッフ": 6, "S物販": 164000, "L物販": 24200, "合計売上": 4676348, "合計来店": 750, "合計新規": 252, "合計客単価": 6235, "L売上比率": 34.5, "L来店比率": 32.7}], "elapsed": 9, "before_months": 3, "after_months": 9, "before": {"合計売上": 1874124, "合計来店": 317, "合計新規": 65, "S売上": 1874124, "S来店": 317, "合計客単価": 5894, "Sスタッフ": 3}, "after": {"合計売上": 3700317, "合計来店": 594, "合計新規": 204, "S売上": 2798992, "S来店": 453, "合計客単価": 6242, "Sスタッフ": 5}, "recent3": {"合計売上": 4144097, "合計来店": 682, "合計新規": 220, "S売上": 2825895, "L売上": 1318202, "合計客単価": 6063}, "L累計売上": 8111924, "L累計来店": 1269, "staffS": {"スタッフB": {"月次": [{"月": "2025-08", "売上": 499900, "来店": 92}, {"月": "2025-09", "売上": 738880, "来店": 121}, {"月": "2025-10", "売上": 655800, "来店": 103}, {"月": "2025-11", "売上": 728100, "来店": 108}, {"月": "2025-12", "売上": 810250, "来店": 110}, {"月": "2026-01", "売上": 726800, "来店": 106}, {"月": "2026-02", "売上": 724300, "来店": 108}, {"月": "2026-03", "売上": 784960, "来店": 123}, {"月": "2026-04", "売上": 798900, "来店": 126}, {"月": "2026-05", "売上": 639500, "来店": 108}, {"月": "2026-06", "売上": 895000, "来店": 130}, {"月": "2026-07", "売上": 763900, "来店": 127}], "売上": 8766290, "来店": 1362, "客単価": 6436, "新規": 342, "初月": "2025-08", "稼働月数": 12}, "スタッフC": {"月次": [{"月": "2025-08", "売上": 657500, "来店": 115}, {"月": "2025-09", "売上": 671500, "来店": 121}, {"月": "2025-10", "売上": 804000, "来店": 120}, {"月": "2025-11", "売上": 588000, "来店": 99}, {"月": "2025-12", "売上": 744000, "来店": 120}, {"月": "2026-01", "売上": 654000, "来店": 94}, {"月": "2026-02", "売上": 562200, "来店": 90}, {"月": "2026-03", "売上": 740900, "来店": 120}, {"月": "2026-04", "売上": 694400, "来店": 109}, {"月": "2026-05", "売上": 708850, "来店": 133}, {"月": "2026-06", "売上": 766750, "来店": 129}, {"月": "2026-07", "売上": 730350, "来店": 117}], "売上": 8322450, "来店": 1367, "客単価": 6088, "新規": 352, "初月": "2025-08", "稼働月数": 12}, "スタッフA": {"月次": [{"月": "2025-08", "売上": 462500, "来店": 91}, {"月": "2025-09", "売上": 511600, "来店": 80}, {"月": "2025-10", "売上": 526900, "来店": 89}, {"月": "2025-11", "売上": 266500, "来店": 44}, {"月": "2025-12", "売上": 346300, "来店": 63}, {"月": "2026-01", "売上": 352000, "来店": 56}, {"月": "2026-02", "売上": 332650, "来店": 58}, {"月": "2026-03", "売上": 325150, "来店": 56}, {"月": "2026-04", "売上": 355950, "来店": 65}, {"月": "2026-05", "売上": 360600, "来店": 61}, {"月": "2026-06", "売上": 325980, "来店": 62}, {"月": "2026-07", "売上": 421200, "来店": 66}], "売上": 4587330, "来店": 791, "客単価": 5799, "新規": 143, "初月": "2025-08", "稼働月数": 12}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 89700, "来店": 11}, {"月": "2025-11", "売上": 697800, "来店": 106}, {"月": "2025-12", "売上": 619600, "来店": 94}, {"月": "2026-01", "売上": 482600, "来店": 79}, {"月": "2026-02", "売上": 560100, "来店": 88}, {"月": "2026-03", "売上": 309100, "来店": 59}, {"月": "2026-04", "売上": 248900, "来店": 51}, {"月": "2026-05", "売上": 296800, "来店": 51}, {"月": "2026-06", "売上": 244700, "来店": 47}, {"月": "2026-07", "売上": 249870, "来店": 40}], "売上": 3799170, "来店": 626, "客単価": 6069, "新規": 198, "初月": "2025-10", "稼働月数": 10}, "スタッフG": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 135500, "来店": 24}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 135500, "来店": 24, "客単価": 5646, "新規": 9, "初月": "2026-06", "稼働月数": 1}, "スタッフE": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 66300, "来店": 11}, {"月": "2025-12", "売上": 731800, "来店": 102}, {"月": "2026-01", "売上": 560250, "来店": 86}, {"月": "2026-02", "売上": 547900, "来店": 89}, {"月": "2026-03", "売上": 659800, "来店": 103}, {"月": "2026-04", "売上": 654090, "来店": 109}, {"月": "2026-05", "売上": 492350, "来店": 98}, {"月": "2026-06", "売上": 541100, "来店": 84}, {"月": "2026-07", "売上": 739650, "来店": 124}], "売上": 4993240, "来店": 806, "客単価": 6195, "新規": 265, "初月": "2025-11", "稼働月数": 9}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 133250, "来店": 25}], "売上": 133250, "来店": 25, "客単価": 5330, "新規": 13, "初月": "2026-07", "稼働月数": 1}, "スタッフH": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 18700, "来店": 4}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 0, "来店": 0}], "売上": 18700, "来店": 4, "客単価": 4675, "新規": 2, "初月": "2026-03", "稼働月数": 1}}, "staffL": {"スタッフA": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 199000, "来店": 29}, {"月": "2025-12", "売上": 513700, "来店": 75}, {"月": "2026-01", "売上": 370650, "来店": 52}, {"月": "2026-02", "売上": 470900, "来店": 69}, {"月": "2026-03", "売上": 431750, "来店": 62}, {"月": "2026-04", "売上": 498200, "来店": 76}, {"月": "2026-05", "売上": 556850, "来店": 87}, {"月": "2026-06", "売上": 535350, "来店": 78}, {"月": "2026-07", "売上": 611850, "来店": 91}], "売上": 4188250, "来店": 619, "客単価": 6766, "新規": 324, "初月": "2025-11", "稼働月数": 9}, "スタッフD": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 7900, "来店": 2}, {"月": "2025-12", "売上": 51800, "来店": 10}, {"月": "2026-01", "売上": 92400, "来店": 18}, {"月": "2026-02", "売上": 176200, "来店": 28}, {"月": "2026-03", "売上": 461900, "来店": 68}, {"月": "2026-04", "売上": 434800, "来店": 66}, {"月": "2026-05", "売上": 512300, "来店": 82}, {"月": "2026-06", "売上": 529650, "来店": 83}, {"月": "2026-07", "売上": 620850, "来店": 94}], "売上": 2887800, "来店": 451, "客単価": 6403, "新規": 247, "初月": "2025-11", "稼働月数": 9}, "スタッフF": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 0, "来店": 0}, {"月": "2025-12", "売上": 0, "来店": 0}, {"月": "2026-01", "売上": 0, "来店": 0}, {"月": "2026-02", "売上": 0, "来店": 0}, {"月": "2026-03", "売上": 0, "来店": 0}, {"月": "2026-04", "売上": 0, "来店": 0}, {"月": "2026-05", "売上": 0, "来店": 0}, {"月": "2026-06", "売上": 0, "来店": 0}, {"月": "2026-07", "売上": 350600, "来店": 55}], "売上": 350600, "来店": 55, "客単価": 6375, "新規": 22, "初月": "2026-07", "稼働月数": 1}, "その他（SSIN担当者の対応分）": {"月次": [{"月": "2025-08", "売上": 0, "来店": 0}, {"月": "2025-09", "売上": 0, "来店": 0}, {"月": "2025-10", "売上": 0, "来店": 0}, {"月": "2025-11", "売上": 43400, "来店": 9}, {"月": "2025-12", "売上": 15400, "来店": 4}, {"月": "2026-01", "売上": 50600, "来店": 10}, {"月": "2026-02", "売上": 78600, "来店": 17}, {"月": "2026-03", "売上": 204700, "来店": 36}, {"月": "2026-04", "売上": 21600, "来店": 5}, {"月": "2026-05", "売上": 33600, "来店": 7}, {"月": "2026-06", "売上": 170500, "来店": 29}, {"月": "2026-07", "売上": 28600, "来店": 5}], "売上": 647000, "来店": 122, "新規": 90, "初月": "2025-11", "稼働月数": 9, "客単価": 5303, "_other": true}}, "roster": ["スタッフA", "スタッフD", "スタッフF"], "staff_rule": "月25件以上、またはその月のLUMISS来店の40%以上を担当した人を担当者としてカウント", "cross": {"S顧客数": 1913, "L顧客数": 695, "併用顧客数": 31, "L客の既存S率": 4.5, "S客のL併用率": 1.6, "併用客LTV": 27238, "S単独客LTV": 16110, "L平均来店回数": 1.83, "L2回以上率": 37.8, "L3回以上率": 19.3}, "weekday": {"S": [{"曜日": "月", "来店": 555, "売上": 3416715}, {"曜日": "火", "来店": 565, "売上": 3525470}, {"曜日": "水", "来店": 573, "売上": 3478419}, {"曜日": "木", "来店": 640, "売上": 3797539}, {"曜日": "金", "来店": 724, "売上": 4386836}, {"曜日": "土", "来店": 1060, "売上": 6572828}, {"曜日": "日", "来店": 913, "売上": 5635490}], "L": [{"曜日": "月", "来店": 141, "売上": 898682}, {"曜日": "火", "来店": 195, "売上": 1304855}, {"曜日": "水", "来店": 184, "売上": 1141050}, {"曜日": "木", "来店": 161, "売上": 1049500}, {"曜日": "金", "来店": 194, "売上": 1267300}, {"曜日": "土", "来店": 179, "売上": 1119100}, {"曜日": "日", "来店": 215, "売上": 1331437}]}, "hours": {"S": [{"時": 9, "来店": 2}, {"時": 10, "来店": 382}, {"時": 11, "来店": 537}, {"時": 12, "来店": 587}, {"時": 13, "来店": 562}, {"時": 14, "来店": 526}, {"時": 15, "来店": 482}, {"時": 16, "来店": 477}, {"時": 17, "来店": 464}, {"時": 18, "来店": 657}, {"時": 19, "来店": 179}, {"時": 20, "来店": 162}, {"時": 21, "来店": 11}, {"時": 23, "来店": 2}], "L": [{"時": 8, "来店": 1}, {"時": 10, "来店": 67}, {"時": 11, "来店": 113}, {"時": 12, "来店": 135}, {"時": 13, "来店": 147}, {"時": 14, "来店": 144}, {"時": 15, "来店": 110}, {"時": 16, "来店": 146}, {"時": 17, "来店": 145}, {"時": 18, "来店": 188}, {"時": 19, "来店": 45}, {"時": 20, "来店": 25}, {"時": 21, "来店": 1}, {"時": 22, "来店": 1}]}, "menu_mix": [{"区分": "マツエク", "売上": 6952300, "件数": 1138}, {"区分": "まつ毛パーマ", "売上": 353500, "件数": 53}, {"区分": "その他", "売上": 304274, "件数": 89}, {"区分": "店販", "売上": 210450, "件数": 61}, {"区分": "オプション", "売上": 144500, "件数": 466}, {"区分": "オフ（付替え）", "売上": 81000, "件数": 219}, {"区分": "指名料", "売上": 43200, "件数": 88}, {"区分": "回数券", "売上": 22700, "件数": 2}], "route": {"S": [{"経路": "HOT PEPPER Beauty", "来店": 4234}, {"経路": "電話(自社)", "来店": 788}, {"経路": "再来次回予約", "来店": 7}, {"経路": "新規次回予約", "来店": 1}], "L": [{"経路": "HOT PEPPER Beauty", "来店": 1169}, {"経路": "電話(自社)", "来店": 100}]}};
+const $ = id => document.getElementById(id);
 const yen = n => '¥' + Math.round(n).toLocaleString('ja-JP');
 const man = n => (n/10000).toFixed(0) + '万';
-const C = {ssin:'#2E6F9E', lum:'#E8A33D', muted:'#8b98a8', line:'#e3e7ec'};
+const C = {ssin:'#2E6F9E', lum:'#E8A33D', pos:'#1f9d6b', muted:'#8b98a8', line:'#e3e7ec'};
+const PALETTE = ['#2E6F9E','#E8A33D','#1f9d6b','#d9534f','#7b61c4','#0f9bb5','#c2703a','#4a6fa5','#9c8a3f','#5aa3c9'];
 Chart.defaults.font.family = '-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif';
 Chart.defaults.font.size = 11;
 Chart.defaults.color = '#6b7684';
-const STORE_COLORS = ['#2E6F9E','#E8A33D','#1f9d6b','#d9534f','#7b61c4','#0f9bb5','#c2703a','#4a6fa5','#9c8a3f'];
 
-/* ---------- 表示モード ---------- */
-const $ = id => document.getElementById(id);
-if ($('btnSv')) {
-  $('btnOwner').onclick = () => {
-    document.body.classList.remove('sv');
-    $('btnOwner').classList.add('on'); $('btnSv').classList.remove('on');
+const M = D.monthly;
+const LAB = M.map(r=>r['月'].slice(2).replace('-','/'));
+const AFTER = M.filter(r=>r['月']>=D.start);
+const pct = (a,b) => b ? ((a-b)/b*100) : 0;
+
+$('metaLine').textContent =
+  `LUMISS導入 ${D.start}／${D.elapsed}ヶ月経過／集計 ${D.months[0]}〜${D.data_through}／作成 ${D.generated}`;
+$('footMeta').textContent = `川崎店 LUMISS導入事例レポート　最終更新 ${D.generated}`;
+
+/* ---- ヘッドライン ---- */
+(function(){
+  const b = D.before, r3 = D.recent3;
+  $('headline').innerHTML = `
+    <div class="hl"><div class="k">店舗合計 月商</div>
+      <div class="v">${man(b['合計売上'])}円 → ${man(r3['合計売上'])}円</div>
+      <div class="n">導入前${D.before_months}ヶ月平均 → 直近3ヶ月平均（<b>+${pct(r3['合計売上'],b['合計売上']).toFixed(0)}%</b>）</div></div>
+    <div class="hl"><div class="k">LUMISS 累計売上</div>
+      <div class="v">${yen(D['L累計売上'])}</div>
+      <div class="n">${D.elapsed}ヶ月・${D['L累計来店'].toLocaleString()}来店</div></div>
+    <div class="hl"><div class="k">直近月のLUMISS月商</div>
+      <div class="v">${yen(M[M.length-1]['L売上'])}</div>
+      <div class="n">${D.data_through}／売上構成比 ${M[M.length-1]['L売上比率']}%</div></div>
+    <div class="hl"><div class="k">月間の新規客</div>
+      <div class="v">${b['合計新規']}人 → ${r3['合計新規']}人</div>
+      <div class="n">店舗全体（<b>+${pct(r3['合計新規'],b['合計新規']).toFixed(0)}%</b>）</div></div>`;
+})();
+
+/* ---- 1. 導入前後 ---- */
+(function(){
+  const b = D.before, a = D.recent3;
+  const row = (k,label,fmt,inv) => {
+    const d = pct(a[k],b[k]);
+    return `<div class="kpi${Math.abs(d)>=20?' hi':''}"><div class="k">${label}</div>
+      <div class="v">${fmt(a[k])}</div>
+      <div class="n">導入前 ${fmt(b[k])} → <span style="color:${d>=0?'var(--pos)':'var(--neg)'};font-weight:700">${d>=0?'+':''}${d.toFixed(0)}%</span></div></div>`;
   };
-  $('btnSv').onclick = () => {
-    document.body.classList.add('sv');
-    $('btnSv').classList.add('on'); $('btnOwner').classList.remove('on');
-  };
-} else if ($('btnOwner')) {
-  $('btnOwner').style.display = 'none';
-}
+  $('kpiBA').innerHTML =
+    row('合計売上','店舗合計 月商',yen) +
+    row('S売上','SSIN（眉）月商',yen) +
+    row('合計来店','月間 来店数',v=>v+'件') +
+    row('合計新規','月間 新規客',v=>v+'人') +
+    row('合計客単価','客単価',yen);
 
-/* ---------- メタ ---------- */
-const through = D.data_through;
-document.getElementById('metaLine').textContent =
-  `集計期間：〜${through}（完了月まで）／導入店舗 ${D.stores.length}店／作成 ${D.generated}`;
-document.getElementById('footMeta').textContent = `LUMISS導入提案ダッシュボード　最終更新 ${D.generated}`;
-if ($('ratioTxt')) $('ratioTxt').textContent = (D.ratio_med*100).toFixed(0) + '%';
-
-/* ---------- 1. サマリー ---------- */
-(function(){
-  const s = D.stores;
-  const totalRev = s.reduce((a,x)=>a+x['L累計売上'],0);
-  const totalVis = s.reduce((a,x)=>a+x['L累計来店'],0);
-  const latest = s.filter(x=>x['L月次'].some(r=>r['月']===through))
-                  .reduce((a,x)=>a+(x['L月次'].find(r=>r['月']===through)||{売上:0})['売上'],0);
-  const nLatest = s.filter(x=>x['L月次'].some(r=>r['月']===through)).length;
-  const mature = s.filter(x=>x.elapsed>=5);
-  const matureAvg = mature.length ? Math.round(mature.reduce((a,x)=>a+x['L直近月商'],0)/mature.length) : 0;
-  document.getElementById('kpiTop').innerHTML = `
-    <div class="kpi"><div class="k">LUMISS導入店舗</div><div class="v">${s.length}<span style="font-size:14px">店</span></div>
-      <div class="n">直営${s.filter(x=>x.kind==='直営').length}店 / 加盟${s.filter(x=>x.kind==='加盟').length}店</div></div>
-    <div class="kpi"><div class="k">1店あたりLUMISS月商（直近月）</div><div class="v">${yen(latest/Math.max(nLatest,1))}</div>
-      <div class="n">累計${yen(totalRev)} / ${totalVis.toLocaleString()}来店</div></div>
-    <div class="kpi hi"><div class="k">直近月（${through}）のLUMISS月商合計</div><div class="v">${yen(latest)}</div>
-      <div class="n">${nLatest}店合計</div></div>
-    <div class="kpi hi"><div class="k">導入5ヶ月以上の店の月商</div><div class="v">${yen(matureAvg)}</div>
-      <div class="n">${mature.length}店平均・直近月</div></div>
-    <div class="kpi"><div class="k">LUMISS客単価</div><div class="v">${yen(totalRev/Math.max(totalVis,1))}</div>
-      <div class="n">全店平均</div></div>`;
-  const best = s.slice().sort((a,b)=>b['L直近月商']-a['L直近月商'])[0];
-  document.getElementById('topNote').innerHTML =
-    `最も進んでいる<b>${best.name}店</b>は導入${best.elapsed}ヶ月目で月商<b>${yen(best['L直近月商'])}</b>。` +
-    `導入直後から一定の売上が立ち、月を追うごとに積み上がる推移が全店で共通しています。` +
-    `<br><a href="kawasaki.html" style="color:var(--ssin);font-weight:700;text-decoration:none">▶ 川崎店の導入事例を詳しく見る（1名でスタートした9ヶ月の記録）</a>`;
-})();
-
-/* ---------- 2. 立ち上がりカーブ ---------- */
-(function(){
-  const r = D.ramp;
-  new Chart(document.getElementById('cRamp'), {
-    data:{labels:r.map(x=>x['月目']+'ヶ月目'),
-      datasets:[
-        {type:'bar',label:'中央値',data:r.map(x=>x['中央値']),backgroundColor:C.lum,borderRadius:4,order:2},
-        {type:'line',label:'最大',data:r.map(x=>x['最大']),borderColor:C.ssin,borderWidth:2,
-         borderDash:[4,3],pointRadius:2,tension:.3,fill:false,order:1},
-        {type:'line',label:'最小',data:r.map(x=>x['最小']),borderColor:C.muted,borderWidth:1.5,
-         borderDash:[2,3],pointRadius:2,tension:.3,fill:false,order:1}]},
-    options:{maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y),
-          afterBody:c=>'対象'+r[c[0].dataIndex]['店舗数']+'店'}}},
-      scales:{y:{beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}},x:{grid:{display:false}}}}
-  });
-  new Chart(document.getElementById('cRampStores'), {
-    type:'line',
-    data:{labels:r.map(x=>x['月目']+'ヶ月目'),
-      datasets:D.stores.map((s,i)=>({label:s.name,
-        data:s['L月次'].map(m=>m['売上']),
-        borderColor:STORE_COLORS[i%STORE_COLORS.length],backgroundColor:'transparent',
-        borderWidth:2,pointRadius:2.5,tension:.25,spanGaps:false}))},
-    options:{maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom',labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y)}}},
-      scales:{y:{beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}},x:{grid:{display:false}}}}
-  });
-  let h = '<thead><tr><th>経過</th><th>対象店舗数</th><th>中央値</th><th>平均</th><th>最大</th><th>最小</th></tr></thead><tbody>';
-  r.forEach(x=>{ h += `<tr><td>${x['月目']}ヶ月目</td><td>${x['店舗数']}店</td><td>${yen(x['中央値'])}</td>
-    <td>${yen(x['平均'])}</td><td>${yen(x['最大'])}</td><td>${yen(x['最小'])}</td></tr>`; });
-  document.getElementById('tRamp').innerHTML = h + '</tbody>';
-})();
-
-/* ---------- 3. 月次実績 ---------- */
-const ALL_MONTHS = [...new Set(D.stores.flatMap(s=>s['合計月次'].map(r=>r['月'])))].sort();
-
-/* 3-a 暦月マトリクス */
-(function(){
-  const KEYS = {L:{f:'L売上',label:'LUMISS月商'},S:{f:'S売上',label:'SSIN月商'},T:{f:'合計売上',label:'店舗合計月商'}};
-  const FIRST_START = D.stores.map(s=>s.start).sort()[0];
-  function draw(k){
-    const f = KEYS[k].f;
-    // LUMISS月商表示のときは、最初の導入月より前の空欄列を出さない
-    const MONTHS = (k==='L') ? ALL_MONTHS.filter(m=>m>=FIRST_START) : ALL_MONTHS;
-    let h = `<thead><tr><th class="name">店舗</th><th class="name" style="left:auto;position:static">導入月</th>`;
-    MONTHS.forEach(m=>{ h += `<th class="mon">${m.slice(2).replace('-','/')}</th>`; });
-    h += `<th>直近月</th></tr></thead><tbody>`;
-    D.stores.forEach(st=>{
-      const map = {}; st['合計月次'].forEach(r=>map[r['月']]=r);
-      h += `<tr><td class="name"><b>${st.name}</b></td><td>${st.start}</td>`;
-      MONTHS.forEach(m=>{
-        const r = map[m];
-        const pre = m < st.start;
-        if (!r || (k==='L' && pre)) { h += `<td class="${pre?'pre':''}">${pre?'—':''}</td>`; return; }
-        const first = (m===st.start) ? ' first' : '';
-        h += `<td class="${first}">${r[f] ? man(r[f]) : '—'}</td>`;
-      });
-      const last = st['合計月次'][st['合計月次'].length-1];
-      h += `<td style="font-weight:700">${yen(last[f])}</td></tr>`;
-    });
-    // 合計行
-    h += `</tbody><tfoot><tr><td class="name">全店合計</td><td></td>`;
-    MONTHS.forEach(m=>{
-      const sum = D.stores.reduce((a,st)=>{
-        const r = st['合計月次'].find(x=>x['月']===m); return a + (r ? r[f] : 0);
-      },0);
-      h += `<td>${sum?man(sum):'—'}</td>`;
-    });
-    const lastSum = D.stores.reduce((a,st)=>{
-      const r = st['合計月次'][st['合計月次'].length-1]; return a + (r ? r[f] : 0);
-    },0);
-    h += `<td>${yen(lastSum)}</td></tr></tfoot>`;
-    document.getElementById('tMatrix').innerHTML = h;
-    document.getElementById('mxNote').innerHTML =
-      `単位は万円（右端の「直近月」のみ円表示）。<b>オレンジの縦線がLUMISS導入月</b>、「—」は導入前です。` +
-      `現在の表示：<b>${KEYS[k].label}</b>。数字はサロンボードの会計実績（税込）で、未完了の当月は含めていません。`;
-  }
-  document.querySelectorAll('#mxSwitch button').forEach(b=>{
-    b.onclick = () => {
-      document.querySelectorAll('#mxSwitch button').forEach(x=>x.classList.remove('on'));
-      b.classList.add('on'); draw(b.dataset.k);
-    };
-  });
-  draw('L');
-})();
-
-/* 3-b 店舗別の月次明細 */
-(function(){
-  const sel = $('selStore');
-  sel.innerHTML = D.stores.map((s,i)=>`<option value="${i}">${s.name}（導入 ${s.start}／${s.elapsed}ヶ月目）</option>`).join('');
-  let ch = null;
-  function draw(){
-    const st = D.stores[+sel.value];
-    const rows = st['合計月次'];
-    if (ch) ch.destroy();
-    ch = new Chart($('cStoreMonthly'), {
-      data:{labels:rows.map(r=>r['月'].slice(2).replace('-','/')),
-        datasets:[
-          {type:'bar',label:'SSIN売上',data:rows.map(r=>r['S売上']),backgroundColor:C.ssin,borderRadius:3,stack:'a'},
-          {type:'bar',label:'LUMISS売上',data:rows.map(r=>r['L売上']),backgroundColor:C.lum,borderRadius:3,stack:'a'},
-          {type:'line',label:'店舗合計売上',data:rows.map(r=>r['合計売上']),borderColor:'#1f9d6b',
-           borderWidth:2,pointRadius:2.5,tension:.25,fill:false}]},
-      options:{maintainAspectRatio:false,
-        plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
-          tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y)}}},
-        scales:{x:{stacked:true,grid:{display:false}},
-          y:{stacked:true,beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}}}}
-    });
-    let h = `<thead><tr><th>月</th><th>SSIN売上</th><th>LUMISS売上</th><th>店舗合計売上</th>
-      <th>前月比</th><th>LUMISS来店</th><th>LUMISS客単価</th><th>LUMISS新規</th>
-      <th>LUMISS担当</th><th>売上に占めるLUMISS</th></tr></thead><tbody>`;
-    rows.forEach((r,i)=>{
-      const prev = i>0 ? rows[i-1]['合計売上'] : null;
-      const d = prev ? (r['合計売上']-prev)/prev*100 : null;
-      const mark = r['月']===st.start ? ' style="background:#fff8ec"' : '';
-      h += `<tr${mark}><td><b>${r['月']}</b>${r['月']===st.start?' <span class="badge" style="background:var(--lum-soft);color:#b9781a">導入</span>':''}</td>
-        <td>${yen(r['S売上'])}</td><td>${r['L売上']?yen(r['L売上']):'—'}</td>
-        <td><b>${yen(r['合計売上'])}</b></td>
-        <td class="${d===null?'':(d>=0?'pos':'neg')}">${d===null?'—':(d>=0?'+':'')+d.toFixed(0)+'%'}</td>
-        <td>${r['L来店']||'—'}</td>
-        <td>${r['L来店']?yen(r['L売上']/r['L来店']):'—'}</td>
-        <td>${r['L新規']||'—'}</td>
-        <td>${r['Lスタッフ']?r['Lスタッフ']+'名':'—'}</td>
-        <td>${r['合計売上']?(r['L売上']/r['合計売上']*100).toFixed(0)+'%':'—'}</td></tr>`;
-    });
-    h += '</tbody>';
-    $('tStoreMonthly').innerHTML = h;
-  }
-  sel.onchange = draw;
-  draw();
-})();
-
-/* 3-c 店舗別サマリー */
-(function(){
-  let h = `<thead><tr><th>店舗</th><th>区分</th><th>導入月</th><th>経過</th>
-    <th>直近月商</th><th>最高月商</th><th>導入後の月商平均</th><th>LUMISS客単価</th><th>SSIN客単価</th>
-    <th>LUMISS累計</th></tr></thead><tbody>`;
-  D.stores.forEach(s=>{
-    const b = s.kind==='直営' ? '<span class="badge chok">直営</span>' : '<span class="badge kamei">加盟</span>';
-    const avg = Math.round(s['L累計売上']/s.elapsed);
-    h += `<tr><td><b>${s.name}</b></td><td style="text-align:left">${b}</td><td>${s.start}</td>
-      <td>${s.elapsed}ヶ月</td><td><b>${yen(s['L直近月商'])}</b></td>
-      <td>${yen(s['L最高月商'])}</td><td>${yen(avg)}</td>
-      <td>${yen(s['L客単価'])}</td><td>${s['S客単価']?yen(s['S客単価']):'—'}</td>
-      <td>${yen(s['L累計売上'])}</td></tr>`;
-  });
-  const t = D.stores.reduce((a,s)=>({r:a.r+s['L累計売上'],l:a.l+s['L直近月商'],h:a.h+s['L最高月商']}),{r:0,l:0,h:0});
-  h += `</tbody><tfoot><tr><td>${D.stores.length}店合計</td><td></td><td></td><td></td>
-    <td>${yen(t.l)}</td><td>${yen(t.h)}</td><td></td><td></td><td></td><td>${yen(t.r)}</td></tr></tfoot>`;
-  $('tStores').innerHTML = h;
-})();
-
-/* ---------- 4. 導入前後 ---------- */
-(function(){
-  const s = D.stores.filter(x=>x['前月数']>0);
-  new Chart(document.getElementById('cBeforeAfter'), {
-    type:'bar',
-    data:{labels:s.flatMap(x=>[x.name+'\n導入前',x.name+'\n導入後']),
-      datasets:[
-        {label:'SSIN売上',data:s.flatMap(x=>[x['S前平均'],x['S後平均']]),backgroundColor:C.ssin,borderRadius:3},
-        {label:'LUMISS売上',data:s.flatMap(x=>[0,x['合計後平均']-x['S後平均']]),backgroundColor:C.lum,borderRadius:3}]},
+  new Chart($('cMain'), {
+    data:{labels:LAB, datasets:[
+      {type:'bar',label:'SSIN売上',data:M.map(r=>r['S売上']),backgroundColor:C.ssin,borderRadius:3,stack:'a'},
+      {type:'bar',label:'LUMISS売上',data:M.map(r=>r['L売上']),backgroundColor:C.lum,borderRadius:3,stack:'a'},
+      {type:'line',label:'店舗合計売上',data:M.map(r=>r['合計売上']),borderColor:C.pos,borderWidth:2.5,
+       pointRadius:2.5,tension:.25,fill:false}]},
     options:{maintainAspectRatio:false,
       plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
         tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y)}}},
-      scales:{x:{stacked:true,grid:{display:false},ticks:{font:{size:10},maxRotation:0,
-        callback:function(v){return this.getLabelForValue(v).split('\n')}}},
+      scales:{x:{stacked:true,grid:{display:false}},
         y:{stacked:true,beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}}}}
   });
-  let h = `<thead><tr><th>店舗</th><th>比較期間</th><th>SSIN 導入前</th><th>SSIN 導入後</th><th>SSIN増減</th>
-    <th>店舗合計 導入前</th><th>店舗合計 導入後</th><th>合計増減</th><th>増減率</th></tr></thead><tbody>`;
-  s.forEach(x=>{
-    const sd = x['S後平均']-x['S前平均'];
-    const cd = x['合計後平均']-x['合計前平均'];
-    const pct = x['合計前平均'] ? (cd/x['合計前平均']*100) : 0;
-    h += `<tr><td><b>${x.name}</b></td><td>${x['前月数']}ヶ月 → ${x['後月数']}ヶ月</td>
-      <td>${yen(x['S前平均'])}</td><td>${yen(x['S後平均'])}</td>
-      <td class="${sd>=0?'pos':'neg'}">${sd>=0?'+':''}${yen(sd)}</td>
-      <td>${yen(x['合計前平均'])}</td><td>${yen(x['合計後平均'])}</td>
-      <td class="${cd>=0?'pos':'neg'}">${cd>=0?'+':''}${yen(cd)}</td>
-      <td class="${pct>=0?'pos':'neg'}">${pct>=0?'+':''}${pct.toFixed(0)}%</td></tr>`;
-  });
-  const tb = s.reduce((a,x)=>a+x['合計前平均'],0)/s.length;
-  const ta = s.reduce((a,x)=>a+x['合計後平均'],0)/s.length;
-  const sb = s.reduce((a,x)=>a+x['S前平均'],0)/s.length;
-  const sa = s.reduce((a,x)=>a+x['S後平均'],0)/s.length;
-  h += `</tbody><tfoot><tr><td>${s.length}店平均</td><td></td><td>${yen(sb)}</td><td>${yen(sa)}</td>
-    <td class="${sa>=sb?'pos':'neg'}">${sa>=sb?'+':''}${yen(sa-sb)}</td>
-    <td>${yen(tb)}</td><td>${yen(ta)}</td>
-    <td class="pos">+${yen(ta-tb)}</td><td class="pos">+${((ta-tb)/tb*100).toFixed(0)}%</td></tr></tfoot>`;
-  document.getElementById('tBeforeAfter').innerHTML = h;
-  const nUp = s.filter(x=>x['S後平均']>=x['S前平均']).length;
-  document.getElementById('baNote').innerHTML =
-    `導入前データのある<b>${s.length}店</b>のうち、SSIN単体の月商が<b>導入前を維持または上回った店舗は${nUp}店</b>。` +
-    `店舗合計では全店で増加し、平均<b>+${((ta-tb)/tb*100).toFixed(0)}%（+${yen(ta-tb)}／月）</b>となりました。` +
-    `<br>※導入から日が浅い店舗は「導入後」の月数が少なく、季節変動の影響を受けます。比較期間の月数を併せてご確認ください。`;
+  const sd = pct(D.recent3['S売上'], D.before['S売上']);
+  const sN = D.before['Sスタッフ'], sN2 = M[M.length-1]['Sスタッフ'];
+  $('mainNote').innerHTML =
+    `LUMISSを足しても<b>SSIN（眉）単体の月商は${sd>=0?'落ちていません':'やや減少しています'}</b>` +
+    `（導入前${yen(D.before['S売上'])}→直近3ヶ月${yen(D.recent3['S売上'])}、${sd>=0?'+':''}${sd.toFixed(0)}%）。` +
+    `眉のお客様をまつげに取られる形にはなっていません。` +
+    `<br><b>※読み方の注意：</b>この期間、川崎店はSSIN側も${sN}名→${sN2}名へ増員しており、SSIN単体でも伸びています。` +
+    `店舗合計の増加分すべてがLUMISS導入の効果ではありません。` +
+    `<b>確実にLUMISS導入による増分と言えるのは、LUMISS単体の売上（累計${yen(D['L累計売上'])}／直近月${yen(M[M.length-1]['L売上'])}）</b>です。`;
 })();
 
-/* ---------- 4b. 導入月=100の指数チャート ---------- */
+/* ---- 2. タイムライン ---- */
 (function(){
-  const st = D.stores.filter(x=>x['前月数']>0);
-  const maxAfter = Math.max(...st.map(x=>x['後月数']));
-  const labels = ['導入月'];
-  for(let i=1;i<maxAfter;i++) labels.push('+'+i+'ヶ月');
-  new Chart($('cIndex'), {
-    type:'line',
-    data:{labels, datasets: st.map((x,i)=>{
-      const rows = x['合計月次'].filter(r=>r['月']>=x.start);
-      const base = rows.length ? rows[0]['合計売上'] : 0;
-      return {label:x.name,
-        data: base ? rows.map(r=>Math.round(r['合計売上']/base*100)) : [],
-        borderColor:STORE_COLORS[i%STORE_COLORS.length],backgroundColor:'transparent',
-        borderWidth:2,pointRadius:2.5,tension:.25};
-    })},
+  const ev = [];
+  let peakStaff = 0, hit100 = false;
+  M.forEach((r,i)=>{
+    const t = [];
+    if (r['月'] === D.start) t.push(`<b>LUMISS導入</b>（初月売上 ${yen(r['L売上'])}／${r['L来店']}来店・担当${r['Lスタッフ']}名）`);
+    else if (r['月'] > D.start) {
+      const prev = M[i-1];
+      if (r['Lスタッフ'] > peakStaff) t.push(`LUMISS担当を<b>${r['Lスタッフ']}名</b>に増員`);
+      if (!hit100 && r['L売上'] >= 1000000){ t.push(`LUMISS月商が<b>100万円を突破</b>（${yen(r['L売上'])}）`); hit100 = true; }
+      if (prev && r['合計売上'] > prev['合計売上'] * 1.2)
+        t.push(`店舗合計売上が前月比 <b>+${pct(r['合計売上'],prev['合計売上']).toFixed(0)}%</b>（${yen(r['合計売上'])}）`);
+    }
+    if (r['Lスタッフ'] > peakStaff) peakStaff = r['Lスタッフ'];
+    if (t.length) ev.push({m:r['月'], lum:r['月']>=D.start, t:t.join('／')});
+  });
+  const last = M[M.length-1];
+  ev.push({m:last['月'], lum:true,
+    t:`直近月：店舗合計 <b>${yen(last['合計売上'])}</b>（SSIN ${yen(last['S売上'])} + LUMISS ${yen(last['L売上'])}）／LUMISS構成比 ${last['L売上比率']}%`});
+  $('timeline').innerHTML = ev.map(e=>
+    `<div class="ev${e.lum?' lum':''}"><div class="m">${e.m}</div><div class="t">${e.t}</div></div>`).join('');
+})();
+
+/* ---- 3. LUMISS単体 ---- */
+(function(){
+  new Chart($('cLum'), {
+    data:{labels:AFTER.map(r=>r['月'].slice(2).replace('-','/')), datasets:[
+      {type:'bar',label:'LUMISS売上',data:AFTER.map(r=>r['L売上']),backgroundColor:C.lum,borderRadius:3,yAxisID:'y'},
+      {type:'line',label:'来店数',data:AFTER.map(r=>r['L来店']),borderColor:C.ssin,borderWidth:2,
+       pointRadius:2.5,tension:.25,fill:false,yAxisID:'y1'}]},
     options:{maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom',labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.y+'（導入月=100）'}}},
-      scales:{y:{grid:{color:C.line},title:{display:true,text:'指数（導入月=100）'},
-        ticks:{callback:v=>v}},x:{grid:{display:false}}}}
-  });
-})();
-
-/* ---------- 5. 予約割合・売上構成比 ---------- */
-(function(){
-  const sel = $('selMix');
-  sel.innerHTML = '<option value="-1">全店合計</option>' +
-    D.stores.map((s,i)=>`<option value="${i}">${s.name}</option>`).join('');
-  let c1=null,c2=null;
-
-  function seriesFor(idx){
-    if (idx >= 0) {
-      const st = D.stores[idx];
-      return st['合計月次'].map(r=>({月:r['月'],S来店:r['S来店'],L来店:r['L来店'],
-        S売上:r['S売上'],L売上:r['L売上']}));
-    }
-    return ALL_MONTHS.map(m=>{
-      const a = {月:m,S来店:0,L来店:0,S売上:0,L売上:0};
-      D.stores.forEach(st=>{
-        const r = st['合計月次'].find(x=>x['月']===m);
-        if(!r) return;
-        a.S来店+=r['S来店']; a.L来店+=r['L来店']; a.S売上+=r['S売上']; a.L売上+=r['L売上'];
-      });
-      return a;
-    });
-  }
-
-  function draw(){
-    const rows = seriesFor(+sel.value);
-    const lab = rows.map(r=>r['月'].slice(2).replace('-','/'));
-    if(c1) c1.destroy(); if(c2) c2.destroy();
-    c1 = new Chart($('cMixVisits'), {
-      data:{labels:lab, datasets:[
-        {type:'bar',label:'SSIN来店',data:rows.map(r=>r.S来店),backgroundColor:C.ssin,borderRadius:3,stack:'a',yAxisID:'y'},
-        {type:'bar',label:'LUMISS来店',data:rows.map(r=>r.L来店),backgroundColor:C.lum,borderRadius:3,stack:'a',yAxisID:'y'},
-        {type:'line',label:'LUMISS比率',data:rows.map(r=>{const t=r.S来店+r.L来店;return t?+(r.L来店/t*100).toFixed(1):0}),
-         borderColor:'#1f9d6b',borderWidth:2,pointRadius:2.5,tension:.25,fill:false,yAxisID:'y1'}]},
-      options:{maintainAspectRatio:false,
-        plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
-          tooltip:{callbacks:{label:c=>c.dataset.label+': '+(c.dataset.yAxisID==='y1'?c.parsed.y+'%':c.parsed.y+'件')}}},
-        scales:{x:{stacked:true,grid:{display:false}},
-          y:{stacked:true,beginAtZero:true,grid:{color:C.line},title:{display:true,text:'来店数'}},
-          y1:{position:'right',beginAtZero:true,max:100,grid:{display:false},
-            ticks:{callback:v=>v+'%'},title:{display:true,text:'LUMISS比率'}}}}
-    });
-    c2 = new Chart($('cMixSales'), {
-      data:{labels:lab, datasets:[
-        {type:'bar',label:'SSIN売上',data:rows.map(r=>r.S売上),backgroundColor:C.ssin,borderRadius:3,stack:'a',yAxisID:'y'},
-        {type:'bar',label:'LUMISS売上',data:rows.map(r=>r.L売上),backgroundColor:C.lum,borderRadius:3,stack:'a',yAxisID:'y'},
-        {type:'line',label:'LUMISS比率',data:rows.map(r=>{const t=r.S売上+r.L売上;return t?+(r.L売上/t*100).toFixed(1):0}),
-         borderColor:'#1f9d6b',borderWidth:2,pointRadius:2.5,tension:.25,fill:false,yAxisID:'y1'}]},
-      options:{maintainAspectRatio:false,
-        plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
-          tooltip:{callbacks:{label:c=>c.dataset.label+': '+(c.dataset.yAxisID==='y1'?c.parsed.y+'%':yen(c.parsed.y))}}},
-        scales:{x:{stacked:true,grid:{display:false}},
-          y:{stacked:true,beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}},
-          y1:{position:'right',beginAtZero:true,max:100,grid:{display:false},ticks:{callback:v=>v+'%'}}}}
-    });
-    let h = `<thead><tr><th>月</th><th>SSIN来店</th><th>LUMISS来店</th><th>合計来店</th><th>LUMISS予約比率</th>
-      <th>SSIN売上</th><th>LUMISS売上</th><th>店舗合計売上</th><th>LUMISS売上比率</th></tr></thead><tbody>`;
-    rows.forEach(r=>{
-      const tv=r.S来店+r.L来店, ts=r.S売上+r.L売上;
-      h += `<tr><td><b>${r['月']}</b></td><td>${r.S来店||'—'}</td><td>${r.L来店||'—'}</td><td>${tv||'—'}</td>
-        <td style="font-weight:600;color:#b9781a">${tv?(r.L来店/tv*100).toFixed(1)+'%':'—'}</td>
-        <td>${r.S売上?yen(r.S売上):'—'}</td><td>${r.L売上?yen(r.L売上):'—'}</td>
-        <td><b>${ts?yen(ts):'—'}</b></td>
-        <td style="font-weight:600;color:#b9781a">${ts?(r.L売上/ts*100).toFixed(1)+'%':'—'}</td></tr>`;
-    });
-    $('tMix').innerHTML = h + '</tbody>';
-  }
-  sel.onchange = draw;
-  draw();
-
-  // 店舗別 直近月の構成比（100%積み上げ）
-  const last = D.stores.map(st=>{
-    const r = st['合計月次'][st['合計月次'].length-1];
-    const tv = r['S来店']+r['L来店'];
-    return {name:st.name, s:tv?+(r['S来店']/tv*100).toFixed(1):0, l:tv?+(r['L来店']/tv*100).toFixed(1):0};
-  }).sort((a,b)=>b.l-a.l);
-  new Chart($('cMixStores'), {
-    type:'bar',
-    data:{labels:last.map(x=>x.name), datasets:[
-      {label:'SSIN予約',data:last.map(x=>x.s),backgroundColor:C.ssin,borderRadius:3,stack:'a'},
-      {label:'LUMISS予約',data:last.map(x=>x.l),backgroundColor:C.lum,borderRadius:3,stack:'a'}]},
-    options:{indexAxis:'y',maintainAspectRatio:false,
       plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.x+'%'}}},
-      scales:{x:{stacked:true,max:100,ticks:{callback:v=>v+'%'},grid:{color:C.line}},
-        y:{stacked:true,grid:{display:false}}}}
+        tooltip:{callbacks:{label:c=>c.dataset.yAxisID==='y1'?c.dataset.label+': '+c.parsed.y+'件':c.dataset.label+': '+yen(c.parsed.y)}}},
+      scales:{x:{grid:{display:false}},
+        y:{beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}},
+        y1:{position:'right',beginAtZero:true,grid:{display:false},title:{display:true,text:'来店数'}}}}
   });
+  new Chart($('cLumNR'), {
+    type:'bar',
+    data:{labels:AFTER.map(r=>r['月'].slice(2).replace('-','/')), datasets:[
+      {label:'新規',data:AFTER.map(r=>r['L新規']),backgroundColor:C.lum,borderRadius:3,stack:'a'},
+      {label:'再来',data:AFTER.map(r=>r['L再来']),backgroundColor:'#E8A33D55',borderRadius:3,stack:'a'}]},
+    options:{maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}}},
+      scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,beginAtZero:true,grid:{color:C.line},title:{display:true,text:'来店数'}}}}
+  });
+  const first = AFTER[0], last = AFTER[AFTER.length-1];
+  const peak = AFTER.reduce((a,r)=>r['L売上']>a['L売上']?r:a, AFTER[0]);
+  $('kpiLum').innerHTML = `
+    <div class="kpi"><div class="k">初月の月商</div><div class="v">${yen(first['L売上'])}</div><div class="n">${first['月']}・${first['L来店']}来店</div></div>
+    <div class="kpi hi"><div class="k">直近月の月商</div><div class="v">${yen(last['L売上'])}</div><div class="n">${last['月']}・${last['L来店']}来店</div></div>
+    <div class="kpi"><div class="k">最高月商</div><div class="v">${yen(peak['L売上'])}</div><div class="n">${peak['月']}</div></div>
+    <div class="kpi"><div class="k">LUMISS客単価</div><div class="v">${yen(D['L累計売上']/Math.max(D['L累計来店'],1))}</div><div class="n">全期間平均</div></div>
+    <div class="kpi"><div class="k">初月比</div><div class="v" style="color:var(--pos)">${(last['L売上']/Math.max(first['L売上'],1)).toFixed(1)}倍</div><div class="n">${AFTER.length}ヶ月で</div></div>`;
 })();
 
-/* ---------- 6. スタッフ別売上 ---------- */
+/* ---- 4. 予約割合 ---- */
 (function(){
-  const sel = $('selStaffStore');
-  sel.innerHTML = D.stores.map((s,i)=>`<option value="${i}">${s.name}</option>`).join('');
-  let brand = 'L', ch = null;
+  const mk = (id,sk,lk,fmt,axis) => new Chart($(id), {
+    data:{labels:LAB, datasets:[
+      {type:'bar',label:'SSIN',data:M.map(r=>r[sk]),backgroundColor:C.ssin,borderRadius:3,stack:'a',yAxisID:'y'},
+      {type:'bar',label:'LUMISS',data:M.map(r=>r[lk]),backgroundColor:C.lum,borderRadius:3,stack:'a',yAxisID:'y'},
+      {type:'line',label:'LUMISS比率',data:M.map(r=>{const t=r[sk]+r[lk];return t?+(r[lk]/t*100).toFixed(1):0}),
+       borderColor:C.pos,borderWidth:2,pointRadius:2.5,tension:.25,fill:false,yAxisID:'y1'}]},
+    options:{maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
+        tooltip:{callbacks:{label:c=>c.dataset.yAxisID==='y1'?c.dataset.label+': '+c.parsed.y+'%':c.dataset.label+': '+fmt(c.parsed.y)}}},
+      scales:{x:{stacked:true,grid:{display:false}},
+        y:{stacked:true,beginAtZero:true,ticks:{callback:axis},grid:{color:C.line}},
+        y1:{position:'right',beginAtZero:true,max:100,grid:{display:false},ticks:{callback:v=>v+'%'}}}}
+  });
+  mk('cMixV','S来店','L来店',v=>v+'件',v=>v);
+  mk('cMixS','S売上','L売上',yen,v=>man(v));
+  const last = M[M.length-1];
+  $('mixNote').innerHTML =
+    `直近月（${last['月']}）は、来店の<b>${last['L来店比率']}%</b>・売上の<b>${last['L売上比率']}%</b>をLUMISSが占めています。` +
+    `導入初月は来店比率${AFTER[0]['L来店比率']}%からのスタートでした。`;
+})();
 
+/* ---- 5. スタッフ ---- */
+(function(){
+  new Chart($('cStaffN'), {
+    data:{labels:LAB, datasets:[
+      {type:'bar',label:'店舗の総スタッフ数',data:M.map(r=>r['総スタッフ']),
+       backgroundColor:'#c9d4de',borderRadius:3},
+      {type:'bar',label:'うちLUMISS担当',data:M.map(r=>r['Lスタッフ']||null),
+       backgroundColor:C.lum,borderRadius:3}]},
+    options:{maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
+        tooltip:{callbacks:{afterBody:c=>{
+          const r = M[c[0].dataIndex];
+          return r['L担当名'] && r['L担当名'].length ? 'LUMISS担当: '+r['L担当名'].join('、') : '';
+        }}}},
+      scales:{x:{grid:{display:false}},
+        y:{beginAtZero:true,ticks:{stepSize:1},grid:{color:C.line},title:{display:true,text:'人数'}}}}
+  });
+  new Chart($('cPerStaff'), {
+    data:{labels:LAB, datasets:[
+      {type:'bar',label:'LUMISS 担当1人あたり月商',data:M.map(r=>r['Lスタッフ']?Math.round(r['L売上']/r['Lスタッフ']):null),
+       backgroundColor:C.lum,borderRadius:3},
+      {type:'line',label:'LUMISS担当者数',data:M.map(r=>r['Lスタッフ']||null),
+       borderColor:C.ssin,borderWidth:2,pointRadius:3,tension:.2,fill:false,spanGaps:true,yAxisID:'y1'}]},
+    options:{maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
+        tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y)}}},
+      scales:{x:{grid:{display:false}},
+        y:{beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}},
+        y1:{position:'right',beginAtZero:true,ticks:{stepSize:1},grid:{display:false},
+          title:{display:true,text:'担当者数'}}}}
+  });
+
+  let brand='L', ch=null;
   function draw(){
-    const st = D.stores[+sel.value];
-    const src = brand==='L' ? st.staffL : st.staffS;
-    const months = st['合計月次'].map(r=>r['月']);
+    const src = brand==='L' ? D.staffL : D.staffS;
     const names = Object.keys(src).sort((a,b)=>src[b]['売上']-src[a]['売上']);
-    const color = brand==='L' ? C.lum : C.ssin;
-
     if (ch) ch.destroy();
-    if (!names.length){
-      $('tStaffRev').innerHTML = '<tbody><tr><td>この店舗の該当データはありません</td></tr></tbody>';
-      return;
-    }
     ch = new Chart($('cStaffRev'), {
       type:'bar',
-      data:{labels:months.map(m=>m.slice(2).replace('-','/')),
-        datasets:names.map((n,i)=>({label:n,
-          data:src[n]['月次'].map(r=>r['売上']),
-          backgroundColor:STORE_COLORS[i%STORE_COLORS.length],borderRadius:3,stack:'a'}))},
+      data:{labels:LAB, datasets:names.map((n,i)=>({label:n,
+        data:src[n]['月次'].map(r=>r['売上']),
+        backgroundColor:PALETTE[i%PALETTE.length],borderRadius:3,stack:'a'}))},
       options:{maintainAspectRatio:false,
         plugins:{legend:{position:'bottom',labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},
           tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y)}}},
         scales:{x:{stacked:true,grid:{display:false}},
           y:{stacked:true,beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}}}}
     });
-
-    let h = `<thead><tr><th>スタッフ</th><th>初月</th><th>稼働月数</th><th>累計売上</th>
-      <th>月平均売上</th><th>直近月売上</th><th>来店数</th><th>客単価</th><th>新規</th></tr></thead><tbody>`;
+    let h = `<thead><tr><th>スタッフ</th><th>初月</th><th>稼働月数</th><th>累計売上</th><th>月平均</th>
+      <th>直近月</th><th>来店数</th><th>客単価</th><th>新規</th></tr></thead><tbody>`;
     names.forEach(n=>{
-      const d = src[n];
-      const lastRow = d['月次'][d['月次'].length-1];
-      h += `<tr><td><b>${n}</b></td><td>${d['初月']||'—'}</td><td>${d['稼働月数']}ヶ月</td>
+      const d = src[n], lastRow = d['月次'][d['月次'].length-1];
+      h += `<tr><td><b>${n}</b></td><td>${d['初月']}</td><td>${d['稼働月数']}ヶ月</td>
         <td>${yen(d['売上'])}</td><td>${yen(d['売上']/Math.max(d['稼働月数'],1))}</td>
         <td><b>${lastRow['売上']?yen(lastRow['売上']):'—'}</b></td>
         <td>${d['来店']}</td><td>${yen(d['客単価'])}</td><td>${d['新規']}</td></tr>`;
     });
     const tot = names.reduce((a,n)=>a+src[n]['売上'],0);
     const totV = names.reduce((a,n)=>a+src[n]['来店'],0);
-    const totLast = names.reduce((a,n)=>a+src[n]['月次'][src[n]['月次'].length-1]['売上'],0);
-    h += `</tbody><tfoot><tr><td>${names.length}名合計</td><td></td><td></td><td>${yen(tot)}</td><td></td>
-      <td>${yen(totLast)}</td><td>${totV}</td><td>${yen(tot/Math.max(totV,1))}</td><td></td></tr></tfoot>`;
-    $('tStaffRev').innerHTML = h;
-
-    // 両ブランド担当（名寄せは大小文字を無視）
-    const key = n => n.toLowerCase();
-    const lm = {}, sm = {};
-    Object.entries(st.staffL).forEach(([n,d])=>lm[key(n)]={n,d});
-    Object.entries(st.staffS).forEach(([n,d])=>sm[key(n)]={n,d});
-    const both = Object.keys(lm).filter(k=>sm[k]);
-    if (both.length){
-      let b = `<thead><tr><th>スタッフ</th><th>SSIN売上</th><th>LUMISS売上</th><th>合計売上</th>
-        <th>LUMISS比率</th><th>SSIN来店</th><th>LUMISS来店</th></tr></thead><tbody>`;
-      both.map(k=>({name:sm[k].n, S:sm[k].d, L:lm[k].d}))
-          .sort((a,b2)=>(b2.S['売上']+b2.L['売上'])-(a.S['売上']+a.L['売上']))
-          .forEach(x=>{
-        const t = x.S['売上']+x.L['売上'];
-        b += `<tr><td><b>${x.name}</b></td><td>${yen(x.S['売上'])}</td><td>${yen(x.L['売上'])}</td>
-          <td><b>${yen(t)}</b></td><td style="font-weight:600;color:#b9781a">${(x.L['売上']/t*100).toFixed(0)}%</td>
-          <td>${x.S['来店']}</td><td>${x.L['来店']}</td></tr>`;
-      });
-      $('tStaffBoth').innerHTML = b + '</tbody>';
-      $('staffRevNote').innerHTML =
-        `<b>${st.name}店では${both.length}名が眉とまつげの両方を担当</b>しています。` +
-        `既存スタッフがLUMISSの施術も持てるようになると、増員なしでも空き時間を売上に変えられます。` +
-        `<br>※期間はこの店舗のデータがある全期間の累計です。`;
-    } else {
-      $('tStaffBoth').innerHTML = '<tbody><tr><td>両ブランドを担当しているスタッフはいません（完全に分業）</td></tr></tbody>';
-      $('staffRevNote').innerHTML =
-        `${st.name}店ではSSIN担当とLUMISS担当が分かれています。分業・兼務のどちらでも運用可能です。`;
-    }
+    const nReal = names.filter(n=>!src[n]['_other']).length;
+    h += `</tbody><tfoot><tr><td>合計（担当${nReal}名${names.length>nReal?'＋その他':''}）</td><td></td><td></td><td>${yen(tot)}</td>
+      <td></td><td></td><td>${totV}</td><td>${yen(tot/Math.max(totV,1))}</td><td></td></tr></tfoot>`;
+    $('tStaff').innerHTML = h;
   }
-  sel.onchange = draw;
   document.querySelectorAll('#brandSwitch button').forEach(b=>{
-    b.onclick = () => {
-      document.querySelectorAll('#brandSwitch button').forEach(x=>x.classList.remove('on'));
-      b.classList.add('on'); brand = b.dataset.b; draw();
-    };
+    b.onclick=()=>{document.querySelectorAll('#brandSwitch button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on'); brand=b.dataset.b; draw();};
   });
   draw();
+
+  const key=n=>n.toLowerCase(), lm={}, sm={};
+  Object.entries(D.staffL).forEach(([n,d])=>lm[key(n)]={n,d});
+  Object.entries(D.staffS).forEach(([n,d])=>sm[key(n)]={n,d});
+  const both = Object.keys(lm).filter(k=>sm[k]);
+  let b2 = `<thead><tr><th>スタッフ</th><th>SSIN売上</th><th>LUMISS売上</th><th>合計売上</th>
+    <th>LUMISS比率</th><th>SSIN来店</th><th>LUMISS来店</th></tr></thead><tbody>`;
+  both.map(k=>({name:sm[k].n,S:sm[k].d,L:lm[k].d}))
+      .sort((a,b3)=>(b3.S['売上']+b3.L['売上'])-(a.S['売上']+a.L['売上']))
+      .forEach(x=>{
+    const t=x.S['売上']+x.L['売上'];
+    b2 += `<tr><td><b>${x.name}</b></td><td>${yen(x.S['売上'])}</td><td>${yen(x.L['売上'])}</td>
+      <td><b>${yen(t)}</b></td><td style="font-weight:600;color:#b9781a">${(x.L['売上']/t*100).toFixed(0)}%</td>
+      <td>${x.S['来店']}</td><td>${x.L['来店']}</td></tr>`;
+  });
+  $('tStaffBoth').innerHTML = b2 + '</tbody>';
+  const lastM = M[M.length-1];
+  const first = AFTER[0];
+  const perStaff = AFTER.filter(r=>r['Lスタッフ']).map(r=>r['L売上']/r['Lスタッフ']);
+  const perAvg = perStaff.reduce((a,b)=>a+b,0)/Math.max(perStaff.length,1);
+  $('staffNote').innerHTML =
+    `<b>LUMISSは1名からスタートしています。</b>初月${first['月']}は${first['Lスタッフ']}名（${first['L担当名'].join('、')}）で月商${yen(first['L売上'])}、` +
+    `2名体制になった${(M.find(r=>r['Lスタッフ']===2)||{})['月']||''}以降は月商100万円前後まで伸び、` +
+    `直近月は${lastM['Lスタッフ']}名（${lastM['L担当名'].join('、')}）で${yen(lastM['L売上'])}。` +
+    `<b>LUMISS担当1人あたりの月商は平均${yen(perAvg)}</b>です。` +
+    `<br>店舗の総スタッフ数は${first['総スタッフ']}〜${Math.max(...M.map(r=>r['総スタッフ']||0))}名で推移しており、` +
+    `<b>大幅な増員なしにLUMISSを立ち上げています</b>。` +
+    `<br><span style="font-size:11.5px">※担当者の判定：${D.staff_rule}。川崎店の実際の配置（SV確認）と全月一致することを確認済みです。` +
+    `表の「その他（SSIN担当者の対応分）」は、担当者が不在の際にSSIN担当者が対応した会計をまとめたものです。</span>`;
 })();
 
-/* ---------- 7. 理由 ---------- */
+/* ---- 6. 顧客 ---- */
 (function(){
-  const s = D.stores.filter(x=>x.cross && x.cross['S顧客数']>50 && x.cross['L客の既存S率']<50);
-  const avgCross = s.reduce((a,x)=>a+x.cross['L客の既存S率'],0)/Math.max(s.length,1);
-  const ltvC = s.reduce((a,x)=>a+x.cross['併用客LTV'],0)/Math.max(s.length,1);
-  const ltvS = s.reduce((a,x)=>a+x.cross['S単独客LTV'],0)/Math.max(s.length,1);
-  // 新規客の比較は導入後3ヶ月以上経過した店舗に限定（季節変動の影響を抑える）
-  const ba = D.stores.filter(x=>x['前月数']>=3 && x['後月数']>=3);
-  const nb = ba.reduce((a,x)=>a+x['合計前新規'],0)/Math.max(ba.length,1);
-  const na = ba.reduce((a,x)=>a+x['合計後新規'],0)/Math.max(ba.length,1);
-  document.getElementById('reasonCards').innerHTML = `
-    <div class="card"><div class="t">① 店舗全体の新規客が増える</div>
-      <div class="big">+${((na-nb)/nb*100).toFixed(0)}%</div>
-      <p>導入前後で3ヶ月以上の比較ができる${ba.length}店の、店舗全体の月間新規客数（${nb.toFixed(0)}人 → ${na.toFixed(0)}人）。HPBに眉・まつげの2枠で掲載でき、検索接点そのものが増えます。</p></div>
-    <div class="card"><div class="t">② 既存の眉のお客様とは食い合わない</div>
-      <div class="big">${(100-avgCross).toFixed(0)}%が新規客</div>
-      <p>LUMISS利用者のうち${(100-avgCross).toFixed(0)}%は、SSINでは接点のなかった新しいお客様（${s.length}店平均）。残る${avgCross.toFixed(1)}%は既存SSIN客の併用で、集客コストをかけずに埋まる枠です。</p></div>
-    <div class="card"><div class="t">③ 併用いただくと単価が上がる</div>
-      <div class="big">${((ltvC/Math.max(ltvS,1)-1)*100).toFixed(0)}%高い</div>
-      <p>SSIN・LUMISS併用客の累計利用額${yen(ltvC)} 対 SSIN単独客${yen(ltvS)}。1人のお客様から得られる売上が伸びます。</p></div>`;
-  const ba2 = D.stores.filter(x=>x['前月数']>0);
-  new Chart(document.getElementById('cNewCust'), {
+  const c = D.cross;
+  $('kpiCust').innerHTML = `
+    <div class="kpi hi"><div class="k">LUMISSのお客様</div><div class="v">${c['L顧客数'].toLocaleString()}人</div>
+      <div class="n">うち${(100-c['L客の既存S率']).toFixed(0)}%はSSINで接点のなかった新規</div></div>
+    <div class="kpi"><div class="k">LUMISSの平均来店回数</div><div class="v">${c['L平均来店回数']}回</div>
+      <div class="n">2回以上 ${c['L2回以上率']}% / 3回以上 ${c['L3回以上率']}%</div></div>
+    <div class="kpi"><div class="k">眉・まつげ併用のお客様</div><div class="v">${c['併用顧客数']}人</div>
+      <div class="n">SSIN顧客の${c['S客のL併用率']}%</div></div>
+    <div class="kpi hi"><div class="k">併用客の累計利用額</div><div class="v">${yen(c['併用客LTV'])}</div>
+      <div class="n">SSIN単独客 ${yen(c['S単独客LTV'])}（${((c['併用客LTV']/Math.max(c['S単独客LTV'],1)-1)*100).toFixed(0)}%高い）</div></div>`;
+  new Chart($('cNew'), {
     type:'bar',
-    data:{labels:ba2.map(x=>x.name+(x['後月数']<3?'*':'')),
-      datasets:[
-        {label:'導入前 月平均新規',data:ba2.map(x=>x['合計前新規']),backgroundColor:'#b8c4d1',borderRadius:3},
-        {label:'導入後 月平均新規',data:ba2.map(x=>x['合計後新規']),backgroundColor:C.lum,borderRadius:3}]},
+    data:{labels:LAB, datasets:[
+      {label:'SSIN 新規',data:M.map(r=>r['S新規']),backgroundColor:C.ssin,borderRadius:3,stack:'a'},
+      {label:'LUMISS 新規',data:M.map(r=>r['L新規']),backgroundColor:C.lum,borderRadius:3,stack:'a'}]},
     options:{maintainAspectRatio:false,
       plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}}},
-      scales:{y:{beginAtZero:true,grid:{color:C.line},title:{display:true,text:'人／月'}},x:{grid:{display:false}}}}
+      scales:{x:{stacked:true,grid:{display:false}},
+        y:{stacked:true,beginAtZero:true,grid:{color:C.line},title:{display:true,text:'人／月'}}}}
   });
+  $('custNote').innerHTML =
+    `LUMISS利用者${c['L顧客数'].toLocaleString()}人のうち、もともとSSINに来ていたお客様は${c['L客の既存S率']}%。` +
+    `<b>ほとんどが新しいお客様</b>で、眉のお客様を取り合う形にはなっていません。` +
+    `一方で眉とまつげを併用されるお客様の累計利用額は単独客より高く、1人あたりの売上を押し上げます。`;
 })();
 
-/* ---------- 6. シミュレーター ---------- */
-let simChart = null;
-function runSim(){
-  const init = +document.getElementById('inInit').value || 0;
-  const setup = +document.getElementById('inSetup').value || 0;
-  const labor = +document.getElementById('inLabor').value || 0;
-  const varr = (+document.getElementById('inVar').value || 0) / 100;
-  const curve = document.getElementById('inCurve').value;
-  const key = curve==='median' ? '中央値' : (curve==='min' ? '最小' : '平均');
-  const MONTHS = 24;
-  // 対象店舗が3店以上ある月までを「実績カーブ」として採用し、それ以降は横ばいと仮定（保守的）
-  const r = D.ramp.filter(x=>x['店舗数']>=3);
-  const rev = [];
-  for (let i=1;i<=MONTHS;i++){
-    const hit = r.find(x=>x['月目']===i);
-    rev.push(hit ? hit[key] : rev[rev.length-1]);
-  }
-  const flatFrom = r.length;
-  const profit = rev.map(v => v*(1-varr) - labor);
-  let cum = -(init+setup), payback = null, cums = [];
-  profit.forEach((p,i)=>{ cum += p; cums.push(Math.round(cum)); if(payback===null && cum>=0) payback = i+1; });
-  const y1rev = rev.slice(0,12).reduce((a,b)=>a+b,0);
-  const y1prof = profit.slice(0,12).reduce((a,b)=>a+b,0);
-  const m12 = profit[11];
-  document.getElementById('simOut').innerHTML = `
-    <div class="kpi hi"><div class="k">投資回収まで</div>
-      <div class="v">${payback ? payback+'ヶ月' : '24ヶ月超'}</div>
-      <div class="n">初期投資 ${yen(init+setup)}</div></div>
-    <div class="kpi"><div class="k">1年目 LUMISS売上</div><div class="v">${yen(y1rev)}</div>
-      <div class="n">${flatFrom}ヶ月目以降は横ばい前提（${key}）</div></div>
-    <div class="kpi"><div class="k">1年目 累計利益（投資前）</div>
-      <div class="v" style="color:${y1prof>=0?'var(--pos)':'var(--neg)'}">${yen(y1prof)}</div>
-      <div class="n">変動費・人件費控除後</div></div>
-    <div class="kpi"><div class="k">12ヶ月目の月次利益</div>
-      <div class="v" style="color:${m12>=0?'var(--pos)':'var(--neg)'}">${yen(m12)}</div>
-      <div class="n">以降の継続的な上乗せ</div></div>`;
-  if (simChart) simChart.destroy();
-  simChart = new Chart(document.getElementById('cSim'), {
-    data:{labels:Array.from({length:MONTHS},(_,i)=>(i+1)+'ヶ月目'),
-      datasets:[
-        {type:'bar',label:'月次LUMISS売上',data:rev,backgroundColor:C.lum+'99',borderRadius:3,order:3},
-        {type:'bar',label:'月次利益',data:profit.map(Math.round),backgroundColor:'#1f9d6b99',borderRadius:3,order:2},
-        {type:'line',label:'累計損益（初期投資込み）',data:cums,borderColor:C.ssin,borderWidth:2.5,
-         pointRadius:0,tension:.25,fill:false,order:1,yAxisID:'y'}]},
-    options:{maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+yen(c.parsed.y)}}},
-      scales:{y:{ticks:{callback:v=>man(v)},grid:{color:C.line}},x:{grid:{display:false},ticks:{maxTicksLimit:12}}}}
-  });
-}
-['inInit','inSetup','inLabor','inVar','inCurve'].forEach(id=>
-  document.getElementById(id).addEventListener('input', runSim));
-runSim();
-
-/* ---------- 7. 体制 ---------- */
+/* ---- 7. 曜日・時間帯 ---- */
 (function(){
-  const maxLen = Math.max(...D.stores.map(s=>s['L月次'].length));
-  const labels = Array.from({length:maxLen},(_,i)=>(i+1)+'ヶ月目');
-  new Chart(document.getElementById('cStaff'), {
-    type:'line',
-    data:{labels, datasets:D.stores.map((s,i)=>({label:s.name,
-      data:s['L月次'].map(m=>m['スタッフ']),
-      borderColor:STORE_COLORS[i%STORE_COLORS.length],backgroundColor:'transparent',
-      borderWidth:2,pointRadius:2.5,tension:.2,stepped:false}))},
-    options:{maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom',labels:{boxWidth:10,usePointStyle:true,font:{size:10}}}},
-      scales:{y:{beginAtZero:true,ticks:{stepSize:1},grid:{color:C.line},title:{display:true,text:'担当スタッフ数'}},
-        x:{grid:{display:false}}}}
-  });
-  const rows = D.stores.map((s,i)=>{
-    const m = s['L月次'][s['L月次'].length-1];
-    return {name:s.name, v: m['スタッフ'] ? Math.round(m['売上']/m['スタッフ']) : 0, i};
-  }).sort((a,b)=>b.v-a.v);
-  new Chart(document.getElementById('cPerStaff'), {
+  new Chart($('cWd'), {
     type:'bar',
-    data:{labels:rows.map(r=>r.name),
-      datasets:[{label:'スタッフ1人あたり月商（直近月）',data:rows.map(r=>r.v),
-        backgroundColor:rows.map(r=>STORE_COLORS[r.i%STORE_COLORS.length]),borderRadius:4}]},
-    options:{indexAxis:'y',maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>yen(c.parsed.x)}}},
-      scales:{x:{beginAtZero:true,ticks:{callback:v=>man(v)},grid:{color:C.line}},y:{grid:{display:false}}}}
+    data:{labels:D.weekday.S.map(x=>x['曜日']), datasets:[
+      {label:'SSIN',data:D.weekday.S.map(x=>x['来店']),backgroundColor:C.ssin,borderRadius:3},
+      {label:'LUMISS',data:D.weekday.L.map(x=>x['来店']),backgroundColor:C.lum,borderRadius:3}]},
+    options:{maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}}},
+      scales:{x:{grid:{display:false}},y:{beginAtZero:true,grid:{color:C.line},title:{display:true,text:'来店数（全期間）'}}}}
   });
-  const first = D.stores.map(s=>s['L月次'][0]['スタッフ']).filter(x=>x>0);
-  const avgFirst = first.reduce((a,b)=>a+b,0)/Math.max(first.length,1);
-  const perStaffAvg = rows.filter(r=>r.v>0).reduce((a,r)=>a+r.v,0)/Math.max(rows.filter(r=>r.v>0).length,1);
-  document.getElementById('staffNote').innerHTML =
-    `導入初月の担当スタッフは平均<b>${avgFirst.toFixed(1)}名</b>。売上の伸びに合わせて増員している店舗が多く、` +
-    `直近月のスタッフ1人あたりLUMISS月商は平均<b>${yen(perStaffAvg)}</b>です。` +
-    `<br><b>全店とも導入初月は1名からのスタート</b>です。1名の採用または既存スタッフの研修から始め、予約が埋まってきた段階で2〜3名体制へ広げる流れが実績上もっとも多いパターンです。` +
-    `<br><span style="font-size:11.5px">※担当者の判定：${D.staff_rule||''}</span>`;
+  const hrs = [...new Set([...D.hours.S.map(x=>x['時']),...D.hours.L.map(x=>x['時'])])].sort((a,b)=>a-b);
+  const pick=(arr,h)=>{const f=arr.find(x=>x['時']===h);return f?f['来店']:0};
+  new Chart($('cHr'), {
+    type:'bar',
+    data:{labels:hrs.map(h=>h+'時'), datasets:[
+      {label:'SSIN',data:hrs.map(h=>pick(D.hours.S,h)),backgroundColor:C.ssin,borderRadius:3},
+      {label:'LUMISS',data:hrs.map(h=>pick(D.hours.L,h)),backgroundColor:C.lum,borderRadius:3}]},
+    options:{maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}}},
+      scales:{x:{grid:{display:false}},y:{beginAtZero:true,grid:{color:C.line},title:{display:true,text:'来店数（全期間）'}}}}
+  });
 })();
 
+/* ---- 8. メニュー構成・経路 ---- */
+(function(){
+  const mm = D.menu_mix.filter(x=>x['売上']>0);
+  new Chart($('cMenu'), {
+    type:'doughnut',
+    data:{labels:mm.map(x=>x['区分']), datasets:[{data:mm.map(x=>x['売上']),
+      backgroundColor:mm.map((_,i)=>PALETTE[i%PALETTE.length]),borderWidth:2,borderColor:'#fff'}]},
+    options:{maintainAspectRatio:false,cutout:'55%',
+      plugins:{legend:{position:'right',labels:{boxWidth:11,usePointStyle:true,font:{size:11}}},
+        tooltip:{callbacks:{label:c=>c.label+': '+yen(c.parsed)}}}}
+  });
+  const rt = D.route.L;
+  new Chart($('cRoute'), {
+    type:'doughnut',
+    data:{labels:rt.map(x=>x['経路']), datasets:[{data:rt.map(x=>x['来店']),
+      backgroundColor:rt.map((_,i)=>PALETTE[i%PALETTE.length]),borderWidth:2,borderColor:'#fff'}]},
+    options:{maintainAspectRatio:false,cutout:'55%',
+      plugins:{legend:{position:'right',labels:{boxWidth:11,usePointStyle:true,font:{size:11}}},
+        tooltip:{callbacks:{label:c=>c.label+': '+c.parsed+'件'}}}}
+  });
+  const tot = mm.reduce((a,x)=>a+x['売上'],0);
+  let h = `<thead><tr><th>LUMISS 売上区分</th><th>売上</th><th>構成比</th><th>明細件数</th></tr></thead><tbody>`;
+  mm.forEach(x=>{ h += `<tr><td><b>${x['区分']}</b></td><td>${yen(x['売上'])}</td>
+    <td>${(x['売上']/tot*100).toFixed(1)}%</td><td>${x['件数']}</td></tr>`; });
+  h += `</tbody><tfoot><tr><td>合計</td><td>${yen(tot)}</td><td>100%</td>
+    <td>${mm.reduce((a,x)=>a+x['件数'],0)}</td></tr></tfoot>`;
+  $('tMenu').innerHTML = h;
+})();
 
+/* ---- 9. 月次明細 ---- */
+(function(){
+  let h = `<thead><tr><th>月</th><th>SSIN売上</th><th>LUMISS売上</th><th>店舗合計</th><th>前月比</th>
+    <th>SSIN来店</th><th>LUMISS来店</th><th>新規</th><th>客単価</th>
+    <th>総スタッフ</th><th>LUMISS担当</th><th>L売上比率</th></tr></thead><tbody>`;
+  M.forEach((r,i)=>{
+    const prev = i>0 ? M[i-1]['合計売上'] : null;
+    const d = prev ? pct(r['合計売上'],prev) : null;
+    const mark = r['月']===D.start ? ' style="background:#fff8ec"' : '';
+    h += `<tr${mark}><td><b>${r['月']}</b>${r['月']===D.start?' <span class="badge l">導入</span>':''}</td>
+      <td>${yen(r['S売上'])}</td><td>${r['L売上']?yen(r['L売上']):'—'}</td>
+      <td><b>${yen(r['合計売上'])}</b></td>
+      <td class="${d===null?'':(d>=0?'pos':'neg')}">${d===null?'—':(d>=0?'+':'')+d.toFixed(0)+'%'}</td>
+      <td>${r['S来店']}</td><td>${r['L来店']||'—'}</td><td>${r['合計新規']}</td>
+      <td>${yen(r['合計客単価'])}</td><td>${r['総スタッフ']}名</td>
+      <td>${r['Lスタッフ']?r['Lスタッフ']+'名':'—'}</td>
+      <td>${r['L売上比率']?r['L売上比率']+'%':'—'}</td></tr>`;
+  });
+  const t = M.reduce((a,r)=>({s:a.s+r['S売上'],l:a.l+r['L売上'],c:a.c+r['合計売上'],
+    sv:a.sv+r['S来店'],lv:a.lv+r['L来店'],n:a.n+r['合計新規']}),{s:0,l:0,c:0,sv:0,lv:0,n:0});
+  h += `</tbody><tfoot><tr><td>${M.length}ヶ月合計</td><td>${yen(t.s)}</td><td>${yen(t.l)}</td>
+    <td>${yen(t.c)}</td><td></td><td>${t.sv}</td><td>${t.lv}</td><td>${t.n}</td>
+    <td>${yen(t.c/Math.max(t.sv+t.lv,1))}</td><td></td><td></td>
+    <td>${(t.l/t.c*100).toFixed(1)}%</td></tr></tfoot>`;
+  $('tMonthly').innerHTML = h;
+})();
 </script>
 </body>
 </html>
