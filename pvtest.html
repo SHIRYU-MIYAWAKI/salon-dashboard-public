@@ -47,6 +47,15 @@ tbody tr:hover{background:#fafcfe}
 .bar i.n{background:var(--neg);right:50%}
 .bar .axis{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#c9d2dc}
 td.barcell{width:190px}
+.tabs{display:flex;gap:8px;margin:18px 0 0;flex-wrap:wrap}
+.tabs button{appearance:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.10);
+ color:#fff;font-size:13px;font-weight:600;padding:7px 18px;border-radius:8px;cursor:pointer;
+ font-family:inherit;transition:background .15s,border-color .15s}
+.tabs button:hover{background:rgba(255,255,255,.2)}
+.tabs button.on{background:#fff;color:#1b2430;border-color:#fff}
+.scope{font-size:12px;color:var(--muted);margin:-10px 0 16px}
+.backlink{display:inline-block;margin-top:9px;font-size:12.5px;color:#fff;opacity:.8;text-decoration:none}
+.backlink:hover{opacity:1;text-decoration:underline}
 .note{background:#fffbe9;border:1px solid #f0e0b0;border-radius:10px;padding:16px 18px;font-size:12.5px;color:#5c4a17}
 .note b{color:#3d3110}
 .note ul{margin:8px 0 0;padding-left:19px}
@@ -62,11 +71,19 @@ td.barcell{width:190px}
 <header><div class="wrap">
 <h1>サロントップ写真 A/Bテスト — PV効果測定</h1>
 <div class="sub">直営10店舗（SSIN STUDIO 5店 / LUMISS 5店）　判定基準：自店PV − 同P同A平均PV　｜　最終更新 2026-09-14</div>
+<div class="tabs">
+<button data-scope="all" class="on" onclick="setScope('all')">全体</button>
+<button data-scope="SSIN" onclick="setScope('SSIN')">SSIN STUDIO</button>
+<button data-scope="LUMISS" onclick="setScope('LUMISS')">LUMISS</button>
+</div>
+<a class="backlink" href="./">← 売上ダッシュボードへ戻る</a>
 </div></header>
 <div class="wrap">
 <section>
 <h2>写真カテゴリ別の成績<span class="hint">同P同A平均をどれだけ引き離せたか</span></h2>
 <p class="lead">「差」がプラスなら平均より優秀。繁忙期などで業界全体のPVが動いても、自店の実力だけを切り出して比較できます。</p>
+<div data-set="all">
+<p class="scope">表示中：全体</p>
 <div class="cards">
 <div class="card best">
 <span class="badge few">暫定トップ</span>
@@ -89,12 +106,42 @@ td.barcell{width:190px}
 <div class="big neg">-91.0<span class="unit">PV/週</span></div>
 <div class="meta">対平均比 <b>86.3%</b>　勝率 <b>50%</b><br>集計 2週（延べ）／2店舗</div>
 </div>
-</div></section>
+</div></div>
+<div data-set="SSIN" style="display:none">
+<p class="scope">表示中：SSIN STUDIO</p>
+<div class="cards">
+<div class="card best">
+<span class="badge few">暫定トップ</span>
+<div class="cat">旧モデル</div>
+<div class="big pos">+155.7<span class="unit">PV/週</span></div>
+<div class="meta">対平均比 <b>127.0%</b>　勝率 <b>67%</b><br>集計 3週（延べ）／3店舗</div>
+</div>
+<div class="card">
+<div class="cat">AIモデル</div>
+<div class="big neg">-91.0<span class="unit">PV/週</span></div>
+<div class="meta">対平均比 <b>86.3%</b>　勝率 <b>50%</b><br>集計 2週（延べ）／2店舗</div>
+</div>
+</div></div>
+<div data-set="LUMISS" style="display:none">
+<p class="scope">表示中：LUMISS</p>
+<div class="cards">
+<div class="card">
+<div class="cat">LED施術写真</div>
+<div class="big neg">-55.0<span class="unit">PV/週</span></div>
+<div class="meta">対平均比 <b>90.3%</b>　勝率 <b>0%</b><br>集計 1週（延べ）／1店舗</div>
+</div>
+<div class="card">
+<div class="cat">ミフウさん</div>
+<div class="big neg">-67.2<span class="unit">PV/週</span></div>
+<div class="meta">対平均比 <b>90.1%</b>　勝率 <b>50%</b><br>集計 4週（延べ）／4店舗</div>
+</div>
+</div></div>
+</section>
 <section>
 <h2>店舗別の成績<span class="hint">2026-09-07 〜 2026-09-13（第1週）</span></h2>
 <p class="lead">差の大きい順。棒グラフの中央線が「同P同A平均とちょうど同じ」です。</p>
 <table><thead><tr><th>店舗</th><th>写真カテゴリ</th><th>自店PV</th><th>同P同A平均</th><th>差</th><th>対平均比</th><th></th></tr></thead><tbody>
-<tr>
+<tr data-brand="SSIN">
 <td><span class="tag ssin">SSIN</span> 船橋</td>
 <td>旧モデル</td>
 <td>829</td>
@@ -103,7 +150,7 @@ td.barcell{width:190px}
 <td class="pos">162.9%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:40.5%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="LUMISS">
 <td><span class="tag lum">LUMISS</span> 船橋</td>
 <td>ミフウさん</td>
 <td>975</td>
@@ -112,7 +159,7 @@ td.barcell{width:190px}
 <td class="pos">133.2%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:30.8%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="SSIN">
 <td><span class="tag ssin">SSIN</span> 上野</td>
 <td>旧モデル</td>
 <td>790</td>
@@ -121,7 +168,7 @@ td.barcell{width:190px}
 <td class="pos">126.0%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:20.6%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="LUMISS">
 <td><span class="tag lum">LUMISS</span> 上野</td>
 <td>ミフウさん</td>
 <td>706</td>
@@ -130,7 +177,7 @@ td.barcell{width:190px}
 <td class="pos">112.6%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:10.0%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="SSIN">
 <td><span class="tag ssin">SSIN</span> 立川</td>
 <td>AIモデル</td>
 <td>625</td>
@@ -139,7 +186,7 @@ td.barcell{width:190px}
 <td class="pos">109.8%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:7.1%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="SSIN">
 <td><span class="tag ssin">SSIN</span> 中野</td>
 <td>旧モデル</td>
 <td>578</td>
@@ -148,7 +195,7 @@ td.barcell{width:190px}
 <td class="neg">97.3%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:2.0%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="LUMISS">
 <td><span class="tag lum">LUMISS</span> 立川</td>
 <td>LED施術写真</td>
 <td>514</td>
@@ -157,7 +204,7 @@ td.barcell{width:190px}
 <td class="neg">90.3%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:7.0%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="LUMISS">
 <td><span class="tag lum">LUMISS</span> 中野</td>
 <td>ミフウさん</td>
 <td>398</td>
@@ -166,7 +213,7 @@ td.barcell{width:190px}
 <td class="neg">67.0%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:24.8%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="SSIN">
 <td><span class="tag ssin">SSIN</span> 高田馬場</td>
 <td>AIモデル</td>
 <td>526</td>
@@ -175,7 +222,7 @@ td.barcell{width:190px}
 <td class="neg">68.8%</td>
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:30.1%"></i></div></td>
 </tr>
-<tr>
+<tr data-brand="LUMISS">
 <td><span class="tag lum">LUMISS</span> 高田馬場</td>
 <td>ミフウさん</td>
 <td>369</td>
@@ -194,5 +241,24 @@ td.barcell{width:190px}
 <li>写真以外の施策（クーポン改定・広告プラン変更・新メニュー）が動いた週は、スプレッドシート③のメモ欄に記録し、解釈時に除外してください。</li>
 <li>写真の差し替えは<b>必ず月曜</b>に。週の途中で変えるとその週はカテゴリが混ざります。</li>
 </ul></div></section>
-<div class="foot">元データ：<a href="https://docs.google.com/spreadsheets/d/1i8eAAtDekJOY8Q-5PhS3zWeD-4ybpk_VLl__PlPnYvA/edit" target="_blank" rel="noopener">効果測定スプレッドシート</a>　／　サロンボード［集計・分析］→［HOT PEPPER Beautyレポート］→［推移］の日別CSV<br>生成 2026-09-14 13:55</div>
-</div></body></html>
+<div class="foot">元データ：<a href="https://docs.google.com/spreadsheets/d/1i8eAAtDekJOY8Q-5PhS3zWeD-4ybpk_VLl__PlPnYvA/edit" target="_blank" rel="noopener">効果測定スプレッドシート</a>　／　サロンボード［集計・分析］→［HOT PEPPER Beautyレポート］→［推移］の日別CSV<br>生成 2026-09-14 14:19</div>
+</div>
+<script>
+function setScope(scope){
+  document.querySelectorAll('.tabs button').forEach(function(b){
+    b.classList.toggle('on', b.dataset.scope === scope);
+  });
+  document.querySelectorAll('[data-set]').forEach(function(el){
+    el.style.display = (el.dataset.set === scope) ? '' : 'none';
+  });
+  document.querySelectorAll('tr[data-brand]').forEach(function(tr){
+    tr.style.display = (scope === 'all' || tr.dataset.brand === scope) ? '' : 'none';
+  });
+  try{ localStorage.setItem('pvtest_scope', scope); }catch(e){}
+}
+try{
+  var saved = localStorage.getItem('pvtest_scope');
+  if(saved && saved !== 'all') setScope(saved);
+}catch(e){}
+</script>
+</body></html>
