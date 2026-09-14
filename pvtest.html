@@ -56,6 +56,18 @@ td.barcell{width:190px}
 .scope{font-size:12px;color:var(--muted);margin:-10px 0 16px}
 .backlink{display:inline-block;margin-top:9px;font-size:12.5px;color:#fff;opacity:.8;text-decoration:none}
 .backlink:hover{opacity:1;text-decoration:underline}
+.tag.patra{color:#7d5ba6;border-color:#7d5ba6;background:#7d5ba622}
+.tag.most{color:#2f8f6b;border-color:#2f8f6b;background:#2f8f6b22}
+.tag.other{color:#6b7684;border-color:#aab3bd;background:#f0f2f5}
+tr.intest{background:#eef6fc}
+tr.intest:hover{background:#e4f0fa}
+tr.intest td:first-child{box-shadow:inset 3px 0 0 var(--ssin)}
+.pill{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:8px;
+ background:var(--ssin);color:#fff;margin-left:6px;vertical-align:1px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:-8px 0 14px}
+.legend span{display:flex;align-items:center;gap:5px}
+.swatch{width:22px;height:12px;border-radius:3px;border:1px solid var(--line);display:inline-block}
+.swatch.test{background:#eef6fc;border-color:#b8d6ee}
 .note{background:#fffbe9;border:1px solid #f0e0b0;border-radius:10px;padding:16px 18px;font-size:12.5px;color:#5c4a17}
 .note b{color:#3d3110}
 .note ul{margin:8px 0 0;padding-left:19px}
@@ -232,6 +244,320 @@ td.barcell{width:190px}
 <td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:50.0%"></i></div></td>
 </tr>
 </tbody></table></section>
+<section>
+<h2>直営全店のPV状況<span class="hint">参考・2026-09-07 〜 2026-09-13</span></h2>
+<p class="lead">グループ全34店舗のサロン情報PV。A/Bテスト対象の10店舗は<b>青い帯</b>で示しています。</p>
+<div class="legend"><span><i class="swatch test"></i>A/Bテスト対象10店舗</span><span><i class="swatch"></i>その他の店舗（参考）</span></div>
+<table><thead><tr><th>店舗</th><th>ブランド</th><th>自店PV</th><th>同P同A平均</th><th>差</th><th>対平均比</th><th></th></tr></thead><tbody>
+<tr data-brand="most eyes">
+<td>most eyes横浜</td>
+<td><span class="tag most">most eyes</span></td>
+<td>1,277</td>
+<td>791</td>
+<td class="pos"><b>+486</b></td>
+<td class="pos">161.4%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:50.0%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO熊本</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>1,086</td>
+<td>613</td>
+<td class="pos"><b>+473</b></td>
+<td class="pos">177.2%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:48.7%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO札幌</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>1,241</td>
+<td>808</td>
+<td class="pos"><b>+433</b></td>
+<td class="pos">153.6%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:44.5%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="SSIN">
+<td>SSIN STUDIO船橋<span class="pill">テスト対象</span></td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>829</td>
+<td>509</td>
+<td class="pos"><b>+320</b></td>
+<td class="pos">162.9%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:32.9%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="LUMISS">
+<td>LUMISS船橋<span class="pill">テスト対象</span></td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>975</td>
+<td>732</td>
+<td class="pos"><b>+243</b></td>
+<td class="pos">133.2%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:25.0%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS川崎</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>1,052</td>
+<td>834</td>
+<td class="pos"><b>+218</b></td>
+<td class="pos">126.1%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:22.4%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO川崎</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>1,038</td>
+<td>834</td>
+<td class="pos"><b>+204</b></td>
+<td class="pos">124.5%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:21.0%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO二子玉川</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>796</td>
+<td>597</td>
+<td class="pos"><b>+199</b></td>
+<td class="pos">133.3%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:20.5%"></i></div></td>
+</tr>
+<tr data-brand="Patra eyes">
+<td>Patra eyes所沢</td>
+<td><span class="tag patra">Patra eyes</span></td>
+<td>685</td>
+<td>502</td>
+<td class="pos"><b>+183</b></td>
+<td class="pos">136.5%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:18.8%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO金山</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>797</td>
+<td>617</td>
+<td class="pos"><b>+180</b></td>
+<td class="pos">129.2%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:18.5%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO岐阜</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>712</td>
+<td>547</td>
+<td class="pos"><b>+165</b></td>
+<td class="pos">130.2%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:17.0%"></i></div></td>
+</tr>
+<tr data-brand="most eyes">
+<td>most eyes立川</td>
+<td><span class="tag most">most eyes</span></td>
+<td>734</td>
+<td>569</td>
+<td class="pos"><b>+165</b></td>
+<td class="pos">129.0%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:17.0%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="SSIN">
+<td>SSIN STUDIO上野<span class="pill">テスト対象</span></td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>790</td>
+<td>627</td>
+<td class="pos"><b>+163</b></td>
+<td class="pos">126.0%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:16.8%"></i></div></td>
+</tr>
+<tr data-brand="Patra eyes">
+<td>Patra eyes横浜</td>
+<td><span class="tag patra">Patra eyes</span></td>
+<td>943</td>
+<td>791</td>
+<td class="pos"><b>+152</b></td>
+<td class="pos">119.2%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:15.6%"></i></div></td>
+</tr>
+<tr data-brand="most eyes">
+<td>most eyes所沢</td>
+<td><span class="tag most">most eyes</span></td>
+<td>637</td>
+<td>502</td>
+<td class="pos"><b>+135</b></td>
+<td class="pos">126.9%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:13.9%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="LUMISS">
+<td>LUMISS上野<span class="pill">テスト対象</span></td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>706</td>
+<td>627</td>
+<td class="pos"><b>+79</b></td>
+<td class="pos">112.6%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:8.1%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS熊本</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>672</td>
+<td>613</td>
+<td class="pos"><b>+59</b></td>
+<td class="pos">109.6%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:6.1%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="SSIN">
+<td>SSIN STUDIO立川<span class="pill">テスト対象</span></td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>625</td>
+<td>569</td>
+<td class="pos"><b>+56</b></td>
+<td class="pos">109.8%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:5.8%"></i></div></td>
+</tr>
+<tr data-brand="most eyes">
+<td>most eyes下北沢</td>
+<td><span class="tag most">most eyes</span></td>
+<td>639</td>
+<td>596</td>
+<td class="pos"><b>+43</b></td>
+<td class="pos">107.2%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:4.4%"></i></div></td>
+</tr>
+<tr data-brand="most eyes">
+<td>most eyes川崎</td>
+<td><span class="tag most">most eyes</span></td>
+<td>840</td>
+<td>834</td>
+<td class="pos"><b>+6</b></td>
+<td class="pos">100.7%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="p" style="width:0.6%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS池袋</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>0</td>
+<td>0</td>
+<td class="neg"><b>0</b></td>
+<td class="neg">0.0%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:0.0%"></i></div></td>
+</tr>
+<tr data-brand="Patra eyes">
+<td>Patra eyes池袋</td>
+<td><span class="tag patra">Patra eyes</span></td>
+<td>0</td>
+<td>0</td>
+<td class="neg"><b>0</b></td>
+<td class="neg">0.0%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:0.0%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="SSIN">
+<td>SSIN STUDIO中野<span class="pill">テスト対象</span></td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>578</td>
+<td>594</td>
+<td class="neg"><b>-16</b></td>
+<td class="neg">97.3%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:1.6%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS藤沢</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>588</td>
+<td>642</td>
+<td class="neg"><b>-54</b></td>
+<td class="neg">91.6%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:5.6%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="LUMISS">
+<td>LUMISS立川<span class="pill">テスト対象</span></td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>514</td>
+<td>569</td>
+<td class="neg"><b>-55</b></td>
+<td class="neg">90.3%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:5.7%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS金山</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>556</td>
+<td>617</td>
+<td class="neg"><b>-61</b></td>
+<td class="neg">90.1%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:6.3%"></i></div></td>
+</tr>
+<tr data-brand="SSIN">
+<td>SSIN STUDIO藤沢</td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>564</td>
+<td>642</td>
+<td class="neg"><b>-78</b></td>
+<td class="neg">87.9%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:8.0%"></i></div></td>
+</tr>
+<tr data-brand="awai">
+<td>awai川崎</td>
+<td><span class="tag other">awai</span></td>
+<td>332</td>
+<td>440</td>
+<td class="neg"><b>-108</b></td>
+<td class="neg">75.5%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:11.1%"></i></div></td>
+</tr>
+<tr data-brand="Patra eyes">
+<td>Patra eyes下北沢</td>
+<td><span class="tag patra">Patra eyes</span></td>
+<td>453</td>
+<td>596</td>
+<td class="neg"><b>-143</b></td>
+<td class="neg">76.0%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:14.7%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS二子玉川</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>427</td>
+<td>597</td>
+<td class="neg"><b>-170</b></td>
+<td class="neg">71.5%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:17.5%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="LUMISS">
+<td>LUMISS中野<span class="pill">テスト対象</span></td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>398</td>
+<td>594</td>
+<td class="neg"><b>-196</b></td>
+<td class="neg">67.0%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:20.2%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="SSIN">
+<td>SSIN STUDIO高田馬場<span class="pill">テスト対象</span></td>
+<td><span class="tag ssin">SSIN</span></td>
+<td>526</td>
+<td>764</td>
+<td class="neg"><b>-238</b></td>
+<td class="neg">68.8%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:24.5%"></i></div></td>
+</tr>
+<tr data-brand="LUMISS">
+<td>LUMISS札幌</td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>500</td>
+<td>808</td>
+<td class="neg"><b>-308</b></td>
+<td class="neg">61.9%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:31.7%"></i></div></td>
+</tr>
+<tr class="intest" data-brand="LUMISS">
+<td>LUMISS高田馬場<span class="pill">テスト対象</span></td>
+<td><span class="tag lum">LUMISS</span></td>
+<td>369</td>
+<td>764</td>
+<td class="neg"><b>-395</b></td>
+<td class="neg">48.3%</td>
+<td class="barcell"><div class="bar"><span class="axis"></span><i class="n" style="width:40.6%"></i></div></td>
+</tr>
+</tbody></table>
+<p class="lead" style="margin:14px 0 0">テスト対象外の店舗は写真カテゴリを管理していないため、A/Bテストの集計には含めていません。同P同A平均との差が全社的にどう出ているかを見るための参考値です。</p>
+</section>
 <section><h2>読み方の注意</h2>
 <div class="note">
 <b>まだ結論を出す段階ではありません（延べ10週）。</b>1カテゴリあたり延べ10週を目安に積み上げてください。<br>
@@ -241,7 +567,7 @@ td.barcell{width:190px}
 <li>写真以外の施策（クーポン改定・広告プラン変更・新メニュー）が動いた週は、スプレッドシート③のメモ欄に記録し、解釈時に除外してください。</li>
 <li>写真の差し替えは<b>必ず月曜</b>に。週の途中で変えるとその週はカテゴリが混ざります。</li>
 </ul></div></section>
-<div class="foot">元データ：<a href="https://docs.google.com/spreadsheets/d/1i8eAAtDekJOY8Q-5PhS3zWeD-4ybpk_VLl__PlPnYvA/edit" target="_blank" rel="noopener">効果測定スプレッドシート</a>　／　サロンボード［集計・分析］→［HOT PEPPER Beautyレポート］→［推移］の日別CSV<br>生成 2026-09-14 14:24</div>
+<div class="foot">元データ：<a href="https://docs.google.com/spreadsheets/d/1i8eAAtDekJOY8Q-5PhS3zWeD-4ybpk_VLl__PlPnYvA/edit" target="_blank" rel="noopener">効果測定スプレッドシート</a>　／　サロンボード［集計・分析］→［HOT PEPPER Beautyレポート］→［推移］の日別CSV<br>生成 2026-09-14 16:24</div>
 </div>
 <script>
 function setScope(scope){
